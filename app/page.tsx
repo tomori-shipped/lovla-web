@@ -1,65 +1,82 @@
+import AppleIcon from "@/assets/svg/apple-icon";
+import AppStoreButton from "@/components/ui/app-store-button";
+import { Button } from "@/components/ui/button";
+import { loveYaLikeASister } from "@/utils/fonts";
+import { ChevronRight } from "lucide-react";
 import Image from "next/image";
+import bojan from "@/assets/svg/bojan.svg";
+import blob from "@/assets/svg/blob.svg";
+import Footer from "@/components/common/footer";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="bg-accent min-h-screen w-screen">
+      <div className="max-w-6xl mx-auto h-full pt-[50px]">
+        <h1 className="text-center text-[110px] font-helix text-primary">
+          Lovla.
+        </h1>
+
+        <h3
+          className={`text-[57px] leading-[72px] text-center font-normal font-inter text-primary`}
+        >
+          A Coloring Journal <br /> Made For Lovers
+        </h3>
+
+        <h6 className="text-center font-normal text-black mt-3">
+          Built to strengthen relationship bonds
+        </h6>
+
+        <div className="mt-8 w-fit mx-auto">
+          <AppStoreButton />
+        </div>
+
+        <div className="mt-20">
+          <h1
+            className={`${loveYaLikeASister.className} text-[58px] text-center text-primary leading-[19.5px]`}
+          >
+            Hi! I'm
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <h1
+            className={`${loveYaLikeASister.className} text-[227.25px] text-center text-primary leading-[280px]`}
+          >
+            Bojan
+          </h1>
+        </div>
+
+        <div className="w-fit mx-auto flex flex-row items-center justify-center relative">
+          <div className="w-[431.4px] h-fit -mt-[60px] z-20">
+            <Image src={bojan} className="w-full h-full" alt="bojan image" />
+          </div>
+          <Image
+            draggable={false}
+            className="absolute w-[400pxpx] h-[400px] top-0 -right-[100px] z-10"
+            src={blob}
+            alt="blob"
+          />
+          <p className="text-primary text-sm w-[273px] -ml-[65px] z-20">
+            I’m here to help you and <br className="md:block hidden" /> your
+            partner discover <br className="md:block hidden" /> your{" "}
+            <span className="font-bold italic">love language</span> by{" "}
+            <br className="md:block hidden" /> turning your shared{" "}
+            <br className="md:block hidden" /> memories into a{" "}
+            <br className="md:block hidden" /> meaningful activity{" "}
+            <br className="md:block hidden" /> you enjoy together.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="mt-5 w-full flex flex-row items-center justify-between bg-[#F8F0FA] rounded-[34px] p-[53px] mb-20">
+          <div>
+            <div className="text-[20px] text-primary">Available now on IOS</div>
+            <div className="text-[64px] text-primary font-bold">Start here</div>
+          </div>
+
+          <div>
+            <AppStoreButton />
+          </div>
         </div>
-      </main>
+
+        <Footer />
+      </div>
     </div>
   );
 }
