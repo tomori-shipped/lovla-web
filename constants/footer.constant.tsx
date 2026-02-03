@@ -25,7 +25,7 @@ export const footerLinks: FooterLink[] = [
 
   {
     title: "Terms and Condition of use",
-    href: "/terms-and-conditions",
+    href: "/terms-and-condition-of-use",
   },
 ];
 

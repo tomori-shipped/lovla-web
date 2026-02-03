@@ -15,7 +15,6 @@ export default function AppStoreButton({
 }: AppStoreButtonProps) {
   return (
     <Button
-      aria-label="Download Lovla on the App Store"
       className={`h-[56px] cursor-pointer w-[185px] bg-black! p-0 rounded-[10px] flex flex-row items-center justify-between ${className}`}
     >
       <AppleIcon className={`text-white ${iconSize}`} />
