@@ -12,8 +12,8 @@ const Footer = () => {
   const currentYear = date.getFullYear();
 
   return (
-    <footer className="flex h-fit flex-col-reverse items-center justify-between gap-8 md:flex-row md:items-end">
-      <div className="flex h-full flex-col items-center justify-center md:mt-14 md:items-start">
+    <footer className="flex h-fit flex-col items-center justify-between gap-8 md:flex-row md:items-end">
+      <div className="flex h-full flex-col items-center justify-center md:mt-14 md:items-start md:order-first">
         <div className="flex flex-row flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-12">
           {footerLinks.map((link) => (
             <Link
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-[200px] md:w-auto md:flex-shrink-0">
+      <div className="order-last w-[200px] md:w-auto md:flex-shrink-0">
         <Image
           src={FooterMascot}
           alt="Lovla mascot"

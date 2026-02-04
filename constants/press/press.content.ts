@@ -28,7 +28,7 @@ export const PRESS_CONTENT: PressPageContent = {
   ],
   contact: {
     name: "Press Inquiries",
-    email: "press@lovla.app",
+    email: "Info@benekan.com",
     role: "Media Relations",
   },
   mediaAssets: [

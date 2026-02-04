@@ -40,6 +40,6 @@ export const socialLinks: SocialLink[] = [
   },
   {
     icon: <EmailIcon />,
-    href: "mailto:info@lovla.com",
+    href: "mailto:Info@benekan.com",
   },
 ];

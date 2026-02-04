@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     description:
       "Turn your shared memories into meaningful activities. Discover your love language together.",
   },
+  icons: {
+    icon: "/lovla-favicon.ico"
+  },
   robots: {
     index: true,
     follow: true,
