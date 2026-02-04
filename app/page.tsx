@@ -4,7 +4,6 @@ import Footer from "@/components/common/footer";
 import {
   FeaturesGrid,
   HowItWorks,
-  AppScreenshots,
   FaqSection,
   AndroidWaitlist,
   TrustBadges,
@@ -15,7 +14,6 @@ import {
   faqItems,
   waitlistConfig,
   trustBadges,
-  appScreenshots,
 } from "@/constants/landing";
 import { loveYaLikeASister } from "@/utils/fonts";
 import bojan from "@/assets/svg/bojan.svg";
@@ -88,9 +86,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* App Screenshots Section */}
-        <AppScreenshots screenshots={appScreenshots} />
 
         {/* How It Works Section */}
         <HowItWorks steps={howItWorksSteps} className="mt-8" />
