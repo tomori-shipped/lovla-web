@@ -9,7 +9,7 @@ export const waitlistConfig: WaitlistConfig = {
     "Be the first to know when Lovla launches on Android and Web. Join the waitlist!",
   inputPlaceholder: "Enter your email",
   buttonText: "Notify Me",
-  successMessage: "You're on the list! We'll notify you when we launch.",
+  successMessage: "You're in! We'll notify you when we launch.",
 };
 
 /**

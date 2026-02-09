@@ -17,8 +17,14 @@ export default function ContactForm() {
     setStatus("sending");
 
     try {
-      // TODO: Replace with actual API endpoint
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) throw new Error();
+
       setStatus("sent");
       setFormData({ name: "", email: "", message: "" });
     } catch {
@@ -93,7 +99,7 @@ export default function ContactForm() {
       </button>
 
       {status === "sent" && (
-        <p className="text-sm text-green-600">
+        <p className="text-sm text-primary">
           Message sent! We&apos;ll get back to you soon.
         </p>
       )}
