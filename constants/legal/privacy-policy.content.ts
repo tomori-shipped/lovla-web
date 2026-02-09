@@ -6,7 +6,7 @@ import type { LegalPageContent } from "./types";
  */
 export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
   title: "Privacy Policy",
-  lastUpdated: "26 January, 2026",
+  lastUpdated: "February 9, 2026",
   sections: [
     {
       number: 1,
@@ -15,21 +15,30 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "This Privacy Policy explains how we collect, use, store, and share personal data when you use the Service. It applies to:",
+            'This Privacy Policy explains how Lovla ("we," "us," or "our") collects, uses, stores, and shares personal data when you use the Lovla mobile application and related services (the "Service").',
+        },
+        {
+          type: "paragraph",
+          content: "This Policy applies to:",
         },
         {
           type: "list",
           items: [
-            { text: "users who create accounts;" },
+            { text: "Users who create accounts;" },
             {
-              text: "people whose images or information appear in User Content.",
+              text: "People whose images or information appear in User Content.",
             },
           ],
         },
         {
           type: "paragraph",
           content:
-            "This Policy is designed to comply with key data protection principles in jurisdictions such as Nigeria, the UK, the EU (including GDPR), and the US. Mandatory local laws may give you additional rights.",
+            "This Policy is designed to comply with applicable data protection laws, including laws in the United States, Nigeria, the United Kingdom, and the European Union (GDPR). Additional local laws may provide you with extra rights.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "By using Lovla, you agree to the practices described in this Privacy Policy.",
         },
       ],
     },
@@ -39,62 +48,50 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       content: [
         {
           type: "paragraph",
-          content: "We collect three types of data that includes:",
-        },
-        {
-          type: "list",
-          items: [
-            {
-              text: "The information you provide directly (account information, profile details, user generated content, feedback, and support requests).",
-            },
-            {
-              text: "Information collected automatically (device information, usage data, app activity).",
-            },
-            { text: "Data from others (linked accounts)." },
-          ],
-        },
-        {
-          type: "paragraph",
-          content:
-            "This information is essential for providing and improving our services, ensuring the safety of our community, and complying with our legal obligations.",
+          content: "We collect the following categories of information:",
         },
       ],
       subsections: [
         {
           number: "2.1",
-          title: "Information you provide directly:",
+          title: "Information You Provide Directly",
           content: [
             {
               type: "list",
               items: [
                 {
-                  text: "Account information: name, username, email address, password, profile image.",
+                  text: "Account Information: name, username, email address, password, profile image.",
                 },
                 {
-                  text: "Relationship information: linked partner's account details, relationship status (if you choose to share it).",
+                  text: "Relationship Information: linked partner's account details and pairing status.",
                 },
                 {
-                  text: "User Content: photographs, AI Outputs, text notes, and other content you upload or create.",
+                  text: "User Content: photographs, text notes, and other content you upload or create.",
                 },
                 {
-                  text: "Communications: messages you send to us (support, feedback, complaints).",
+                  text: "Communications: messages sent to us for support, feedback, or inquiries.",
                 },
               ],
+            },
+            {
+              type: "paragraph",
+              content:
+                "Most information we collect is associated with your Lovla account and user ID in order to provide the Service.",
             },
           ],
         },
         {
           number: "2.2",
-          title: "Information we collect automatically:",
+          title: "Information Collected Automatically",
           content: [
             {
               type: "list",
               items: [
                 {
-                  text: "Device and technical data: IP address, device identifiers, app version, operating system, language, crash logs.",
+                  text: "Device and Technical Data: IP address, device identifiers, operating system, app version, language, and crash logs.",
                 },
                 {
-                  text: "Usage data: pages and screens visited, features used, time spent in the app.",
+                  text: "Usage Data: screens viewed, features used, interactions, and time spent in the app.",
                 },
               ],
             },
@@ -102,16 +99,16 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         },
         {
           number: "2.3",
-          title: "Data from others:",
+          title: "Data From Others",
           content: [
             {
               type: "list",
               items: [
                 {
-                  text: "Your linked partner may upload photos or content that includes you.",
+                  text: "Your linked partner may upload content that includes you.",
                 },
                 {
-                  text: "Third-party service providers (for example, analytics or cloud hosting) may provide us with aggregated information.",
+                  text: "Service providers (such as analytics or cloud hosting partners) may provide aggregated or de-identified information.",
                 },
               ],
             },
@@ -125,22 +122,34 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       content: [
         {
           type: "paragraph",
-          content: "We use your personal data to:",
+          content: "We use personal data to:",
         },
         {
           type: "list",
           items: [
-            { text: "create and manage your account and Linked Accounts;" },
-            { text: "provide and personalize the Service and AI features;" },
-            { text: "process photos and generate AI Outputs;" },
-            { text: "maintain security, detect fraud, and prevent abuse;" },
-            { text: "respond to your inquiries and support requests;" },
             {
-              text: "send service-related messages (for example, changes to terms or privacy);",
+              text: "Create and manage user accounts and linked accounts",
             },
-            { text: "conduct analytics to improve the Service; and" },
-            { text: "comply with legal obligations and enforce our rights." },
+            { text: "Provide and personalize Lovla features" },
+            { text: "Process photos and generate AI outputs" },
+            { text: "Enable pairing between users" },
+            {
+              text: "Maintain security, detect fraud, and prevent abuse",
+            },
+            { text: "Respond to support requests" },
+            { text: "Send important service-related notifications" },
+            { text: "Analyze usage to improve the Service" },
+            { text: "Comply with legal obligations" },
           ],
+        },
+        {
+          type: "paragraph",
+          content: "We do not sell personal data.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "We do not use personal data for third-party advertising or targeted advertising.",
         },
       ],
     },
@@ -151,205 +160,223 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "When you upload photos, we process them using our AI tools to:",
+            "When you upload photos, we process them using AI systems to:",
         },
         {
           type: "list",
           items: [
-            { text: "detect and remove backgrounds;" },
-            { text: "simplify colours; and" },
-            { text: "generate colouring-book style or similar images." },
+            { text: "Remove or detect backgrounds" },
+            { text: "Simplify colors" },
+            {
+              text: "Generate digital coloring-style images and similar outputs",
+            },
           ],
         },
         {
           type: "paragraph",
           content:
-            "We process this data primarily to perform our contract with you.",
+            "We may use third-party service providers to assist with image processing and AI functionality. These providers process data only on our behalf and under contractual obligations to protect user data.",
         },
         {
           type: "paragraph",
           content:
-            "We may also use aggregated or de-identified data from AI processing to improve our models and systems. We will not publish or share your identifiable images for training public models without your explicit consent.",
+            "We may use aggregated or de-identified data to improve our systems. We will not use identifiable images to train public AI models without your explicit consent.",
         },
         {
           type: "paragraph",
           content:
-            "We do not guarantee the accuracy, completeness, or quality of AI Outputs. See the AI Image Processing and Licensing Policy and the Disclaimer, Limitation of Liability, and Indemnity document for more information.",
+            "AI outputs are generated automatically and may contain errors. We do not guarantee accuracy, quality, or suitability of AI-generated content.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "Generated coloring pages are digital-only and are not currently available for export or printing.",
         },
       ],
     },
     {
       number: 5,
-      title: "User Content Ownership and Licensing",
+      title: "Payment & Subscription Information",
       content: [
         {
           type: "paragraph",
           content:
-            "You retain ownership of your User Content. We do not claim ownership over your images or AI Outputs. You licence us to process, store, and handle your User Content as described in the Terms of Service.",
+            "Lovla does not collect or store payment card information.",
         },
         {
           type: "paragraph",
           content:
-            "You must ensure you have the right to upload photos of others and to allow us to process them in this way.",
+            "All payments are processed by Apple through the App Store's In-App Purchase system. We receive limited transaction information from Apple, such as subscription status, product type, and expiration date, to provide access to paid features.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "We do not have access to your full payment details.",
         },
       ],
     },
     {
       number: 6,
-      title: "Children and Minors",
+      title: "User Content Ownership and Licensing",
       content: [
         {
           type: "paragraph",
-          content:
-            "The Service is for individuals from 13 and above. We do not knowingly allow the upload of sexual/explicit images of minors. Accordingly, you must not upload images of anyone without their explicit consent.",
+          content: "You retain ownership of your User Content.",
         },
         {
           type: "paragraph",
           content:
-            "If we become aware that we hold images of minors without proper consent, we will take steps to delete them and may suspend the relevant account.",
+            "You grant Lovla a limited license to store, process, and display your content solely to operate the Service.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "You are responsible for ensuring you have the right to upload any images, including images of other people.",
         },
       ],
     },
     {
       number: 7,
-      title: "Sharing Your Data",
+      title: "Children and Minors",
       content: [
         {
           type: "paragraph",
-          content: "We may share your personal data with:",
-        },
-        {
-          type: "list",
-          items: [
-            {
-              text: "Your linked partner, for content you share in Linked Accounts;",
-            },
-            {
-              text: "Service providers (for example, cloud hosting, analytics, and AI processing infrastructure providers) under appropriate contracts;",
-            },
-            {
-              text: "Authorities, regulators, or law enforcement when required by law or to protect rights and safety.",
-            },
-          ],
+          content:
+            "Lovla is intended for users aged 13 and older.",
         },
         {
           type: "paragraph",
-          content: "We do not sell your personal data to third parties.",
+          content:
+            "You must not upload sexual or explicit images of minors. If we become aware that prohibited content has been uploaded, we will remove it and may suspend the account.",
         },
       ],
     },
     {
       number: 8,
-      title: "International Transfers",
+      title: "Sharing Your Data",
       content: [
         {
           type: "paragraph",
-          content:
-            "Your personal data may be transferred to and processed in countries other than your own, including countries that may not have the same level of data protection. Where we transfer personal data, we use appropriate safeguards.",
-        },
-      ],
-    },
-    {
-      number: 9,
-      title: "Data Storage, Retention, and Deletion",
-      content: [
-        {
-          type: "paragraph",
-          content:
-            "We store your data on servers operated by us or our service providers. We keep personal data:",
+          content: "We may share personal data with:",
         },
         {
           type: "list",
           items: [
-            { text: "for as long as you have an active account; and" },
             {
-              text: "for a limited period after account closure, as necessary for legal, security, and business continuity reasons.",
+              text: "Your linked partner (for shared content)",
+            },
+            {
+              text: "Service providers (cloud hosting, analytics, AI processing)",
+            },
+            {
+              text: "Authorities when required by law",
             },
           ],
         },
         {
           type: "paragraph",
-          content:
-            "When we no longer need personal data, we will delete or de-identify it.",
+          content: "We do not sell personal data.",
         },
+      ],
+    },
+    {
+      number: 9,
+      title: "International Transfers",
+      content: [
         {
           type: "paragraph",
           content:
-            "When you delete specific content, we will remove it from active use and our systems within reasonable timeframes. Copies may remain in backups for a limited period.",
-        },
-        {
-          type: "paragraph",
-          content:
-            "Deleting your account does not automatically delete content already downloaded or copied by your linked partner.",
+            "Your data may be processed in countries outside your own. We use appropriate safeguards to protect personal data during international transfers.",
         },
       ],
     },
     {
       number: 10,
-      title: "Your Rights",
+      title: "Data Storage, Retention, and Deletion",
       content: [
         {
           type: "paragraph",
           content:
-            "Depending on your location, you may have rights such as:",
-        },
-        {
-          type: "list",
-          items: [
-            { text: "Access to your personal data;" },
-            { text: "Rectification of inaccurate data;" },
-            { text: "Erasure of your data in certain circumstances;" },
-            { text: "Data portability." },
-          ],
+            "We store data for as long as your account is active and for a limited period after account closure for legal and operational purposes.",
         },
         {
           type: "paragraph",
           content:
-            "You can exercise these rights by contacting us. We may need to verify your identity. You may also have the right to lodge a complaint with a data protection authority in your country.",
+            "You may delete specific content or your account within the app. Backup copies may persist temporarily.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "Deleting your account does not automatically delete content already saved or downloaded by your linked partner.",
         },
       ],
     },
     {
       number: 11,
-      title: "Security",
+      title: "Your Rights",
       content: [
         {
           type: "paragraph",
           content:
-            "We use reasonable technical and organizational measures to protect your personal data. No system is perfectly secure. You are responsible for keeping your login credentials safe and using strong passwords.",
+            "Depending on your location, you may have rights to:",
+        },
+        {
+          type: "list",
+          items: [
+            { text: "Access your data" },
+            { text: "Correct inaccurate data" },
+            { text: "Request deletion" },
+            { text: "Request data portability" },
+          ],
+        },
+        {
+          type: "paragraph",
+          content:
+            "Contact us to exercise these rights. We may verify your identity.",
         },
       ],
     },
     {
       number: 12,
-      title: "Reporting Concerns and Takedown",
+      title: "Security",
       content: [
         {
           type: "paragraph",
           content:
-            "If you believe your privacy rights have been infringed (for example, someone uploaded your image without permission), you may contact us or use in-app tools. We will review and, where appropriate, remove or restrict access to the relevant content.",
+            "We use reasonable technical and organizational safeguards to protect personal data. No system is completely secure. You are responsible for protecting your login credentials.",
         },
       ],
     },
     {
       number: 13,
-      title: "Changes to This Policy",
+      title: "Reporting and Takedown",
       content: [
         {
           type: "paragraph",
           content:
-            "We may update this Policy from time to time. We will notify you of material changes where required by law. Continued use of the Service after changes take effect means you accept the updated Policy.",
+            "If you believe your privacy rights have been violated or your image was uploaded without consent, contact us or use in-app reporting tools. We will investigate and take appropriate action.",
         },
       ],
     },
     {
       number: 14,
+      title: "Changes to This Policy",
+      content: [
+        {
+          type: "paragraph",
+          content:
+            "We may update this Privacy Policy from time to time. Continued use of Lovla means you accept the updated Policy.",
+        },
+      ],
+    },
+    {
+      number: 15,
       title: "Contact",
       content: [
         {
           type: "paragraph",
           content:
-            "If you have any questions about this Privacy Policy, please contact us.",
+            "If you have questions about this Privacy Policy, contact us at: info@benekan.com",
         },
       ],
     },
