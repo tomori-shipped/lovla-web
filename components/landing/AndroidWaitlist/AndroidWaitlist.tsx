@@ -40,10 +40,15 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
 
         setStatus("submitting");
 
-        // TODO: Replace with actual API call
-        // For now, simulate a successful submission
         try {
-          await new Promise((resolve) => setTimeout(resolve, 1000));
+          const res = await fetch("/api/waitlist", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email: emailValue }),
+          });
+
+          if (!res.ok) throw new Error();
+
           setStatus("success");
           setEmail("");
         } catch {
@@ -70,7 +75,7 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         </p>
 
         {status === "success" ? (
-          <div className="mx-auto max-w-md rounded-lg bg-green-50 p-3 text-sm text-green-700 sm:rounded-xl sm:p-4 sm:text-base">
+          <div className="mx-auto max-w-md rounded-lg bg-primary/10 p-3 text-sm text-primary sm:rounded-xl sm:p-4 sm:text-base">
             {config.successMessage}
           </div>
         ) : (

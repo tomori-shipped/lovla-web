@@ -14,8 +14,8 @@ interface SocialLink {
 
 export const footerLinks: FooterLink[] = [
   {
-    title: "Press",
-    href: "/press",
+    title: "Contact Us",
+    href: "/contact-us",
   },
 
   {
@@ -24,7 +24,7 @@ export const footerLinks: FooterLink[] = [
   },
 
   {
-    title: "Terms and Condition of use",
+    title: "Terms and Conditions",
     href: "/terms-and-conditions",
   },
 ];
@@ -32,11 +32,7 @@ export const footerLinks: FooterLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     icon: <InstagramIcon />,
-    href: "https://www.instagram.com/lovlaofficial/",
-  },
-  {
-    icon: <LinkedIn />,
-    href: "https://www.linkedin.com/company/lovla/",
+    href: "https://www.instagram.com/lovla.app",
   },
   {
     icon: <EmailIcon />,
