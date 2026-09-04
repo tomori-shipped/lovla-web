@@ -62,6 +62,7 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
 
     return (
       <section
+        id="android-waitlist"
         className={cn(
           "rounded-2xl bg-primary/5 px-4 py-8 text-center sm:rounded-3xl sm:px-6 sm:py-10 md:px-12 md:py-12",
           className

@@ -1,5 +1,4 @@
 import InstagramIcon from "@/assets/svg/instagram";
-import LinkedIn from "@/assets/svg/linkedin";
 import EmailIcon from "@/assets/svg/mail";
 
 interface FooterLink {
@@ -13,6 +12,11 @@ interface SocialLink {
 }
 
 export const footerLinks: FooterLink[] = [
+  {
+    title: "Blog",
+    href: "/blog",
+  },
+
   {
     title: "Contact Us",
     href: "/contact-us",
