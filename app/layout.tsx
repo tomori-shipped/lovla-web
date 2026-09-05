@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${hellixBold.variable} antialiased`}>
+      <body className={`${inter.className} ${inter.variable} ${hellixBold.variable} antialiased`}>
         {children}
       </body>
     </html>

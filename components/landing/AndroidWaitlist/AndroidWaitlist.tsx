@@ -64,11 +64,11 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
       <section
         id="android-waitlist"
         className={cn(
-          "rounded-2xl bg-primary/5 px-4 py-8 text-center sm:rounded-3xl sm:px-6 sm:py-10 md:px-12 md:py-12",
+          "rounded-2xl bg-[#F3EBF4] px-5 py-10 text-center sm:px-8 md:px-12 md:py-14",
           className
         )}
       >
-        <h2 className="mb-2 text-xl font-bold text-primary sm:text-2xl md:text-3xl">
+        <h2 className="mb-3 font-helix text-2xl tracking-[-0.02em] text-primary sm:text-3xl">
           {config.headline}
         </h2>
         <p className="mb-6 text-sm text-gray-600 sm:mb-8 sm:text-base">
@@ -76,13 +76,13 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         </p>
 
         {status === "success" ? (
-          <div className="mx-auto max-w-md rounded-lg bg-primary/10 p-3 text-sm text-primary sm:rounded-xl sm:p-4 sm:text-base">
+          <div role="status" className="mx-auto max-w-md rounded-lg bg-primary/10 p-3 text-sm text-primary sm:rounded-xl sm:p-4 sm:text-base">
             {config.successMessage}
           </div>
         ) : (
           <form
             onSubmit={handleSubmit}
-            className="mx-auto flex max-w-md items-stretch overflow-hidden rounded-lg border border-gray-300 bg-white focus-within:border-primary focus-within:ring-2 focus-within:ring-primary/20"
+            className="mx-auto flex max-w-md flex-col gap-2 sm:flex-row sm:gap-0"
           >
             <input
               type="email"
@@ -92,13 +92,15 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
               placeholder={config.inputPlaceholder}
               required
               disabled={isDisabled}
-              className="h-12 flex-1 bg-transparent px-4 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:h-14 sm:px-5 sm:text-base"
+              autoComplete="email"
+              aria-describedby={status === "error" ? "waitlist-error" : undefined}
+              className="h-12 min-w-0 flex-1 rounded-lg border border-primary/15 bg-white px-4 text-sm text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-50 sm:rounded-r-none sm:border-r-0"
               aria-label="Email address"
             />
             <Button
               type="submit"
               disabled={isDisabled}
-              className="h-12 rounded-none bg-primary px-5 text-sm font-semibold text-white hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:h-14 sm:px-6 sm:text-base"
+              className="h-12 shrink-0 rounded-lg bg-primary px-5 text-sm font-medium text-white hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:rounded-l-none"
             >
               {status === "submitting" ? "Submitting..." : config.buttonText}
             </Button>
@@ -106,7 +108,7 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         )}
 
         {status === "error" && (
-          <p className="mt-3 text-xs text-red-600 sm:mt-4 sm:text-sm">
+          <p id="waitlist-error" role="alert" className="mt-3 text-xs text-red-600 sm:mt-4 sm:text-sm">
             Something went wrong. Please try again.
           </p>
         )}

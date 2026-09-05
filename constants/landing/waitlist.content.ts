@@ -4,11 +4,11 @@ import type { WaitlistConfig, TrustBadge } from "./types";
  * Configuration for the Android & Web waitlist section.
  */
 export const waitlistConfig: WaitlistConfig = {
-  headline: "Android & Web Coming Soon",
+  headline: "Waiting for Android or web?",
   subheadline:
-    "Be the first to know when Lovla launches on Android and Web. Join the waitlist!",
+    "Leave your email. We’ll let you know when it’s your turn to color.",
   inputPlaceholder: "Enter your email",
-  buttonText: "Notify Me",
+  buttonText: "Keep me posted",
   successMessage: "You're in! We'll notify you when we launch.",
 };
 
