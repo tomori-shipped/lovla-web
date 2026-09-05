@@ -29,8 +29,8 @@ export default function AppStoreButton({
       >
         <AppleIcon className={`text-white ${iconSize}`} />
         <div className="flex flex-col items-start justify-between">
-          <h6 className="text-white text-xs">Download on the</h6>
-          <h6 className="text-white text-xl font-bold">App Store</h6>
+          <span className="text-white text-xs">Download on the</span>
+          <span className="text-white text-xl font-bold">App Store</span>
         </div>
         {showChevron && (
           <ChevronRight className="text-white size-[24px]" />

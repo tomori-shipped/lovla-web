@@ -1,0 +1,59 @@
+.memories {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 520px;
+  height: 530px;
+  margin: 0 auto;
+}
+.backdrop {
+  position: absolute;
+  z-index: -1;
+  inset: 30px -5px 45px 30px;
+  border-radius: 48% 52% 45% 55%;
+  background: #f0e6f0;
+  transform: rotate(-12deg);
+}
+.memoryCard {
+  position: absolute;
+  width: 48%;
+  padding: 12px 12px 0;
+  background: #fff;
+  border: 1px solid #4b164c0d;
+  border-radius: 5px;
+  box-shadow: 0 20px 55px -20px #4b164c40, 0 3px 8px #4b164c08;
+}
+.photoCard { left: 2%; top: 14px; transform: rotate(-9deg); }
+.artCard { right: 0; top: 125px; transform: rotate(8deg); }
+.photoWindow, .artWindow { position: relative; overflow: hidden; background: #fcf8ff; }
+/* Frame the actual photo and artwork from Lovla's App Store screenshots.
+   Surrounding promotional copy stays outside these presentation windows. */
+.photoWindow { aspect-ratio: 265 / 400; }
+.artWindow { aspect-ratio: 428 / 610; }
+.photoImage, .artImage { position: absolute; max-width: none; height: auto; }
+.photoImage { width: 226.42%; left: -64.15%; top: -138.5%; }
+.artImage { width: 140.19%; left: -21.03%; top: -99.67%; }
+.cardCaption { padding: 16px 0 18px; text-align: center; font-size: 12px; font-weight: 500; color: #4b164c; }
+.heart { position: absolute; top: 40px; right: 70px; color: #a93f7b; transform: rotate(16deg); }
+.figureCaption { position: absolute; bottom: 0; left: 0; width: 100%; text-align: center; font-size: 12px; letter-spacing: 0.02em; color: #786577; }
+@media (max-width: 1023px) and (min-width: 768px) {
+  .memories { height: 450px; }
+  .artCard { top: 110px; }
+  .heart { right: 35px; }
+  .cardCaption { font-size: 10px; padding: 13px 0; }
+}
+@media (max-width: 767px) {
+  .memories { max-width: 390px; height: 425px; margin-top: 10px; }
+  .backdrop { inset: 20px 0 38px; }
+  .photoCard { top: 8px; left: 3%; }
+  .artCard { top: 100px; right: 3%; }
+  .memoryCard { width: 47%; padding: 9px 9px 0; }
+  .cardCaption { font-size: 10px; padding: 13px 0; }
+  .heart { top: 20px; right: 55px; }
+}
+@media (max-width: 380px) {
+  .memories { height: 360px; }
+  .artCard { top: 75px; }
+  .heart { right: 40px; }
+  .cardCaption { font-size: 9px; }
+}

@@ -2,15 +2,33 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/common/footer";
+import { activitiesPost } from "@/constants/blog/long-distance-activities";
 
-const post = {
+const posts = [
+  {
+    title: activitiesPost.title,
+    excerpt: activitiesPost.excerpt,
+    href: `/blog/${activitiesPost.slug}`,
+    image: activitiesPost.image,
+    alt: activitiesPost.imageAlt,
+    date: activitiesPost.displayDate,
+    dateTime: activitiesPost.date,
+    readingMinutes: activitiesPost.readingMinutes,
+    category: "Long-distance dates",
+  },
+  {
   title: "9 Best Apps for Couples in 2026 That Are Actually Useful",
   excerpt:
     "A practical, honest comparison of couples apps for better conversations, shared plans, creative dates, everyday photos, and long-distance quality time.",
   href: "/blog/best-apps-for-couples",
   image: "/blog/best-apps-for-couples-2026.webp",
   date: "September 4, 2026",
-};
+  dateTime: "2026-09-04",
+  alt: "Illustration of a couple choosing relationship apps together",
+  readingMinutes: 12,
+  category: "Couples guides",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Relationship Ideas & Advice",
@@ -67,25 +85,28 @@ export default function BlogPage() {
           <h2 id="latest-posts" className="sr-only">
             Latest posts
           </h2>
-          <article className="overflow-hidden rounded-[32px] border border-primary/10 bg-white shadow-[0_20px_60px_rgba(75,22,76,0.08)]">
-            <Link href={post.href} className="group grid md:grid-cols-[1.15fr_0.85fr]">
-              <div className="relative aspect-[16/9] overflow-hidden md:aspect-auto md:min-h-[410px]">
+          <div className="grid gap-8 md:grid-cols-2">
+          {posts.map((post, index) => (
+          <article key={post.href} className="overflow-hidden rounded-2xl border border-primary/10 bg-white">
+            <Link href={post.href} className="group block h-full">
+              <div className="relative aspect-[1672/941] overflow-hidden">
                 <Image
                   src={post.image}
-                  alt="Illustration of a couple choosing relationship apps together"
+                  alt={post.alt}
                   fill
-                  priority
-                  sizes="(max-width: 768px) 100vw, 58vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  preload={index === 0}
+                  sizes="(max-width: 768px) 100vw, 540px"
+                  className="object-contain transition-transform duration-500 motion-safe:group-hover:scale-[1.02]"
                 />
               </div>
-              <div className="flex flex-col justify-center p-7 sm:p-9 md:p-10">
+              <div className="flex flex-col p-6 sm:p-8">
+                <p className="mb-3 text-xs font-semibold uppercase tracking-[0.15em] text-[#A93F7B]">{post.category}</p>
                 <div className="flex flex-wrap items-center gap-3 text-sm text-[#725f73]">
-                  <span>{post.date}</span>
+                  <time dateTime={post.dateTime}>{post.date}</time>
                   <span aria-hidden="true">·</span>
-                  <span>12 min read</span>
+                  <span>{post.readingMinutes} min read</span>
                 </div>
-                <h2 className="mt-5 text-3xl font-bold leading-tight text-primary sm:text-4xl">
+                <h2 className="mt-5 font-helix text-3xl leading-tight tracking-[-0.02em] text-primary">
                   {post.title}
                 </h2>
                 <p className="mt-5 leading-7 text-[#4f4350]">{post.excerpt}</p>
@@ -95,11 +116,13 @@ export default function BlogPage() {
               </div>
             </Link>
           </article>
+          ))}
+          </div>
         </section>
       </main>
 
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <Footer />
+        <Footer compact />
       </div>
     </div>
   );

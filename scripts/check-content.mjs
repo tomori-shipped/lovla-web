@@ -1,0 +1,56 @@
+import assert from "node:assert/strict";
+
+// Run against a local production server: node scripts/check-content.mjs
+// This deliberately does not submit a valid email or call any external service.
+const origin = new URL(process.argv[2] ?? "http://localhost:3000");
+assert(["localhost", "127.0.0.1"].includes(origin.hostname), "Checks must target a local server");
+const slug = "/blog/long-distance-relationship-activities";
+const routes = ["/", "/blog", slug, "/blog/best-apps-for-couples", "/contact-us", "/privacy-policy", "/terms-and-conditions", "/sitemap.xml", "/robots.txt"];
+const pages = new Map(await Promise.all(routes.map(async (route) => {
+  const response = await fetch(new URL(route, origin));
+  assert.equal(response.status, 200, `${route} returns 200`);
+  return [route, await response.text()];
+})));
+
+const home = pages.get("/");
+assert(!home.includes("Why Couples Love Lovla"), "Feature section is removed from homepage");
+assert(!home.includes("Frequently Asked Questions"), "FAQ section is removed from homepage");
+assert(!home.includes("FAQPage"), "No obsolete homepage FAQ schema");
+assert(home.includes("android-waitlist"), "Waitlist remains available");
+assert(home.includes(`href="${slug}"`), "Homepage links to the new post");
+assert(pages.get("/blog").includes(`href="${slug}"`), "Blog index links to the new post");
+assert(pages.get("/sitemap.xml").includes(`https://www.lovla.app${slug}`), "Sitemap includes the new post");
+
+const article = pages.get(slug);
+const visibleMarkup = article.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
+assert.equal((visibleMarkup.match(/<h1\b/g) ?? []).length, 1, "One article H1");
+assert.equal((visibleMarkup.match(/<h3\b/g) ?? []).length, 45, "Exactly 45 activities");
+assert.equal((visibleMarkup.match(/<ol\b/g) ?? []).length, 5, "Five activity groups");
+assert(visibleMarkup.includes("The Lovla Team"), "Correct visible author");
+assert(article.includes(`rel="canonical" href="https://www.lovla.app${slug}"`), "Correct canonical");
+assert(article.includes('property="og:type" content="article"'), "Article Open Graph tags");
+assert(article.includes('name="twitter:card" content="summary_large_image"'), "Large image social card");
+assert(article.includes('name="description"'), "Meta description exists");
+assert(!/<meta[^>]+content="[^"]*noindex/.test(article), "Article is indexable");
+const json = [...article.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]));
+const schema = json.flatMap((value) => value["@graph"] ?? [value]);
+const posting = schema.find((value) => value["@type"] === "BlogPosting");
+assert(posting, "BlogPosting structured data is valid JSON");
+assert.equal(posting.author.name, "The Lovla Team");
+assert.equal(posting.mainEntityOfPage["@id"], `https://www.lovla.app${slug}`);
+assert(schema.some((value) => value["@type"] === "BreadcrumbList"), "Breadcrumb schema exists");
+for (const [, href] of visibleMarkup.matchAll(/href="(https:\/\/apps\.apple\.com[^\"]+)"/g)) {
+  assert(href.includes("id6758548454"), "Only Lovla App Store links in new post");
+}
+for (const asset of ["/blog/long-distance-relationship-activities.webp", "/screenshots/lovla-photo-to-art.webp", "/screenshots/lovla-shared-coloring.webp"]) {
+  const response = await fetch(new URL(asset, origin));
+  assert.equal(response.status, 200, `${asset} is available`);
+  assert(response.headers.get("content-type")?.includes("image/webp"), `${asset} is WebP`);
+}
+const invalidEmail = await fetch(new URL("/api/waitlist", origin), {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ email: "not-an-email" }),
+});
+assert.equal(invalidEmail.status, 400, "Invalid waitlist email is rejected before sending");
+console.log(`PASS: ${routes.length} routes, homepage removals, article structure, SEO, images, internal discovery, and invalid-email validation.`);

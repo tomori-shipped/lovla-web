@@ -7,9 +7,28 @@ import Image from "next/image";
  * Footer component with navigation links, social media, and mascot.
  * Responsive design that stacks on mobile and displays side-by-side on desktop.
  */
-const Footer = () => {
+const Footer = ({ compact = false }: { compact?: boolean }) => {
   const date = new Date();
   const currentYear = date.getFullYear();
+
+  if (compact) {
+    return (
+      <footer className="border-t border-primary/12 pb-8 pt-8 text-primary">
+        <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
+          <Link href="/" aria-label="Lovla home" className="w-fit font-helix text-3xl tracking-[-1px]">Lovla.</Link>
+          <nav aria-label="Footer navigation" className="flex flex-wrap gap-x-6 gap-y-4 text-xs">
+            {footerLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="py-1 hover:underline underline-offset-4">{link.title}</Link>
+            ))}
+          </nav>
+        </div>
+        <div className="mt-7 flex flex-wrap items-center justify-between gap-4 text-[11px] text-[#786577]">
+          <p>&copy; {currentYear} Lovla. Benekan Technologies LLC.</p>
+          <a href="https://www.instagram.com/lovla.app" target="_blank" rel="noopener noreferrer" className="py-1 hover:text-primary">Find us on Instagram <span aria-hidden="true">↗</span></a>
+        </div>
+      </footer>
+    );
+  }
 
   return (
     <footer className="flex h-fit flex-col items-center justify-between gap-8 md:flex-row md:items-end">
