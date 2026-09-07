@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { activitiesPost } from "@/constants/blog/long-distance-activities";
+import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
 
 const baseUrl = "https://www.lovla.app";
 
@@ -13,13 +14,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-09-05"),
+      lastModified: new Date("2026-09-07"),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/blog/${activitiesPost.slug}`,
       lastModified: new Date(activitiesPost.date),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/${photoColoringPost.slug}`,
+      lastModified: new Date(photoColoringPost.date),
       changeFrequency: "monthly",
       priority: 0.8,
     },

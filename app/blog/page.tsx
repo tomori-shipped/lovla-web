@@ -3,8 +3,20 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/common/footer";
 import { activitiesPost } from "@/constants/blog/long-distance-activities";
+import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
 
 const posts = [
+  {
+    title: photoColoringPost.title,
+    excerpt: photoColoringPost.excerpt,
+    href: `/blog/${photoColoringPost.slug}`,
+    image: photoColoringPost.image,
+    alt: photoColoringPost.imageAlt,
+    date: photoColoringPost.displayDate,
+    dateTime: photoColoringPost.date,
+    readingMinutes: photoColoringPost.readingMinutes,
+    category: "Creative dates",
+  },
   {
     title: activitiesPost.title,
     excerpt: activitiesPost.excerpt,

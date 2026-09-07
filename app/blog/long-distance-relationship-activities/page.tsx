@@ -129,6 +129,7 @@ export default function LongDistanceActivitiesPage() {
                 <div className="mt-6"><AppStoreButton showChevron={false} className="gap-3 px-5! w-fit!" /></div>
                 <Link href="/" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline underline-offset-4">See how Lovla works <ArrowRight size={15} aria-hidden="true" /></Link>
               </section>
+              <p className="mb-12">Want to make activity 10 tonight? Follow our practical guide to <Link href="/blog/turn-photo-into-coloring-page" className="font-semibold text-primary underline decoration-[#D98AB8] underline-offset-4">turning a photo into a coloring page</Link>, including which pictures work best and how to fix messy line art.</p>
               <p className="border-t border-primary/10 pt-6 text-sm leading-7 text-[#786577]">Written by <span className="font-semibold text-primary">The Lovla Team</span>. We make Lovla, a shared coloring journal for couples, and share practical ideas for spending time together—wherever you both are.</p>
             </div>
           </div>
