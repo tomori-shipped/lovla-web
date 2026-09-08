@@ -1,105 +1,363 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowRight, Heart } from "lucide-react";
-import AppStoreButton from "@/components/ui/app-store-button";
-import Footer from "@/components/common/footer";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  ArrowRight,
+  Heart,
+  Palette,
+  Sparkles,
+  BookHeart,
+  Download,
+} from "lucide-react";
+import MarketingHeader from "@/components/common/marketing-header";
+import { storeUrl } from "@/constants/landing/links";
+import MarketingFooter from "@/components/common/marketing-footer";
 import { AndroidWaitlist } from "@/components/landing/AndroidWaitlist";
 import { waitlistConfig } from "@/constants/landing/waitlist.content";
 import styles from "./home.module.css";
-
-const description =
-  "Turn your favorite photos into coloring pages and color together in Lovla. A shared coloring journal for couples, near or far. Available on iOS.";
-
 export const metadata: Metadata = {
-  title: { absolute: "Lovla — Color Your Memories, Together" },
-  description,
+  title: { absolute: "Lovla — A little more color. A little more us." },
+  description:
+    "Turn photos into coloring pages, color together in real time, and save your favorite moments in a shared journal. Lovla is made for two.",
   alternates: { canonical: "https://www.lovla.app" },
-  openGraph: {
-    title: "Lovla — Color Your Memories, Together",
-    description,
-    url: "https://www.lovla.app",
-    type: "website",
-    siteName: "Lovla",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Lovla — Color Your Memories, Together",
-    description,
-  },
 };
-
-const steps = [
-  { number: "01", title: "Pick a memory.", text: "The first date. That blurry holiday selfie. A little moment you both love." },
-  { number: "02", title: "Make it colorful.", text: "Turn your photo into a coloring page. Pick your colors and fill it in together, in real time." },
-  { number: "03", title: "Keep it yours.", text: "Save your finished page in your shared journal. One more memory, made by the two of you." },
+const faqs = [
+  [
+    "What is Lovla?",
+    "Lovla is a shared coloring journal for couples. Turn your photos into coloring pages, create together, and keep your memories in one place.",
+  ],
+  [
+    "Can we color together from different places?",
+    "Yes. Color together in real time, whether you’re on the same sofa or in different time zones.",
+  ],
+  [
+    "Do we both need the app?",
+    "Both partners need Lovla to connect and color together. Download the app on your iPhones to get started.",
+  ],
+  [
+    "What photos should we use?",
+    "Choose a photo with a clear subject and good contrast. Couple selfies, holiday snapshots, and everyday moments are a lovely place to start.",
+  ],
+  [
+    "Is Lovla available on Android?",
+    "Lovla is available on iOS. Join the waitlist below for updates about Android and web.",
+  ],
 ];
-
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FDFBFD] text-[#171217]">
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-5 focus:py-3 focus:text-white">Skip to content</a>
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 sm:px-8 md:py-8">
-        <Link href="/" aria-label="Lovla home" className="font-helix text-[38px] leading-none tracking-[-1.5px] text-primary">Lovla.</Link>
-        <nav aria-label="Main navigation" className="flex items-center gap-6 text-sm font-medium text-primary sm:gap-9">
-          <a href="#how-it-works" className="hidden py-2 transition-opacity hover:opacity-60 sm:block">How it works</a>
-          <Link href="/blog" className="py-2 transition-opacity hover:opacity-60">The blog</Link>
-          <a href="#download" className="rounded-full border border-primary/20 px-4 py-2.5 transition-colors hover:bg-primary hover:text-white sm:px-5">Get Lovla <span aria-hidden="true">↗</span></a>
-        </nav>
-      </header>
+    <div className={styles.site}>
+      <a href="#main-content" className={styles.skip}>
+        Skip to content
+      </a>
+      <MarketingHeader />
       <main id="main-content">
-        <section aria-labelledby="hero-title" className="mx-auto grid max-w-6xl items-center gap-10 px-6 pb-12 pt-9 sm:px-8 sm:pt-14 md:grid-cols-[1fr_1fr] md:gap-5 md:pb-20 md:pt-16 lg:pb-24">
-          <div className="relative z-10 max-w-xl">
-            <p className="mb-6 flex items-center gap-2.5 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#8C4677] sm:text-xs"><span className="size-1.5 rounded-full bg-[#A93F7B]" aria-hidden="true" />A little more us time</p>
-            <h1 id="hero-title" className="font-helix text-[clamp(3.25rem,6.3vw,5rem)] leading-[1.02] tracking-[-0.045em] text-primary">Your memories.<br />A little more<br /><span className="text-[#A93F7B]">colorful.</span></h1>
-            <p className="mt-6 max-w-[370px] text-base leading-[1.8] text-[#6F5B6D] sm:text-lg">Turn your favorite photos into coloring pages. Make something together, even when you&apos;re apart.</p>
-            <div id="download" className="mt-8 scroll-mt-8">
-              <AppStoreButton showChevron={false} className="gap-3 px-5! w-fit!" />
-              <p className="mt-3 text-xs text-[#786577]">Made for two. Available on iOS.</p>
-            </div>
-            <a href="#how-it-works" className="mt-9 inline-flex items-center gap-2 py-2 text-sm font-medium text-primary transition-opacity hover:opacity-60 md:mt-12">A memory becomes a moment <ArrowDown size={15} aria-hidden="true" /></a>
+        <section className={styles.hero}>
+          <div className={styles.eyebrow}>
+            <Heart size={13} /> A LITTLE MORE US TIME
           </div>
-          <figure className={styles.memories} aria-label="A couple’s photo becomes a coloring page in Lovla">
-            <div className={styles.backdrop} aria-hidden="true" />
-            <div className={`${styles.memoryCard} ${styles.photoCard}`}>
-              <div className={styles.photoWindow}>
-                <Image src="/screenshots/lovla-photo-to-art.webp" alt="A couple sharing a kiss in their original photo in Lovla" width={600} height={1299} preload sizes="(max-width: 767px) 460px, 560px" className={styles.photoImage} />
+          <h1>
+            A little more color.
+            <br />A little more <span>us.</span>
+          </h1>
+          <p>
+            Turn your favorite memories into something
+            <br className={styles.desktopBreak} /> you make together. A coloring
+            journal, made for two.
+          </p>
+          <div className={styles.actions}>
+            <a
+              href={storeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.primary}
+            >
+              Download for iOS <ArrowRight size={18} />
+            </a>
+            <a href="#how-it-works" className={styles.secondary}>
+              Meet Lovla <ArrowDown size={17} />
+            </a>
+          </div>
+          <div className={styles.heroStage}>
+            <Image
+              src="/media/lovla-hand.png"
+              width={1024}
+              height={1536}
+              alt="A hand holding Lovla, with a couple coloring their shared portrait"
+              className={styles.hand}
+              preload
+              sizes="(max-width: 600px) 400px, 560px"
+            />
+            <div className={`${styles.floating} ${styles.floatLeft}`}>
+              <div className={styles.floatIcon}>
+                <Palette size={22} />
               </div>
-              <p className={styles.cardCaption}>A favorite memory.</p>
-            </div>
-            <div className={`${styles.memoryCard} ${styles.artCard}`}>
-              <div className={styles.artWindow}>
-                <Image src="/screenshots/lovla-shared-coloring.webp" alt="The same couple’s photo transformed into a line-art coloring page in Lovla" width={600} height={1299} preload sizes="(max-width: 767px) 330px, 410px" className={styles.artImage} />
+              <div>
+                <strong>Your photo. Your palette.</strong>
+                <small>Make a memory your own.</small>
               </div>
-              <p className={styles.cardCaption}>A new way to share it.</p>
             </div>
-            <span className={styles.heart} aria-hidden="true"><Heart size={26} strokeWidth={1.5} /></span>
-            <figcaption className={styles.figureCaption}>Yours to color. Together.</figcaption>
+            <div className={`${styles.floating} ${styles.floatRight}`}>
+              <div className={styles.floatIcon}>
+                <Heart size={22} />
+              </div>
+              <div>
+                <strong>Closer, wherever.</strong>
+                <small>Color together in real time.</small>
+              </div>
+            </div>
+            <span className={styles.stageNote}>
+              Less scrolling.
+              <br />
+              More connecting.
+            </span>
+          </div>
+        </section>
+        <div className={styles.ribbon}>
+          <span>
+            <Heart size={16} /> Made for two
+          </span>
+          <span>
+            <Palette size={16} /> Create in real time
+          </span>
+          <span>
+            <BookHeart size={16} /> Keep every memory
+          </span>
+        </div>
+        <section id="features" className={styles.section}>
+          <div className={styles.sectionIntro}>
+            <span className={styles.tag}>
+              <Sparkles size={14} /> Your kind of quality time
+            </span>
+            <h2>
+              Small moments.
+              <br />A colorful connection.
+            </h2>
+            <p>
+              A new way to spend time together.
+              <br />
+              No perfect plans. No artistic talent required.
+            </p>
+          </div>
+          <div className={styles.benefitGrid}>
+            {[
+              {
+                image: "couple-cafe",
+                alt: "A couple laughing together at a sunlit café",
+                label: "THE LITTLE THINGS",
+                title: "Turn a memory into a moment.",
+                text: "Your favorite photos. A new way to enjoy them together.",
+              },
+              {
+                image: "couple-home",
+                alt: "A couple sharing a quiet moment on their sofa",
+                label: "YOUR KIND OF DATE NIGHT",
+                title: "Less scrolling. More us time.",
+                text: "Find your rhythm on one shared canvas, wherever you are.",
+              },
+              {
+                image: "couple-coast",
+                alt: "A couple smiling at each other on a coastal walk",
+                label: "SOMETHING TO KEEP",
+                title: "A little collection of your love.",
+                text: "Keep the pages you make in a journal that’s just yours.",
+              },
+            ].map((benefit) => (
+              <article key={benefit.image} className={styles.benefitCard}>
+                <Image
+                  src={`/media/${benefit.image}.webp`}
+                  fill
+                  alt={benefit.alt}
+                  sizes="(max-width: 650px) 100vw, (max-width: 900px) 33vw, 400px"
+                />
+                <div className={styles.benefitCopy}>
+                  <span>{benefit.label}</span>
+                  <h3>{benefit.title}</h3>
+                  <p>{benefit.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+        <section
+          className={styles.memorySpotlight}
+          aria-labelledby="memory-title"
+        >
+          <div className={styles.sectionIntro}>
+            <span className={styles.tag}>
+              <Palette size={14} /> A MEMORY, REIMAGINED
+            </span>
+            <h2 id="memory-title">
+              Your favorite days.
+              <br />
+              All over again.
+            </h2>
+            <p>
+              The big adventures. The in-between moments.
+              <br />
+              Bring them back to life, one color at a time.
+            </p>
+          </div>
+          <figure className={styles.festivalArtwork}>
+            <Image
+              src="/media/lovla-festival.png"
+              width={1920}
+              height={1080}
+              alt="A couple’s festival selfie reimagined as a partially colored illustration"
+              sizes="(max-width: 700px) 100vw, 1180px"
+            />
+            <figcaption>
+              <span>A day to remember.</span>
+              <span>A page to make together.</span>
+            </figcaption>
           </figure>
         </section>
-        <section id="how-it-works" aria-labelledby="how-title" className="mx-auto max-w-6xl scroll-mt-8 px-6 py-12 sm:px-8 md:py-16">
-          <div className="border-t border-primary/12 pt-12 md:pt-16">
-            <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-              <h2 id="how-title" className="font-helix text-3xl leading-tight tracking-[-0.025em] text-primary sm:text-[40px]">Less scrolling. More creating.</h2>
-              <p className="max-w-xs text-sm leading-6 text-[#6F5B6D]">From your camera roll to a little quality time.</p>
-            </div>
-            <ol className="mt-10 grid gap-9 md:mt-12 md:grid-cols-3 md:gap-12">
-              {steps.map((step) => (
-                <li key={step.number}>
-                  <span className="text-xs font-semibold tracking-[0.15em] text-[#A93F7B]">{step.number}</span>
-                  <h3 className="mt-4 text-xl font-semibold tracking-[-0.02em] text-primary">{step.title}</h3>
-                  <p className="mt-3 max-w-sm text-sm leading-7 text-[#6F5B6D]">{step.text}</p>
-                </li>
-              ))}
-            </ol>
+        <section
+          id="how-it-works"
+          className={`${styles.section} ${styles.howSection}`}
+        >
+          <div>
+            <span className={styles.tag}>
+              <Heart size={14} /> From photo to quality time
+            </span>
+            <h2>
+              Your next date night?
+              <br />
+              Already in your
+              <br />
+              camera roll.
+            </h2>
+            <p className={styles.bodyCopy}>
+              A few minutes. Your favorite person.
+              <br />
+              Something that’s just yours.
+            </p>
+            <a
+              className={styles.textLink}
+              href={storeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start making memories <ArrowRight size={18} />
+            </a>
           </div>
-          <Link href="/blog/long-distance-relationship-activities" className="mt-12 flex items-center justify-between gap-5 border-y border-primary/12 py-5 text-sm text-primary transition-colors hover:text-[#A93F7B] md:mt-16">
-            <span><span className="mr-3 hidden text-[#786577] sm:inline">A little inspiration</span>45 long-distance date ideas for your next night in</span><ArrowRight size={18} className="shrink-0" aria-hidden="true" />
-          </Link>
+          <ol className={styles.steps}>
+            {[
+              [
+                "Pick a memory.",
+                "Choose a photo that makes you both smile. Lovla turns it into a coloring page.",
+              ],
+              [
+                "Make it colorful.",
+                "Connect with your partner, pick your colors, and bring your page to life together.",
+              ],
+              [
+                "Keep it close.",
+                "Save your creation in your shared journal. Your next little tradition starts here.",
+              ],
+            ].map(([title, copy], i) => (
+              <li key={title}>
+                <span>0{i + 1}</span>
+                <div>
+                  <h3>{title}</h3>
+                  <p>{copy}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </section>
-        <div className="mx-auto max-w-6xl px-6 pb-16 pt-2 sm:px-8 md:pb-20"><AndroidWaitlist config={waitlistConfig} /></div>
+        <section className={styles.pressBand}>
+          <div>
+            <span className={styles.tag}>THE LOVLA STORY</span>
+            <h2>
+              Good things
+              <br />
+              are worth sharing.
+            </h2>
+            <p>
+              Writing about Lovla? Meet the app and find
+              <br />
+              the brand assets you need, all in one place.
+            </p>
+            <Link href="/press-kit" className={styles.primary}>
+              Explore the press kit <Download size={18} />
+            </Link>
+          </div>
+          <div className={styles.bigWordmark} aria-hidden="true">
+            Lovla.<span>Made for a little more us.</span>
+          </div>
+        </section>
+        <section className={`${styles.section} ${styles.faqSection}`}>
+          <div>
+            <span className={styles.tag}>A LITTLE CLARITY</span>
+            <h2>Glad you asked.</h2>
+            <p>
+              Still curious?{" "}
+              <Link href="/contact-us" className={styles.inlineLink}>
+                Say hello.
+              </Link>
+            </p>
+          </div>
+          <div className={styles.faqs}>
+            {faqs.map(([q, a]) => (
+              <details key={q}>
+                <summary>
+                  {q}
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <p>{a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+        <div className={styles.waitlist}>
+          <AndroidWaitlist config={waitlistConfig} />
+        </div>
+        <section className={styles.downloadPanel}>
+          <div className={styles.downloadCopy}>
+            <span className={styles.tag}>
+              <Heart size={14} /> MADE FOR YOUR KIND OF LOVE
+            </span>
+            <h2>
+              Make time.
+              <br />
+              Make something
+              <br />
+              together.
+            </h2>
+            <p>
+              Your memories. Your colors. Your person.
+              <br />
+              Your next little tradition starts with Lovla.
+            </p>
+            <div className={styles.downloadActions}>
+              <a
+                className={styles.primary}
+                href={storeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Lovla <ArrowRight size={18} />
+              </a>
+              <a className={styles.downloadSecondary} href="#features">
+                Explore the app <ArrowUpRight size={18} />
+              </a>
+            </div>
+            <small>Available on iOS. Made for two.</small>
+          </div>
+          <div className={styles.downloadVisual}>
+            <Image
+              src="/screenshots/lovla-shared-coloring.webp"
+              width={600}
+              height={1299}
+              alt="Lovla’s shared coloring canvas on an iPhone"
+              sizes="(max-width: 650px) 340px, 470px"
+            />
+          </div>
+        </section>
       </main>
-      <div className="mx-auto max-w-6xl px-6 sm:px-8"><Footer compact /></div>
+      <MarketingFooter />
     </div>
   );
 }

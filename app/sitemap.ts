@@ -7,6 +7,12 @@ const baseUrl = "https://www.lovla.app";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
+      url: `${baseUrl}/press-kit`,
+      lastModified: new Date("2026-09-07"),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
       url: baseUrl,
       lastModified: new Date("2026-09-05"),
       changeFrequency: "monthly",

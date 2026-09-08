@@ -12,6 +12,7 @@ interface SocialLink {
 }
 
 export const footerLinks: FooterLink[] = [
+  { title: "Press kit", href: "/press-kit" },
   {
     title: "Blog",
     href: "/blog",
