@@ -303,6 +303,16 @@ export default function LongDistanceActivitiesPage() {
                 , including which pictures work best and how to fix messy line
                 art.
               </p>
+              <p className="mb-12">
+                For activity 43, use our{" "}
+                <Link
+                  href="/blog/who-knows-me-better-questions-for-couples"
+                  className="font-semibold text-primary underline decoration-[#D98AB8] underline-offset-4"
+                >
+                  101 Who Knows Me Better questions for couples
+                </Link>{" "}
+                to build a round without writing every prompt yourself.
+              </p>
               <p className="border-t border-primary/10 pt-6 text-sm leading-7 text-[#786577]">
                 Written by{" "}
                 <span className="font-semibold text-primary">

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { activitiesPost } from "@/constants/blog/long-distance-activities";
 import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
+import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const baseUrl = "https://www.lovla.app";
 
@@ -33,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/blog/${photoColoringPost.slug}`,
       lastModified: new Date(photoColoringPost.updatedDate),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog/${whoKnowsMeBetterPost.slug}`,
+      lastModified: new Date(whoKnowsMeBetterPost.updatedDate),
       changeFrequency: "monthly",
       priority: 0.8,
     },

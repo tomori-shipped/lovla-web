@@ -4,8 +4,20 @@ import Link from "next/link";
 import Footer from "@/components/common/footer";
 import { activitiesPost } from "@/constants/blog/long-distance-activities";
 import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
+import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
+  {
+    title: whoKnowsMeBetterPost.title,
+    excerpt: whoKnowsMeBetterPost.excerpt,
+    href: `/blog/${whoKnowsMeBetterPost.slug}`,
+    image: whoKnowsMeBetterPost.image,
+    alt: whoKnowsMeBetterPost.imageAlt,
+    date: whoKnowsMeBetterPost.displayDate,
+    dateTime: whoKnowsMeBetterPost.date,
+    readingMinutes: whoKnowsMeBetterPost.readingMinutes,
+    category: "Couples games",
+  },
   {
     title: photoColoringPost.title,
     excerpt: photoColoringPost.excerpt,
