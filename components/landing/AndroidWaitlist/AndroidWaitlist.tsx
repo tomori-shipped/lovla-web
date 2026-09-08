@@ -55,7 +55,7 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
           setStatus("error");
         }
       },
-      []
+      [],
     );
 
     const isDisabled = status === "submitting" || status === "success";
@@ -65,7 +65,7 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         id="android-waitlist"
         className={cn(
           "rounded-2xl bg-[#F3EBF4] px-5 py-10 text-center sm:px-8 md:px-12 md:py-14",
-          className
+          className,
         )}
       >
         <h2 className="mb-3 font-helix text-2xl tracking-[-0.02em] text-primary sm:text-3xl">
@@ -76,13 +76,16 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         </p>
 
         {status === "success" ? (
-          <div role="status" className="mx-auto max-w-md rounded-lg bg-primary/10 p-3 text-sm text-primary sm:rounded-xl sm:p-4 sm:text-base">
+          <div
+            role="status"
+            className="mx-auto max-w-md rounded-lg bg-primary/10 p-3 text-sm text-primary sm:rounded-xl sm:p-4 sm:text-base"
+          >
             {config.successMessage}
           </div>
         ) : (
           <form
             onSubmit={handleSubmit}
-            className="mx-auto flex max-w-md flex-col gap-2 sm:flex-row sm:gap-0"
+            className="mx-auto flex w-full max-w-2xl flex-col gap-3 md:flex-row md:gap-0"
           >
             <input
               type="email"
@@ -93,14 +96,16 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
               required
               disabled={isDisabled}
               autoComplete="email"
-              aria-describedby={status === "error" ? "waitlist-error" : undefined}
-              className="h-12 min-w-0 flex-1 rounded-lg border border-primary/15 bg-white px-4 text-sm text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-50 sm:rounded-r-none sm:border-r-0"
+              aria-describedby={
+                status === "error" ? "waitlist-error" : undefined
+              }
+              className="h-16 min-h-16 w-full min-w-0 shrink-0 rounded-xl border border-primary/15 bg-white px-5 text-base md:flex-1 text-gray-900 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:cursor-not-allowed disabled:opacity-50 md:rounded-r-none md:border-r-0"
               aria-label="Email address"
             />
             <Button
               type="submit"
               disabled={isDisabled}
-              className="h-12 shrink-0 rounded-lg bg-primary px-5 text-sm font-medium text-white hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:rounded-l-none"
+              className="h-16 min-h-16 shrink-0 rounded-xl bg-primary px-7 text-base font-medium text-white hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 md:rounded-l-none"
             >
               {status === "submitting" ? "Submitting..." : config.buttonText}
             </Button>
@@ -108,13 +113,17 @@ export const AndroidWaitlist = memo<AndroidWaitlistProps>(
         )}
 
         {status === "error" && (
-          <p id="waitlist-error" role="alert" className="mt-3 text-xs text-red-600 sm:mt-4 sm:text-sm">
+          <p
+            id="waitlist-error"
+            role="alert"
+            className="mt-3 text-xs text-red-600 sm:mt-4 sm:text-sm"
+          >
             Something went wrong. Please try again.
           </p>
         )}
       </section>
     );
-  }
+  },
 );
 
 AndroidWaitlist.displayName = "AndroidWaitlist";

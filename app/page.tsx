@@ -8,8 +8,6 @@ import {
   Heart,
   Palette,
   Sparkles,
-  BookHeart,
-  Download,
 } from "lucide-react";
 import MarketingHeader from "@/components/common/marketing-header";
 import { storeUrl } from "@/constants/landing/links";
@@ -17,6 +15,7 @@ import MarketingFooter from "@/components/common/marketing-footer";
 import { AndroidWaitlist } from "@/components/landing/AndroidWaitlist";
 import { waitlistConfig } from "@/constants/landing/waitlist.content";
 import styles from "./home.module.css";
+import Testimonials from "@/components/landing/Testimonials";
 export const metadata: Metadata = {
   title: { absolute: "Lovla — A little more color. A little more us." },
   description:
@@ -114,17 +113,6 @@ export default function Home() {
             </span>
           </div>
         </section>
-        <div className={styles.ribbon}>
-          <span>
-            <Heart size={16} /> Made for two
-          </span>
-          <span>
-            <Palette size={16} /> Create in real time
-          </span>
-          <span>
-            <BookHeart size={16} /> Keep every memory
-          </span>
-        </div>
         <section id="features" className={styles.section}>
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>
@@ -267,27 +255,7 @@ export default function Home() {
             ))}
           </ol>
         </section>
-        <section className={styles.pressBand}>
-          <div>
-            <span className={styles.tag}>THE LOVLA STORY</span>
-            <h2>
-              Good things
-              <br />
-              are worth sharing.
-            </h2>
-            <p>
-              Writing about Lovla? Meet the app and find
-              <br />
-              the brand assets you need, all in one place.
-            </p>
-            <Link href="/press-kit" className={styles.primary}>
-              Explore the press kit <Download size={18} />
-            </Link>
-          </div>
-          <div className={styles.bigWordmark} aria-hidden="true">
-            Lovla.<span>Made for a little more us.</span>
-          </div>
-        </section>
+        <Testimonials />
         <section className={`${styles.section} ${styles.faqSection}`}>
           <div>
             <span className={styles.tag}>A LITTLE CLARITY</span>
@@ -346,13 +314,13 @@ export default function Home() {
             </div>
             <small>Available on iOS. Made for two.</small>
           </div>
-          <div className={styles.downloadVisual}>
+          <div className={styles.downloadMascot}>
             <Image
-              src="/screenshots/lovla-shared-coloring.webp"
-              width={600}
-              height={1299}
-              alt="Lovla’s shared coloring canvas on an iPhone"
-              sizes="(max-width: 650px) 340px, 470px"
+              src="/media/lovla-mascot-paintbrush.png"
+              width={1183}
+              height={1329}
+              alt="Lovla’s smiling mascot holding a pink paintbrush"
+              sizes="(max-width: 650px) 300px, 430px"
             />
           </div>
         </section>
