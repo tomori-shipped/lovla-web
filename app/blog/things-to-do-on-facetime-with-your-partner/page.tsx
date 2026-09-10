@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import Footer from "@/components/common/footer";
 import AppStoreButton from "@/components/ui/app-store-button";
@@ -9,13 +10,17 @@ const title = "35 Things to Do on FaceTime With Your Boyfriend or Girlfriend";
 const description = "35 genuinely fun things to do on FaceTime with your boyfriend or girlfriend, from quick games and creative dates to low-energy ways to feel close.";
 const author = "The Lovla Team";
 const date = "2026-09-09";
+const hero = "/blog/things-to-do-on-facetime-with-your-partner.png";
+const heroUrl = `https://www.lovla.app${hero}`;
+const heroAlt = "35 things to do on FaceTime: a couple sharing a playful video-call date";
 
 export const metadata: Metadata = {
   title: "35 Things to Do on FaceTime With Your Boyfriend or Girlfriend",
   description,
   authors: [{ name: author, url: "https://www.lovla.app" }],
   alternates: { canonical },
-  openGraph: { type: "article", title, description, url: canonical, siteName: "Lovla", publishedTime: date, modifiedTime: date, authors: [author] },
+  openGraph: { type: "article", title, description, url: canonical, siteName: "Lovla", publishedTime: date, modifiedTime: date, authors: [author], images: [{ url: heroUrl, width: 1672, height: 941, alt: heroAlt }] },
+  twitter: { card: "summary_large_image", title, description, images: [heroUrl] },
 };
 
 const groups = [
@@ -66,19 +71,19 @@ const groups = [
   ]},
 ];
 
-const structuredData = { "@context": "https://schema.org", "@type": "BlogPosting", headline: title, description, datePublished: date, dateModified: date, inLanguage: "en-US", author: { "@type": "Organization", name: author, url: "https://www.lovla.app" }, publisher: { "@type": "Organization", name: "Lovla", url: "https://www.lovla.app" }, mainEntityOfPage: canonical };
+const structuredData = { "@context": "https://schema.org", "@type": "BlogPosting", headline: title, description, image: heroUrl, datePublished: date, dateModified: date, inLanguage: "en-US", author: { "@type": "Organization", name: author, url: "https://www.lovla.app" }, publisher: { "@type": "Organization", name: "Lovla", url: "https://www.lovla.app" }, mainEntityOfPage: canonical };
 
 export default function FaceTimeIdeasPage() {
-  let n = 0;
   return <div className="min-h-screen bg-[#FDFBFD] text-[#171217]">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
     <header className="border-b border-primary/10"><div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 sm:px-8"><Link href="/" aria-label="Lovla home" className="font-helix text-3xl tracking-[-1px] text-primary">Lovla.</Link><Link href="/blog" className="flex items-center gap-2 py-2 text-sm font-medium text-primary hover:underline underline-offset-4"><ArrowLeft size={15} aria-hidden="true" />All stories</Link></div></header>
     <main><article>
       <header className="mx-auto max-w-4xl px-6 pb-10 pt-12 text-center sm:px-8 md:pb-12 md:pt-20"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A93F7B]">For when “so… what are you doing?” runs out</p><h1 className="mt-5 font-helix text-[38px] leading-[1.1] tracking-[-0.03em] text-primary sm:text-5xl md:text-[60px]">{title}</h1><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#6F5B6D] sm:text-lg">You do not need another two-hour conversation about your day. Pick something to do together and let the conversation happen around it.</p><div className="mt-6 flex items-center justify-center gap-3 text-sm text-[#786577]"><span>By {author}</span><span>·</span><time dateTime={date}>September 9, 2026</time><span>·</span><span>10 min read</span></div></header>
+      <figure className="mx-auto max-w-6xl px-6 sm:px-8"><Image src={hero} alt={heroAlt} width={1672} height={941} preload sizes="(max-width: 1152px) 100vw, 1088px" className="h-auto w-full rounded-2xl" /></figure>
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:px-8 md:py-16 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-14"><aside><nav aria-label="In this guide" className="rounded-xl border border-primary/10 p-5 lg:sticky lg:top-8 lg:rounded-none lg:border-0 lg:p-0"><p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#786577]">Pick your energy</p><ul className="mt-4 space-y-3">{groups.map(g => <li key={g.id}><a href={`#${g.id}`} className="block py-1 text-sm leading-6 text-primary hover:underline">{g.title}</a></li>)}</ul></nav></aside>
       <div className="min-w-0 max-w-[740px] text-[17px] leading-[1.85] text-[#4F4350]"><div className="space-y-5"><p>FaceTime gets boring when the call itself is expected to be the entertainment. That is a lot of pressure for two people who may have already texted all day.</p><p>A better approach is to give the call a small purpose. Play something, make something, eat something, walk somewhere, or simply do your separate routines together. You still get to talk, but neither person has to manufacture conversation every minute.</p><p>This list stays focused on activities that actually work while you are already on a video call. If you want a broader list that includes texting, mail, shared rituals, and asynchronous ideas, see our <Link href="/blog/long-distance-relationship-activities" className="font-semibold text-primary underline decoration-[#D98AB8] underline-offset-4">long-distance relationship activities</Link>.</p></div>
       <div className="my-9 border-l-2 border-[#D98AB8] py-1 pl-5"><p className="font-semibold text-primary">Choose by energy, not ambition.</p><p className="mt-2">If one of you is exhausted, pick something from the quiet section. A date you both enjoy for 15 minutes is better than an elaborate plan you secretly want to cancel.</p></div>
-      {groups.map(group => <section key={group.id} id={group.id} className="scroll-mt-8 border-t border-primary/10 pt-10 mt-12"><h2 className="font-helix text-3xl leading-tight tracking-[-0.02em] text-primary sm:text-4xl">{group.title}</h2><ol className="mt-8 ml-7 list-decimal space-y-8 marker:font-semibold marker:text-primary">{group.items.map(([name, text]) => { n += 1; return <li key={name} value={n} className="pl-1 sm:pl-2"><h3 className="text-xl font-semibold text-primary">{name}</h3><p className="mt-2">{text}</p></li>; })}</ol></section>)}
+      {groups.map((group, groupIndex) => <section key={group.id} id={group.id} className="scroll-mt-8 border-t border-primary/10 pt-10 mt-12"><h2 className="font-helix text-3xl leading-tight tracking-[-0.02em] text-primary sm:text-4xl">{group.title}</h2><ol className="mt-8 ml-7 list-decimal space-y-8 marker:font-semibold marker:text-primary">{group.items.map(([name, text], itemIndex) => { return <li key={name} value={groups.slice(0, groupIndex).reduce((total, previous) => total + previous.items.length, 0) + itemIndex + 1} className="pl-1 sm:pl-2"><h3 className="text-xl font-semibold text-primary">{name}</h3><p className="mt-2">{text}</p></li>; })}</ol></section>)}
       <section className="mt-12 border-t border-primary/10 pt-10"><h2 className="font-helix text-3xl leading-tight text-primary sm:text-4xl">How to make a FaceTime date feel less awkward</h2><p className="mt-5">Agree on the activity before the call when it requires ingredients, supplies, or leaving home. For everything else, keep the setup under five minutes. Put the phone somewhere stable, use headphones when they help, and do not turn every quiet moment into a problem that needs fixing.</p><p className="mt-5">It also helps to give the date an ending. “Let’s cook and hang out until 9:30” feels easier than an open-ended call where somebody eventually has to invent a reason to leave.</p></section>
       <section className="my-12 rounded-2xl bg-[#F0E6F0] p-6 sm:p-8"><p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8C4677]">A creative FaceTime date</p><h2 className="mt-3 font-helix text-3xl leading-tight text-primary">Turn one of your photos into something you can make together.</h2><p className="mt-4">Lovla lets couples turn a favorite photo into a coloring page and color together in real time. Pick a memory, stay on your call, and work on the same page while you talk.</p><div className="mt-6"><AppStoreButton showChevron={false} className="gap-3 px-5! w-fit!" /></div><Link href="/blog/turn-photo-into-coloring-page" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">See how to choose a photo that works <ArrowRight size={15} aria-hidden="true" /></Link></section>
       <p className="border-t border-primary/10 pt-6 text-sm leading-7 text-[#786577]">Written by <span className="font-semibold text-primary">The Lovla Team</span>. Practical ideas for couples who want more ways to spend meaningful time together.</p></div></div>

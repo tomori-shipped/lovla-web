@@ -39,3 +39,7 @@ Inter supplies navigation, body text, and the main heading structure; Instrument
 The entrance is adapted from direct browser observation of https://monex.framer.ai/: copy starts at 80px down and 90% scale, the phone rises from 350px down and 60% scale, side cards fan out from the center at 70% scale, and a soft background halo expands from 50% scale. Staggered CSS animations settle within 2.2 seconds, and reduced-motion preferences disable the entrance. No additional animation dependency is used.
 
 The Android/web waitlist section and public waitlist references, including the couples-apps article link, were removed at the user's request. The unused backend endpoint and reusable component remain outside the public landing page.
+
+## Approved FaceTime article artwork
+
+`public/blog/things-to-do-on-facetime-with-your-partner.png` is an unchanged copy of the user-provided `Playful FaceTime date ideas.png`, approved September 9, 2026. Used for the article hero, blog index card, Open Graph, Twitter card, and BlogPosting image. No regeneration, cropping, or image edits.

@@ -26,6 +26,17 @@ assert(pages.get("/blog").includes(`href="${questionsSlug}"`), "Blog index links
 assert(pages.get("/sitemap.xml").includes(`https://www.lovla.app${slug}`), "Sitemap includes the new post");
 assert(pages.get("/sitemap.xml").includes(`https://www.lovla.app${questionsSlug}`), "Sitemap includes the questions post");
 
+const facetimeImage = "/blog/things-to-do-on-facetime-with-your-partner.png";
+const facetimeArticle = pages.get(facetimeSlug);
+assert(pages.get("/blog").includes(encodeURIComponent(facetimeImage)), "Blog card uses the approved FaceTime image");
+assert(facetimeArticle.includes(encodeURIComponent(facetimeImage)), "Article renders the approved FaceTime hero");
+assert(facetimeArticle.includes(`property="og:image" content="https://www.lovla.app${facetimeImage}"`), "FaceTime Open Graph image is correct");
+assert(facetimeArticle.includes(`name="twitter:image" content="https://www.lovla.app${facetimeImage}"`), "FaceTime Twitter image is correct");
+assert.equal((facetimeArticle.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "").match(/<h3\b/g) ?? []).length, 35, "All 35 FaceTime ideas are retained");
+const heroResponse = await fetch(new URL(facetimeImage, origin));
+assert.equal(heroResponse.status, 200, "Approved FaceTime image is available");
+assert(heroResponse.headers.get("content-type")?.includes("image/png"), "Approved FaceTime image is PNG");
+
 const article = pages.get(slug);
 const visibleMarkup = article.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
 assert.equal((visibleMarkup.match(/<h1\b/g) ?? []).length, 1, "One article H1");
