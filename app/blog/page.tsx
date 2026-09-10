@@ -8,6 +8,17 @@ import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
   {
+    title: "25 Long-Distance Relationship Gifts Packed With Love",
+    excerpt: "Personal care packages, thoughtful keepsakes, and shared experiences that give your partner a little piece of you, wherever they are.",
+    href: "/blog/long-distance-relationship-gifts",
+    image: "/blog/long-distance-relationship-gifts.webp",
+    alt: "A couple opening a care package over video call beneath the words 25 Long-Distance Gifts",
+    date: "September 10, 2026",
+    dateTime: "2026-09-10",
+    readingMinutes: 11,
+    category: "Long-distance gifts",
+  },
+  {
     title: "35 Things to Do on FaceTime With Your Boyfriend or Girlfriend",
     excerpt: "The call does not have to be the activity. Try a quick game, make something together, plan a real date, or just share a quiet evening.",
     href: "/blog/things-to-do-on-facetime-with-your-partner",
