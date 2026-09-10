@@ -26,7 +26,7 @@ const apps = [
     ),
     fit: "Choose it if you want an activity to do together, especially when another video call feels a little stale.",
     caveat:
-      "Available on iOS. If you use Android, join the waitlist on the Lovla homepage.",
+      "Available on iOS.",
   },
   {
     name: "Paired",
@@ -303,12 +303,6 @@ export default function BestAppsForCouplesPage() {
               className="text-sm font-semibold text-primary hover:underline"
             >
               Blog
-            </Link>
-            <Link
-              href="/#android-waitlist"
-              className="hidden text-sm font-semibold text-primary hover:underline sm:block"
-            >
-              Android waitlist
             </Link>
           </nav>
         </div>

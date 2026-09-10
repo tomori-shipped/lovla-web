@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Menu } from "lucide-react";
+import { ArrowUpRightIcon as ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
+import { ListIcon as Menu } from "@phosphor-icons/react/dist/ssr/List";
 import { storeUrl } from "@/constants/landing/links";
 import styles from "@/app/home.module.css";
 
@@ -44,7 +45,7 @@ export default function MarketingHeader() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Get Lovla <ArrowUpRight size={16} />
+          Get Lovla <ArrowUpRight size={18} aria-hidden="true" />
         </a>
         <details
           ref={menuRef}
@@ -55,7 +56,7 @@ export default function MarketingHeader() {
           }}
         >
           <summary aria-label="Open navigation">
-            <Menu size={22} />
+            <Menu size={24} weight="light" aria-hidden="true" />
           </summary>
           <nav aria-label="Mobile navigation">
             {links.map(([label, href]) => (

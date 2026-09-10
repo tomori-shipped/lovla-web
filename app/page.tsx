@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  ArrowDown,
-  ArrowUpRight,
-  ArrowRight,
-  Heart,
-  Palette,
-  Sparkles,
-} from "lucide-react";
+import { ArrowDownIcon as ArrowDown } from "@phosphor-icons/react/dist/ssr/ArrowDown";
+import { ArrowUpRightIcon as ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
+import { ArrowRightIcon as ArrowRight } from "@phosphor-icons/react/dist/ssr/ArrowRight";
+import { HeartIcon as Heart } from "@phosphor-icons/react/dist/ssr/Heart";
+import { PaintBrushIcon as PaintBrush } from "@phosphor-icons/react/dist/ssr/PaintBrush";
+import { ImagesIcon as Images } from "@phosphor-icons/react/dist/ssr/Images";
+import { PlusIcon as Plus } from "@phosphor-icons/react/dist/ssr/Plus";
 import MarketingHeader from "@/components/common/marketing-header";
 import { storeUrl } from "@/constants/landing/links";
 import MarketingFooter from "@/components/common/marketing-footer";
-import { AndroidWaitlist } from "@/components/landing/AndroidWaitlist";
-import { waitlistConfig } from "@/constants/landing/waitlist.content";
 import styles from "./home.module.css";
 import Testimonials from "@/components/landing/Testimonials";
 export const metadata: Metadata = {
@@ -40,8 +37,8 @@ const faqs = [
     "Choose a photo with a clear subject and good contrast. Couple selfies, holiday snapshots, and everyday moments are a lovely place to start.",
   ],
   [
-    "Is Lovla available on Android?",
-    "Lovla is available on iOS. Join the waitlist below for updates about Android and web.",
+    "Where can I download Lovla?",
+    "Lovla is available for iPhone on the App Store. Download the app and invite your partner to start creating together.",
   ],
 ];
 export default function Home() {
@@ -54,11 +51,11 @@ export default function Home() {
       <main id="main-content">
         <section className={styles.hero}>
           <div className={styles.eyebrow}>
-            <Heart size={13} /> A LITTLE MORE US TIME
+            <Heart size={15} weight="duotone" aria-hidden="true" /> A LITTLE MORE US TIME
           </div>
           <h1>
-            A little more color.
-            <br />A little more <span>us.</span>
+            A little more <em>color.</em>
+            <br />A little more <em>us.</em>
           </h1>
           <p>
             Turn your favorite memories into something
@@ -72,25 +69,25 @@ export default function Home() {
               rel="noopener noreferrer"
               className={styles.primary}
             >
-              Download for iOS <ArrowRight size={18} />
+              Download for iOS <ArrowRight size={18} aria-hidden="true" />
             </a>
             <a href="#how-it-works" className={styles.secondary}>
-              Meet Lovla <ArrowDown size={17} />
+              Meet Lovla <ArrowDown size={17} aria-hidden="true" />
             </a>
           </div>
           <div className={styles.heroStage}>
             <Image
-              src="/media/lovla-hand.png"
+              src="/media/lovla-hand-beach.png"
               width={1024}
               height={1536}
-              alt="A hand holding Lovla, with a couple coloring their shared portrait"
+              alt="A hand holding Lovla, showing a couple’s half-colored beach portrait and matching profile avatars"
               className={styles.hand}
               preload
               sizes="(max-width: 600px) 400px, 560px"
             />
             <div className={`${styles.floating} ${styles.floatLeft}`}>
               <div className={styles.floatIcon}>
-                <Palette size={22} />
+                <PaintBrush size={26} weight="duotone" aria-hidden="true" />
               </div>
               <div>
                 <strong>Your photo. Your palette.</strong>
@@ -99,7 +96,7 @@ export default function Home() {
             </div>
             <div className={`${styles.floating} ${styles.floatRight}`}>
               <div className={styles.floatIcon}>
-                <Heart size={22} />
+                <Heart size={26} weight="duotone" aria-hidden="true" />
               </div>
               <div>
                 <strong>Closer, wherever.</strong>
@@ -116,11 +113,11 @@ export default function Home() {
         <section id="features" className={styles.section}>
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>
-              <Sparkles size={14} /> Your kind of quality time
+              <Images size={17} weight="duotone" aria-hidden="true" /> Your kind of quality time
             </span>
             <h2>
               Small moments.
-              <br />A colorful connection.
+              <br />A colorful <em>connection.</em>
             </h2>
             <p>
               A new way to spend time together.
@@ -174,12 +171,12 @@ export default function Home() {
         >
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>
-              <Palette size={14} /> A MEMORY, REIMAGINED
+              <PaintBrush size={17} weight="duotone" aria-hidden="true" /> A MEMORY, REIMAGINED
             </span>
             <h2 id="memory-title">
               Your favorite days.
               <br />
-              All over again.
+              <em>All over again.</em>
             </h2>
             <p>
               The big adventures. The in-between moments.
@@ -207,14 +204,14 @@ export default function Home() {
         >
           <div>
             <span className={styles.tag}>
-              <Heart size={14} /> From photo to quality time
+              <Heart size={14} aria-hidden="true" /> From photo to quality time
             </span>
             <h2>
               Your next date night?
               <br />
               Already in your
               <br />
-              camera roll.
+              <em>camera roll.</em>
             </h2>
             <p className={styles.bodyCopy}>
               A few minutes. Your favorite person.
@@ -227,7 +224,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Start making memories <ArrowRight size={18} />
+              Start making memories <ArrowRight size={18} aria-hidden="true" />
             </a>
           </div>
           <ol className={styles.steps}>
@@ -272,27 +269,24 @@ export default function Home() {
               <details key={q}>
                 <summary>
                   {q}
-                  <span aria-hidden="true">+</span>
+                  <span aria-hidden="true"><Plus size={20} weight="light" /></span>
                 </summary>
                 <p>{a}</p>
               </details>
             ))}
           </div>
         </section>
-        <div className={styles.waitlist}>
-          <AndroidWaitlist config={waitlistConfig} />
-        </div>
         <section className={styles.downloadPanel}>
           <div className={styles.downloadCopy}>
             <span className={styles.tag}>
-              <Heart size={14} /> MADE FOR YOUR KIND OF LOVE
+              <Heart size={17} weight="duotone" aria-hidden="true" /> MADE FOR YOUR KIND OF LOVE
             </span>
             <h2>
               Make time.
               <br />
               Make something
               <br />
-              together.
+              <em>together.</em>
             </h2>
             <p>
               Your memories. Your colors. Your person.
@@ -306,10 +300,10 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download Lovla <ArrowRight size={18} />
+                Download Lovla <ArrowRight size={18} aria-hidden="true" />
               </a>
               <a className={styles.downloadSecondary} href="#features">
-                Explore the app <ArrowUpRight size={18} />
+                Explore the app <ArrowUpRight size={18} aria-hidden="true" />
               </a>
             </div>
             <small>Available on iOS. Made for two.</small>

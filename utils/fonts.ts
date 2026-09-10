@@ -2,6 +2,7 @@ import {
   Geist,
   Geist_Mono,
   Inter,
+  Instrument_Serif,
   Love_Ya_Like_A_Sister,
 } from "next/font/google";
 import localFont from "next/font/local";
@@ -19,6 +20,14 @@ export const geistMono = Geist_Mono({
 export const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+});
+
+export const instrumentSerif = Instrument_Serif({
+  variable: "--font-instrument-serif",
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
 });
 
 export const loveYaLikeASister = Love_Ya_Like_A_Sister({

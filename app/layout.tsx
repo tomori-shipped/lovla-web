@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { hellixBold, inter } from "@/utils/fonts";
+import { hellixBold, inter, instrumentSerif } from "@/utils/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${inter.variable} ${hellixBold.variable} antialiased`}>
+      <body className={`${inter.className} ${inter.variable} ${instrumentSerif.variable} ${hellixBold.variable} antialiased`}>
         {children}
       </body>
     </html>

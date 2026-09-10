@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRightIcon as ArrowUpRight } from "@phosphor-icons/react/dist/ssr/ArrowUpRight";
 import styles from "@/app/home.module.css";
 
 export default function MarketingFooter() {
@@ -21,7 +21,7 @@ export default function MarketingFooter() {
               <br />A coloring journal, made for two.
             </p>
             <a href="mailto:Info@benekan.com">
-              Info@benekan.com <ArrowUpRight size={14} />
+              Info@benekan.com <ArrowUpRight size={14} aria-hidden="true" />
             </a>
           </div>
           <nav aria-label="Explore Lovla">
@@ -38,10 +38,10 @@ export default function MarketingFooter() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram <ArrowUpRight size={14} />
+              Instagram <ArrowUpRight size={14} aria-hidden="true" />
             </a>
             <Link href="/contact-us">
-              Contact us <ArrowUpRight size={14} />
+              Contact us <ArrowUpRight size={14} aria-hidden="true" />
             </Link>
           </nav>
         </div>
