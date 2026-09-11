@@ -8,6 +8,17 @@ import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
   {
+    title: "35 Long-Distance Anniversary Ideas",
+    excerpt: "Celebrate your story with video-call dates, personal surprises, free activities, and thoughtful plans for different time zones.",
+    href: "/blog/long-distance-anniversary-ideas",
+    image: "/blog/long-distance-anniversary-ideas.webp",
+    alt: "A couple celebrating their anniversary over a video call with cake and love notes",
+    date: "September 11, 2026",
+    dateTime: "2026-09-11",
+    readingMinutes: 12,
+    category: "Anniversary ideas",
+  },
+  {
     title: "25 Long-Distance Relationship Gifts Packed With Love",
     excerpt: "Personal care packages, thoughtful keepsakes, and shared experiences that give your partner a little piece of you, wherever they are.",
     href: "/blog/long-distance-relationship-gifts",
