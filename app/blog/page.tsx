@@ -1,3 +1,4 @@
+import { partnerQuestionsPost } from "@/constants/blog/questions-to-ask-your-partner";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +8,11 @@ import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
 import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
+  {
+    title: partnerQuestionsPost.title, excerpt: partnerQuestionsPost.excerpt,
+    href: `/blog/${partnerQuestionsPost.slug}`, image: partnerQuestionsPost.image, alt: partnerQuestionsPost.imageAlt,
+    date: partnerQuestionsPost.displayDate, dateTime: partnerQuestionsPost.date, readingMinutes: partnerQuestionsPost.readingMinutes, category: "Conversation starters",
+  },
   {
     title: "35 Long-Distance Anniversary Ideas",
     excerpt: "Celebrate your story with video-call dates, personal surprises, free activities, and thoughtful plans for different time zones.",
