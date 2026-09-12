@@ -1,0 +1,16 @@
+.heading { margin: 72px 0 30px; }
+.heading p { color: #756177; line-height: 1.7; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.card { overflow: hidden; border: 1px solid #4b164c14; border-radius: 24px; background: white; }
+.art { height: 240px; display: flex; align-items: center; justify-content: center; padding: 32px; }
+.wordmark { width: 90%; height: auto; max-height: 150px; object-fit: contain; }
+.icon { width: 160px; height: 160px; filter: drop-shadow(0 12px 16px #4b164c18); }
+.copy { padding: 24px; }
+.copy h3 { margin: 0 0 8px; font-size: 20px; }
+.copy p { color: #756177; font-size: 13px; line-height: 1.6; min-height: 42px; }
+.downloads { display: flex; gap: 12px; margin-top: 20px; }
+.downloads a { display: inline-flex; align-items: center; gap: 10px; border: 1px solid #4b164c26; padding: 9px 15px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+.downloads a:hover { background: #f8f0fa; }
+.downloads a:focus-visible { outline: 2px solid #4b164c; outline-offset: 3px; }
+@media(max-width: 900px) { .grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width: 560px) { .grid { grid-template-columns: 1fr; } .heading { margin-top: 48px; } }

@@ -14,6 +14,9 @@ Lavender: #F8F0FA
 
 ASSET NOTES
 The mascot is an original repository brand asset.
-The two WebP images are existing product screenshots.
-The hand-held phone PNG is an AI-generated campaign mockup created with OpenAI image generation. It is illustrative and is not an exact product screenshot.
+Brand assets include plum, white and black outlined wordmarks, plus light, plum and pink app icon treatments. Icon treatments retain the existing raster mascot artwork.
 Preserve asset proportions and colors. Do not imply endorsement or partnership.
+
+MASCOT STICKER COLLECTION
+Explore the full collection at https://www.lovla.app/press-kit/mascots
+The enhanced sticker illustrations use AI-assisted versions of Lovla-supplied mascot artwork. PNG and WebP exports preserve transparent backgrounds. The original vector mascot remains available as SVG.
