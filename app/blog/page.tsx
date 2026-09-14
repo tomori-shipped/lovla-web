@@ -1,3 +1,4 @@
+import { creativeDatesPost } from "@/constants/blog/creative-date-ideas";
 import { partnerQuestionsPost } from "@/constants/blog/questions-to-ask-your-partner";
 import type { Metadata } from "next";
 import Image from "next/image";
@@ -8,6 +9,7 @@ import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
 import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
+  { title: creativeDatesPost.title, excerpt: creativeDatesPost.excerpt, href: `/blog/${creativeDatesPost.slug}`, image: creativeDatesPost.image, alt: creativeDatesPost.imageAlt, date: creativeDatesPost.displayDate, dateTime: creativeDatesPost.date, readingMinutes: creativeDatesPost.readingMinutes, category: "Creative dates" },
   {
     title: partnerQuestionsPost.title, excerpt: partnerQuestionsPost.excerpt,
     href: `/blog/${partnerQuestionsPost.slug}`, image: partnerQuestionsPost.image, alt: partnerQuestionsPost.imageAlt,
