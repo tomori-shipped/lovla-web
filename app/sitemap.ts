@@ -7,6 +7,7 @@ const baseUrl = "https://www.lovla.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    { url: `${baseUrl}/blog/long-distance-sip-and-paint`, lastModified: new Date("2026-09-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog/creative-date-ideas-for-couples`, lastModified: new Date("2026-09-14"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog/questions-to-ask-your-partner`, lastModified: new Date("2026-09-12"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/blog/long-distance-anniversary-ideas`, lastModified: new Date("2026-09-11"), changeFrequency: "monthly", priority: 0.8 },

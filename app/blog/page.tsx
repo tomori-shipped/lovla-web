@@ -1,3 +1,4 @@
+import { colorBattlePost } from "@/constants/blog/long-distance-sip-and-paint";
 import { creativeDatesPost } from "@/constants/blog/creative-date-ideas";
 import { partnerQuestionsPost } from "@/constants/blog/questions-to-ask-your-partner";
 import type { Metadata } from "next";
@@ -9,6 +10,7 @@ import { photoColoringPost } from "@/constants/blog/photo-to-coloring-page";
 import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 const posts = [
+  { title: colorBattlePost.title, excerpt: colorBattlePost.excerpt, href: `/blog/${colorBattlePost.slug}`, image: colorBattlePost.image, alt: colorBattlePost.imageAlt, date: colorBattlePost.displayDate, dateTime: colorBattlePost.date, readingMinutes: colorBattlePost.readingMinutes, category: "Virtual paint dates" },
   { title: creativeDatesPost.title, excerpt: creativeDatesPost.excerpt, href: `/blog/${creativeDatesPost.slug}`, image: creativeDatesPost.image, alt: creativeDatesPost.imageAlt, date: creativeDatesPost.displayDate, dateTime: creativeDatesPost.date, readingMinutes: creativeDatesPost.readingMinutes, category: "Creative dates" },
   {
     title: partnerQuestionsPost.title, excerpt: partnerQuestionsPost.excerpt,
