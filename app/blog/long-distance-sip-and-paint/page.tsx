@@ -37,7 +37,7 @@ const structuredData = {
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Lovla", item: "https://www.lovla.app" },
         { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.lovla.app/blog" },
-        { "@type": "ListItem", position: 3, name: "Long-distance sip and paint", item: canonical },
+        { "@type": "ListItem", position: 3, name: "Long distance sip and paint", item: canonical },
       ],
     },
   ],
@@ -78,17 +78,17 @@ export default function ColorBattleDatePage() {
             <div className="min-w-0 max-w-[740px] text-[17px] leading-[1.85] text-[#4F4350]">
               <div className="space-y-5">
                 <p>You have agreed on a video call. You have caught up on your days. Now you are both waiting for something more interesting to happen than another conversation about what to eat.</p>
-                <p>A long-distance paint date gives you something to do together. The appeal of a sip-and-paint evening is easy to understand: a little creativity, a shared challenge, and the possibility of laughing at a portrait that went spectacularly off course. You can bring that painting activity into your relationship without alcohol or a table full of supplies.</p>
+                <p>A long distance paint date gives you something to do together. The appeal of a sip and paint evening is easy to understand: a little creativity, a shared challenge, and the possibility of laughing at a portrait that went spectacularly off course. You can bring that painting activity into your relationship without a table full of supplies.</p>
                 <p>Lovla’s <strong>Color Battle</strong> makes it a virtual, timed challenge. Two users paint each other in Lovla from a reference image. You are in different places, but you have the same kind of task to focus on: turning the person you know into a portrait before the time runs out.</p>
               </div>
               <section id="what-is-it" className="mt-10 scroll-mt-8 rounded-2xl bg-[#F0E6F0] p-6 sm:p-8">
-                <h2 className="font-helix text-3xl leading-tight text-primary">What is a long-distance sip and paint date?</h2>
-                <p className="mt-4">For this date, take the painting-together idea and adapt it to two locations. Instead of attending a studio or getting matching art supplies delivered, you paint digitally in Lovla. Color Battle provides the timed portrait-painting activity; alcohol is not part of it.</p>
+                <h2 className="font-helix text-3xl leading-tight text-primary">What is a long distance sip and paint date?</h2>
+                <p className="mt-4">For this date, take the painting-together idea and adapt it to two locations. Instead of attending a studio or getting matching art supplies delivered, you paint digitally in Lovla. Color Battle provides the timed activity of painting portraits together.</p>
                 <p className="mt-4">The subject is personal, too. You are painting your partner from a reference image, and they are painting you. A familiar smile, hairstyle, or expression gives you something more meaningful to work with than an unrelated still life.</p>
               </section>
               <section id="color-battle" className="mt-12 scroll-mt-8 border-t border-primary/10 pt-10">
                 <h2 className="font-helix text-3xl leading-tight text-primary">How Color Battle makes the date work from different places</h2>
-                <p className="mt-5">An ordinary remote paint night can involve finding supplies, choosing what to paint, and agreeing when to stop. Color Battle brings the activity into Lovla: two people, reference-based portraits of each other, and a timer.</p>
+                <p className="mt-5">An ordinary remote paint night can involve finding supplies, choosing what to paint, and agreeing when to stop. Color Battle brings the activity into Lovla: two people, reference based portraits of each other, and a timer.</p>
                 <p className="mt-5">That gives your evening a clear focus. You are not responsible for keeping a conversation going every second because you both have something to work on. A quiet minute can simply mean someone is concentrating very hard on an eyebrow.</p>
                 <p className="mt-5">The timer also gives you a reason to make a choice and move on. You might spend your attention on the expression rather than every detail of the outfit. Treat that constraint as part of the fun, not a demand to produce professional art.</p>
                 <p className="mt-5">This is different from coloring one shared photo together. In Color Battle, the activity is painting each other from a reference image in a timed round.</p>
@@ -134,8 +134,7 @@ export default function ColorBattleDatePage() {
                 <Link href="/blog/creative-date-ideas-for-couples" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline">Explore more creative date ideas <ArrowRight size={15} aria-hidden="true" /></Link>
               </section>
               <section id="questions" className="border-t border-primary/10 pt-10">
-                <h2 className="font-helix text-3xl leading-tight text-primary">Questions about a long-distance paint date</h2>
-                <h3 className="mt-7 text-xl font-semibold text-primary">Does this involve drinking alcohol?</h3><p className="mt-3">No. The sip-and-paint comparison describes the shared painting-date idea. Color Battle is a virtual, timed portrait-painting activity in Lovla; there is no alcohol component.</p>
+                <h2 className="font-helix text-3xl leading-tight text-primary">Questions about a long distance paint date</h2>
                 <h3 className="mt-7 text-xl font-semibold text-primary">Are we painting the same picture together?</h3><p className="mt-3">In Color Battle, two users paint each other from a reference image. It is a portrait challenge rather than both people coloring one shared picture.</p>
                 <h3 className="mt-7 text-xl font-semibold text-primary">Do we need to know how to paint?</h3><p className="mt-3">You can approach the date as a playful first attempt. Choose a straightforward reference, focus on a few recognizable features, and let the result be imperfect.</p>
                 <h3 className="mt-7 text-xl font-semibold text-primary">How long is a Color Battle round?</h3><p className="mt-3">Color Battle is timed. Follow the timer shown in Lovla for your round, and leave extra time before and after for choosing references and talking.</p>
