@@ -83,7 +83,7 @@ export default function ColorBattleDatePage() {
               </div>
               <section id="what-is-it" className="mt-10 scroll-mt-8 rounded-2xl bg-[#F0E6F0] p-6 sm:p-8">
                 <h2 className="font-helix text-3xl leading-tight text-primary">What is a long distance sip and paint date?</h2>
-                <p className="mt-4">For this date, take the painting-together idea and adapt it to two locations. Instead of attending a studio or getting matching art supplies delivered, you paint digitally in Lovla. Color Battle provides the timed activity of painting portraits together.</p>
+                <p className="mt-4">For this date, take the idea of painting together and adapt it to two locations. Instead of attending a studio or getting matching art supplies delivered, you paint digitally in Lovla. Color Battle provides the timed activity of painting portraits together.</p>
                 <p className="mt-4">The subject is personal, too. You are painting your partner from a reference image, and they are painting you. A familiar smile, hairstyle, or expression gives you something more meaningful to work with than an unrelated still life.</p>
               </section>
               <section id="color-battle" className="mt-12 scroll-mt-8 border-t border-primary/10 pt-10">
