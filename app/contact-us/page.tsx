@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Footer from "@/components/common/footer";
 import ContactForm from "@/components/contact/ContactForm";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
-  description:
-    "Get in touch with the Lovla team. Whether you have a question, partnership idea, or press inquiry, we're here to help.",
-};
+export const metadata = pageMetadata(
+  "Contact the Lovla Team",
+  "Get help with Lovla, share feedback, or contact the team about partnerships and press inquiries.",
+  "/contact-us",
+);
 
 export default function ContactUsPage() {
   return (
@@ -17,9 +17,9 @@ export default function ContactUsPage() {
         <header className="flex items-start justify-between">
           <div className="flex-1" />
           <Link href="/">
-            <h1 className="text-5xl font-helix text-primary sm:text-6xl md:text-8xl lg:text-[110px]">
+            <span className="text-5xl font-helix text-primary sm:text-6xl md:text-8xl lg:text-[110px]">
               Lovla.
-            </h1>
+            </span>
           </Link>
           <div className="flex flex-1 justify-end">
             <Link
@@ -47,9 +47,9 @@ export default function ContactUsPage() {
 
         {/* Content Container - 690px centered */}
         <div className="mx-auto mt-12 w-full max-w-[690px] md:mt-20">
-          <h2 className="text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
             Contact Us
-          </h2>
+          </h1>
           <p className="mt-3 text-sm text-muted-foreground sm:text-base">
             We&apos;d love to hear from you! Whether you have a question,
             partnership idea, or press inquiry the Lovla team is here to help.

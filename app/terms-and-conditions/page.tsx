@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 import { LegalSection } from "@/components/legal/LegalSection";
 import { TERMS_AND_CONDITIONS_CONTENT } from "@/constants/legal/terms-and-conditions.content";
 
-export const metadata: Metadata = {
-  title: "Terms of Service",
-  description:
-    "Terms of Service for Lovla - Understand the rules and guidelines for using Lovla.",
-};
+export const metadata = pageMetadata(
+  "Terms of Service",
+  "Read the terms and conditions for using Lovla, including accounts, subscriptions, acceptable use, and your responsibilities.",
+  "/terms-and-conditions",
+);
 
 export default function TermsOfServicePage() {
   const { title, lastUpdated, sections } = TERMS_AND_CONDITIONS_CONTENT;

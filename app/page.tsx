@@ -1,3 +1,10 @@
+import {
+  SITE_URL,
+  SITE_TITLE,
+  SITE_DESCRIPTION,
+  pageMetadata,
+} from "@/lib/seo";
+import StructuredData from "@/components/seo/StructuredData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,11 +21,14 @@ import MarketingFooter from "@/components/common/marketing-footer";
 import styles from "./home.module.css";
 import Testimonials from "@/components/landing/Testimonials";
 export const metadata: Metadata = {
-  title: { absolute: "Lovla — A little more color. A little more us." },
-  description:
-    "Turn photos into coloring pages, color together in real time, and save your favorite moments in a shared journal. Lovla is made for two.",
-  alternates: { canonical: "https://www.lovla.app" },
+  ...pageMetadata(
+    "Couples Coloring App & Shared Memory Journal",
+    SITE_DESCRIPTION,
+    "",
+  ),
+  title: { absolute: SITE_TITLE },
 };
+
 const faqs = [
   [
     "What is Lovla?",
@@ -30,7 +40,7 @@ const faqs = [
   ],
   [
     "Do we both need the app?",
-    "Both partners need Lovla to connect and color together. Download the app on your iPhones to get started.",
+    "Both partners need Lovla to connect and color together. Download the app on your iPhones or iPads to get started.",
   ],
   [
     "What photos should we use?",
@@ -38,7 +48,7 @@ const faqs = [
   ],
   [
     "Where can I download Lovla?",
-    "Lovla is available for iPhone on the App Store. Download the app and invite your partner to start creating together.",
+    "Lovla is available for iPhone and iPad on the App Store. Download the app and invite your partner to start creating together.",
   ],
 ];
 export default function Home() {
@@ -47,11 +57,46 @@ export default function Home() {
       <a href="#main-content" className={styles.skip}>
         Skip to content
       </a>
+      <StructuredData
+        data={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
+              name: "Lovla",
+              url: SITE_URL,
+              inLanguage: "en",
+              publisher: { "@id": `${SITE_URL}/#organization` },
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": `${SITE_URL}/#app`,
+              name: "Lovla",
+              url: SITE_URL,
+              description: SITE_DESCRIPTION,
+              applicationCategory: "LifestyleApplication",
+              operatingSystem: "iOS, iPadOS",
+              downloadUrl: storeUrl,
+              image: `${SITE_URL}/press-kit/brand/lovla-app-icon-plum.png`,
+              publisher: { "@id": `${SITE_URL}/#organization` },
+              featureList: [
+                "Photos into coloring pages",
+                "Shared coloring in real time",
+                "Shared memory journal",
+                "Magic Canvas",
+                "Color Battle",
+              ],
+            },
+          ],
+        }}
+      />
       <MarketingHeader />
       <main id="main-content">
         <section className={styles.hero}>
           <div className={styles.eyebrow}>
-            <Heart size={15} weight="duotone" aria-hidden="true" /> A LITTLE MORE US TIME
+            <Heart size={15} weight="duotone" aria-hidden="true" /> A LITTLE
+            MORE US TIME
           </div>
           <h1>
             A little more <em>color.</em>
@@ -59,8 +104,8 @@ export default function Home() {
           </h1>
           <p>
             Turn your favorite memories into something
-            <br className={styles.desktopBreak} /> you make together. A coloring
-            journal, made for two.
+            <br className={styles.desktopBreak} /> you make together. A couples
+            coloring app and shared journal, made for two.
           </p>
           <div className={styles.actions}>
             <a
@@ -113,7 +158,8 @@ export default function Home() {
         <section id="features" className={styles.section}>
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>
-              <Images size={17} weight="duotone" aria-hidden="true" /> Your kind of quality time
+              <Images size={17} weight="duotone" aria-hidden="true" /> Your kind
+              of quality time
             </span>
             <h2>
               Small moments.
@@ -171,7 +217,8 @@ export default function Home() {
         >
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>
-              <PaintBrush size={17} weight="duotone" aria-hidden="true" /> A MEMORY, REIMAGINED
+              <PaintBrush size={17} weight="duotone" aria-hidden="true" /> A
+              MEMORY, REIMAGINED
             </span>
             <h2 id="memory-title">
               Your favorite days.
@@ -252,6 +299,71 @@ export default function Home() {
             ))}
           </ol>
         </section>
+        <section className={styles.section} aria-labelledby="date-guides-title">
+          <div className={styles.sectionIntro}>
+            <span className={styles.tag}>SOMETHING TO TRY TOGETHER</span>
+            <h2 id="date-guides-title">
+              A little inspiration.
+              <br />
+              <em>Your next date.</em>
+            </h2>
+            <p>
+              Creative dates, shared memories, and small ways to make time for
+              each other.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                href: "/blog/turn-photo-into-coloring-page",
+                title: "Turn a favorite photo into a coloring date",
+                text: "Choose a memory and make something together.",
+                image: "/blog/turn-photo-into-coloring-page.webp",
+              },
+              {
+                href: "/blog/long-distance-relationship-activities",
+                title: "Find your next long distance date",
+                text: "Fresh ideas for the nights you spend in different places.",
+                image: "/blog/long-distance-relationship-activities.webp",
+              },
+              {
+                href: "/blog/lovla-ten-minute-date",
+                title: "Make ten minutes feel like a date",
+                text: "A small plan for couples with very full calendars.",
+                image: "/blog/lovla-ten-minute-date.webp",
+              },
+            ].map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group overflow-hidden rounded-2xl border border-primary/10 bg-white transition-shadow hover:shadow-lg"
+              >
+                <Image
+                  src={guide.image}
+                  alt=""
+                  width={1672}
+                  height={941}
+                  sizes="(max-width: 768px) 100vw, 380px"
+                  className="h-auto w-full"
+                />
+                <div className="p-6">
+                  <h3 className="text-xl font-bold leading-snug text-primary">
+                    {guide.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-6 text-[#6F5B6D]">
+                    {guide.text}
+                  </p>
+                  <span className="mt-5 inline-block font-semibold text-primary group-hover:underline">
+                    Read the guide
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <Link href="/blog" className={`${styles.textLink} mt-8`}>
+            Explore all date ideas <ArrowRight size={18} aria-hidden="true" />
+          </Link>
+        </section>
         <Testimonials />
         <section className={`${styles.section} ${styles.faqSection}`}>
           <div>
@@ -269,7 +381,9 @@ export default function Home() {
               <details key={q}>
                 <summary>
                   {q}
-                  <span aria-hidden="true"><Plus size={20} weight="light" /></span>
+                  <span aria-hidden="true">
+                    <Plus size={20} weight="light" />
+                  </span>
                 </summary>
                 <p>{a}</p>
               </details>
@@ -279,7 +393,8 @@ export default function Home() {
         <section className={styles.downloadPanel}>
           <div className={styles.downloadCopy}>
             <span className={styles.tag}>
-              <Heart size={17} weight="duotone" aria-hidden="true" /> MADE FOR YOUR KIND OF LOVE
+              <Heart size={17} weight="duotone" aria-hidden="true" /> MADE FOR
+              YOUR KIND OF LOVE
             </span>
             <h2>
               Make time.

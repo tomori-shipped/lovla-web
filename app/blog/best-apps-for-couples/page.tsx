@@ -1,3 +1,4 @@
+import BreadcrumbData from "@/components/seo/BreadcrumbData";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -272,6 +273,7 @@ const faqJsonLd = {
 export default function BestAppsForCouplesPage() {
   return (
     <div className="min-h-screen bg-accent text-[#171217]">
+      <BreadcrumbData title={"9 Best Apps for Couples in 2026 That Are Actually Useful"} path="/blog/best-apps-for-couples" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

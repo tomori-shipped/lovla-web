@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import { LegalPageLayout } from "@/components/legal/LegalPageLayout";
 import { LegalSection } from "@/components/legal/LegalSection";
 import { PRIVACY_POLICY_CONTENT } from "@/constants/legal/privacy-policy.content";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Privacy Policy for Lovla - Learn how we collect, use, and protect your personal data.",
-};
+export const metadata = pageMetadata(
+  "Privacy Policy",
+  "Read how Lovla collects, uses, and protects your personal information, and learn about your privacy choices.",
+  "/privacy-policy",
+);
 
 export default function PrivacyPolicyPage() {
   const { title, lastUpdated, sections } = PRIVACY_POLICY_CONTENT;

@@ -1,3 +1,4 @@
+import BreadcrumbData from "@/components/seo/BreadcrumbData";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -200,7 +201,8 @@ const structuredData = { "@context": "https://schema.org", "@type": "BlogPosting
 
 export default function LongDistanceAnniversaryPage() {
   return <div className="min-h-screen bg-[#FDFBFD] text-[#171217]">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
+    <BreadcrumbData title={"35 Long-Distance Anniversary Ideas"} path="/blog/long-distance-anniversary-ideas" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
     <header className="border-b border-primary/10"><div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 sm:px-8"><Link href="/" aria-label="Lovla home" className="font-helix text-3xl tracking-[-1px] text-primary">Lovla.</Link><Link href="/blog" className="flex items-center gap-2 py-2 text-sm font-medium text-primary hover:underline underline-offset-4"><ArrowLeft size={15} aria-hidden="true" />All stories</Link></div></header>
     <main><article>
       <header className="mx-auto max-w-4xl px-6 pb-10 pt-12 text-center sm:px-8 md:pb-12 md:pt-20"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A93F7B]">A little closer, even from here</p><h1 className="mt-5 font-helix text-[38px] leading-[1.1] tracking-[-0.03em] text-primary sm:text-5xl md:text-[60px]">{title}</h1><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#6F5B6D] sm:text-lg">A thoughtful date, a personal surprise, or ten minutes that belong to you two. Make your anniversary feel like yours, even from different places.</p><div className="mt-6 flex items-center justify-center gap-3 text-sm text-[#786577]"><span>By {author}</span><span>·</span><time dateTime={date}>September 11, 2026</time><span>·</span><span>12 min read</span></div></header>
