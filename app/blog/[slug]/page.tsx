@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url,
       publishedTime: post.date,
-      modifiedTime: "2026-09-19",
+      modifiedTime: post.updatedDate ?? "2026-09-19",
       authors: ["The Lovla Team"],
       images: [{ url: image, alt: post.imageAlt }],
     },
@@ -59,7 +59,7 @@ export default async function LovlaStoryPage({ params }: Props) {
         headline: post.title,
         description: post.description,
         datePublished: post.date,
-        dateModified: "2026-09-19",
+        dateModified: post.updatedDate ?? "2026-09-19",
         image: `https://www.lovla.app${storyImage(post)}`,
         author: {
           "@type": "Organization",

@@ -1,9 +1,13 @@
+import { launchAndAutumnPosts } from "./lovla-launch-and-autumn-posts";
+
 export type LovlaStory = {
   slug: string;
   title: string;
   seoTitle: string;
   description: string;
   date: string;
+  updatedDate?: string;
+  image?: string;
   category: string;
   coverText: string;
   imageAlt: string;
@@ -20,6 +24,7 @@ export type LovlaStory = {
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...launchAndAutumnPosts,
   {
     slug: "lovla-ten-minute-date",
     seoTitle: "Ten Minute Date Ideas for Busy Couples",
@@ -552,7 +557,7 @@ export const lovlaStories: LovlaStory[] = [
   },
 ];
 
-export const storyImage = (post: LovlaStory) => `/blog/${post.slug}.webp`;
+export const storyImage = (post: LovlaStory) => post.image ?? `/blog/${post.slug}.webp`;
 export const storyDate = (date: string) =>
   new Intl.DateTimeFormat("en-US", {
     month: "long",

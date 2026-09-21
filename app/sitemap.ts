@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [
     ...lovlaStories.map((post) => ({
       url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: new Date("2026-09-19"),
+      lastModified: new Date(post.updatedDate ?? "2026-09-19"),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),
@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-09-19"),
+      lastModified: new Date("2026-09-21"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

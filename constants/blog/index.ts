@@ -14,7 +14,7 @@ import { whoKnowsMeBetterPost } from "@/constants/blog/who-knows-me-better";
 
 export const blogPosts = [
   ...[...lovlaStories]
-    .reverse()
+    .sort((a, b) => b.date.localeCompare(a.date))
     .map((post) => ({
       title: post.title,
       excerpt: post.description,
@@ -151,4 +151,4 @@ export const blogPosts = [
     readingMinutes: 8,
     category: "Couples guides",
   },
-];
+].sort((a, b) => b.dateTime.localeCompare(a.dateTime));
