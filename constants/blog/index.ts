@@ -83,7 +83,7 @@ export const blogPosts = [
     category: "Anniversary ideas",
   },
   {
-    title: "25 Long-Distance Relationship Gifts Packed With Love",
+    title: "25 Long-Distance Relationship Gifts That Actually Feel Personal",
     excerpt:
       "Personal care packages, thoughtful keepsakes, and shared experiences that give your partner a little piece of you, wherever they are.",
     href: "/blog/long-distance-relationship-gifts",

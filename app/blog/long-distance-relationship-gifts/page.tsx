@@ -7,21 +7,23 @@ import Footer from "@/components/common/footer";
 import AppStoreButton from "@/components/ui/app-store-button";
 
 const canonical = "https://www.lovla.app/blog/long-distance-relationship-gifts";
-const title = "25 Long-Distance Relationship Gifts Packed With Love";
-const description = "Find 25 thoughtful long-distance relationship gifts, from personal care packages and keepsakes to digital surprises and creative dates you can share.";
+const title = "25 Long-Distance Relationship Gifts That Actually Feel Personal";
+const seoTitle = "25 Personal Long-Distance Relationship Gifts";
+const description = "Find 25 personal long-distance relationship gifts, including care packages, meaningful keepsakes, digital surprises, and dates you can share.";
 const author = "The Lovla Team";
 const date = "2026-09-10";
+const updatedDate = "2026-09-22";
 const hero = "/blog/long-distance-relationship-gifts.webp";
 const heroUrl = `https://www.lovla.app${hero}`;
 const heroAlt = "A couple opening a care package over video call beneath the words 25 Long-Distance Gifts";
 
 export const metadata: Metadata = {
-  title: "25 Long-Distance Relationship Gifts Packed With Love",
+  title: seoTitle,
   description,
   authors: [{ name: author, url: "https://www.lovla.app" }],
   alternates: { canonical },
-  openGraph: { type: "article", title, description, url: canonical, siteName: "Lovla", publishedTime: date, modifiedTime: date, authors: [author], images: [{ url: heroUrl, width: 1672, height: 941, alt: heroAlt }] },
-  twitter: { card: "summary_large_image", title, description, images: [heroUrl] },
+  openGraph: { type: "article", title, description, url: canonical, siteName: "Lovla", publishedTime: date, modifiedTime: updatedDate, authors: [author], images: [{ url: heroUrl, width: 1672, height: 941, alt: heroAlt }] },
+  twitter: { card: "summary_large_image", title: seoTitle, description, images: [heroUrl] },
 };
 
 const groups = [
@@ -157,15 +159,15 @@ const groups = [
   }
 ];
 
-const structuredData = { "@context": "https://schema.org", "@type": "BlogPosting", headline: title, description, image: heroUrl, datePublished: date, dateModified: date, inLanguage: "en-US", author: { "@type": "Organization", name: author, url: "https://www.lovla.app" }, publisher: { "@type": "Organization", name: "Lovla", url: "https://www.lovla.app" }, mainEntityOfPage: canonical };
+const structuredData = { "@context": "https://schema.org", "@type": "BlogPosting", headline: title, description, image: heroUrl, datePublished: date, dateModified: updatedDate, inLanguage: "en-US", author: { "@type": "Organization", name: author, url: "https://www.lovla.app" }, publisher: { "@type": "Organization", name: "Lovla", url: "https://www.lovla.app" }, mainEntityOfPage: canonical };
 
 export default function LongDistanceGiftsPage() {
   return <div className="min-h-screen bg-[#FDFBFD] text-[#171217]">
-    <BreadcrumbData title={"25 Long-Distance Relationship Gifts Packed With Love"} path="/blog/long-distance-relationship-gifts" />
+    <BreadcrumbData title={title} path="/blog/long-distance-relationship-gifts" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
     <header className="border-b border-primary/10"><div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 sm:px-8"><Link href="/" aria-label="Lovla home" className="font-helix text-3xl tracking-[-1px] text-primary">Lovla.</Link><Link href="/blog" className="flex items-center gap-2 py-2 text-sm font-medium text-primary hover:underline underline-offset-4"><ArrowLeft size={15} aria-hidden="true" />All stories</Link></div></header>
     <main><article>
-      <header className="mx-auto max-w-4xl px-6 pb-10 pt-12 text-center sm:px-8 md:pb-12 md:pt-20"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A93F7B]">A little closer, even from here</p><h1 className="mt-5 font-helix text-[38px] leading-[1.1] tracking-[-0.03em] text-primary sm:text-5xl md:text-[60px]">{title}</h1><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#6F5B6D] sm:text-lg">Something they can open, keep, or do with you. Here are 25 gifts that make room for your actual story.</p><div className="mt-6 flex items-center justify-center gap-3 text-sm text-[#786577]"><span>By {author}</span><span>·</span><time dateTime={date}>September 10, 2026</time><span>·</span><span>11 min read</span></div></header>
+      <header className="mx-auto max-w-4xl px-6 pb-10 pt-12 text-center sm:px-8 md:pb-12 md:pt-20"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A93F7B]">A little closer, even from here</p><h1 className="mt-5 font-helix text-[38px] leading-[1.1] tracking-[-0.03em] text-primary sm:text-5xl md:text-[60px]">{title}</h1><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#6F5B6D] sm:text-lg">Something they can open, keep, or do with you. Here are 25 gifts that make room for your actual story.</p><div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm text-[#786577]"><span>By {author}</span><span>·</span><time dateTime={date}>September 10, 2026</time><span>·</span><span>Updated <time dateTime={updatedDate}>September 22, 2026</time></span><span>·</span><span>11 min read</span></div></header>
       <figure className="mx-auto max-w-6xl px-6 sm:px-8"><Image src={hero} alt={heroAlt} width={1672} height={941} preload sizes="(max-width: 1152px) 100vw, 1088px" className="h-auto w-full rounded-2xl" /></figure>
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 sm:px-8 md:py-16 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-14"><aside><nav aria-label="In this guide" className="rounded-xl border border-primary/10 p-5 lg:sticky lg:top-8 lg:rounded-none lg:border-0 lg:p-0"><p className="text-xs font-semibold uppercase tracking-[0.15em] text-[#786577]">Find their kind of gift</p><ul className="mt-4 space-y-3">{groups.map(g => <li key={g.id}><a href={`#${g.id}`} className="block py-1 text-sm leading-6 text-primary hover:underline">{g.title}</a></li>)}</ul></nav></aside>
       <div className="min-w-0 max-w-[740px] text-[17px] leading-[1.85] text-[#4F4350]"><div className="space-y-5"><p>The best long-distance relationship gifts give your partner something personal to come back to: your handwriting, a favorite memory, a comfort they reach for, or a plan to spend time together. You do not need a huge box or an expensive device to make the gift feel like you.</p><p>Start with what your partner enjoys. Someone who keeps every card might love a bundle of letters. Someone with a crowded apartment may prefer a digital scrapbook or a date you have already planned. The ideas below work for a boyfriend, girlfriend, or spouse; choose by personality rather than the label on a gift guide.</p><p>For a quick starting point, pair one keepsake with one shared activity. A photo and a coloring date, a mug and a breakfast call, or a snack box and a movie invitation gives the gift a life after it arrives.</p></div>

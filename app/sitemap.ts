@@ -48,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/long-distance-relationship-gifts`,
-      lastModified: new Date("2026-09-10"),
+      lastModified: new Date("2026-09-22"),
       changeFrequency: "monthly",
       priority: 0.8,
     },
