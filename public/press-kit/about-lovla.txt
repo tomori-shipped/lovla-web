@@ -14,9 +14,15 @@ Lavender: #F8F0FA
 
 ASSET NOTES
 The mascot is an original repository brand asset.
-Brand assets include plum, white and black outlined wordmarks, plus light, plum and pink app icon treatments. Icon treatments retain the existing raster mascot artwork.
+Brand assets include plum, white and black outlined wordmarks, plus one official app icon: brand/lovla-app-icon.png. The app icon is the original supplied artwork with its lavender background. Do not recolor or substitute alternate treatments.
 Preserve asset proportions and colors. Do not imply endorsement or partnership.
 
 MASCOT STICKER COLLECTION
 Explore the full collection at https://www.lovla.app/press-kit/mascots
 The enhanced sticker illustrations use AI-assisted versions of Lovla-supplied mascot artwork. PNG and WebP exports preserve transparent backgrounds. The original vector mascot remains available as SVG.
+
+WEBSITE TYPOGRAPHY
+Primary: Hellix, used for the wordmark and key headings. Publisher: https://displaay.net/typeface/hellix/
+Secondary: Inter, used for body text and interface details. https://rsms.me/inter/
+Editorial accent: Instrument Serif.
+Font files are not bundled; obtain them from their publishers.

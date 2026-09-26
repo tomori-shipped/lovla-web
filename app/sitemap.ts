@@ -60,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/press-kit`,
-      lastModified: new Date("2026-09-12"),
+      lastModified: new Date("2026-09-26"),
       changeFrequency: "monthly",
       priority: 0.6,
     },
@@ -72,7 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date("2026-09-21"),
+      lastModified: new Date("2026-09-26"),
       changeFrequency: "weekly",
       priority: 0.9,
     },

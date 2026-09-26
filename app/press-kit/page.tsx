@@ -10,7 +10,7 @@ import Footer from "@/components/common/footer";
 import styles from "../home.module.css";
 export const metadata = pageMetadata(
   "Press Kit & Brand Assets",
-  "Meet Lovla, the couples coloring app. Download official logos, app icons, mascot stickers, and brand information for your story.",
+  "Meet Lovla, the couples coloring app. Download official logos, our app icon, mascot stickers, and brand fonts for your story.",
   "/press-kit",
 );
 export default function PressKit() {
@@ -111,9 +111,18 @@ export default function PressKit() {
             <span className={styles.tag}>THE SIGNATURE DETAILS</span>
             <h2>Make it unmistakably Lovla.</h2>
             <p>
-              Our wordmark and app icon, dressed for light and dark backgrounds.
+              Our wordmark for light and dark backgrounds, plus the official app icon.
             </p>
           </div>
+          <article className={brandStyles.appIconCard}>
+            <Image src="/press-kit/brand/lovla-app-icon.png" width={1501} height={1501} alt="Official Lovla app icon: a smiling character holding a pink paintbrush on lavender" sizes="(max-width: 600px) 80vw, 280px" className={brandStyles.officialIcon} />
+            <div className={brandStyles.copy}>
+              <span className={styles.tag}>THE OFFICIAL APP ICON</span>
+              <h3>One icon. Unmistakably Lovla.</h3>
+              <p>Use this original artwork with its lavender background and pink paintbrush. Keep the colors and proportions intact.</p>
+              <div className={brandStyles.downloads}><a href="/press-kit/brand/lovla-app-icon.png" download>Download PNG <ArrowDown size={16} /></a></div>
+            </div>
+          </article>
           <div className={brandStyles.grid}>
             {brandAssets.map((asset) => (
               <article key={asset.slug} className={brandStyles.card}>
@@ -149,8 +158,7 @@ export default function PressKit() {
             ))}
           </div>
           <p className={styles.pressNote}>
-            Wordmark SVGs scale crisply at any size. App icon treatments
-            preserve our existing mascot artwork. Choose PNG for quick use in
+            Wordmark SVGs scale crisply at any size. The app icon is supplied as its original PNG. Choose PNG for quick use in
             articles and presentations.
           </p>
         </section>
@@ -175,6 +183,25 @@ export default function PressKit() {
             Write our name as Lovla. Preserve asset proportions and original
             colors. Please don’t imply a partnership or endorsement.
           </p>
+        </section>
+        <section className={styles.section} style={{ paddingTop: 0 }} aria-labelledby="brand-fonts">
+          <span className={styles.tag}>THE WAY WE WRITE</span>
+          <h2 id="brand-fonts">Our fonts.</h2>
+          <div className={brandStyles.fontGrid}>
+            <article className={brandStyles.card}><div className={brandStyles.copy}>
+              <span className={styles.tag}>PRIMARY · HEADLINES &amp; WORDMARK</span>
+              <h3 className="font-helix" style={{ fontSize: 36, marginTop: 20 }}>Hellix</h3>
+              <p>Bold, friendly lettering for Lovla’s name and key headings.</p>
+              <a href="https://displaay.net/typeface/hellix/" className="underline">Get Hellix from Displaay</a>
+            </div></article>
+            <article className={brandStyles.card}><div className={brandStyles.copy}>
+              <span className={styles.tag}>SECONDARY · BODY &amp; INTERFACE</span>
+              <h3 style={{ fontSize: 36, marginTop: 20 }}>Inter</h3>
+              <p>Clear, readable text for descriptions, navigation and everyday details.</p>
+              <a href="https://rsms.me/inter/" className="underline">Get Inter from its official site</a>
+            </div></article>
+          </div>
+          <p className={styles.pressNote}>Our website also uses Instrument Serif for expressive editorial accents. Font files are available from their respective publishers.</p>
         </section>
         <section className={styles.finalCta}>
           <h2>Let’s tell a good story.</h2>

@@ -1,3 +1,4 @@
+import { lateSeptemberPosts } from "./lovla-late-september-posts";
 import { launchAndAutumnPosts } from "./lovla-launch-and-autumn-posts";
 
 export type LovlaStory = {
@@ -25,6 +26,7 @@ export type LovlaStory = {
 
 export const lovlaStories: LovlaStory[] = [
   ...launchAndAutumnPosts,
+  ...lateSeptemberPosts,
   {
     slug: "lovla-ten-minute-date",
     seoTitle: "Ten Minute Date Ideas for Busy Couples",

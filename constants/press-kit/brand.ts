@@ -19,26 +19,5 @@ export const brandAssets = [
     "kind": "wordmark",
     "bg": "#f6f3f6",
     "copy": "Transparent background \u00b7 outlined lettering"
-  },
-  {
-    "slug": "lovla-app-icon-light",
-    "title": "Light app icon",
-    "kind": "icon",
-    "bg": "#f6f3f6",
-    "copy": "Rounded presentation icon \u00b7 original mascot artwork"
-  },
-  {
-    "slug": "lovla-app-icon-plum",
-    "title": "Plum app icon",
-    "kind": "icon",
-    "bg": "#f6f3f6",
-    "copy": "Rounded presentation icon \u00b7 original mascot artwork"
-  },
-  {
-    "slug": "lovla-app-icon-pink",
-    "title": "Pink app icon",
-    "kind": "icon",
-    "bg": "#f6f3f6",
-    "copy": "Rounded presentation icon \u00b7 original mascot artwork"
   }
 ];
