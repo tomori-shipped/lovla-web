@@ -11,7 +11,7 @@ export const activitiesPost = {
   imageAlt:
     "Hand drawn illustration of long distance partners in plum colored clothes sharing a date across two spaces, with a globe between them",
   date: "2026-09-05",
-  updatedDate: "2026-09-08",
+  updatedDate: "2026-09-28",
   displayDate: "September 5, 2026",
   author: "The Lovla Team",
   readingMinutes: 12,

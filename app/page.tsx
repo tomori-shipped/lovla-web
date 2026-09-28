@@ -120,6 +120,9 @@ export default function Home() {
               Meet Lovla <ArrowDown size={17} aria-hidden="true" />
             </a>
           </div>
+          <Link href="#date-guides" className={`${styles.textLink} mt-6`}>
+            Looking for a date idea? Start here <ArrowDown size={17} aria-hidden="true" />
+          </Link>
           <div className={styles.heroStage}>
             <Image
               src="/media/lovla-hand-beach.png"
@@ -299,7 +302,7 @@ export default function Home() {
             ))}
           </ol>
         </section>
-        <section className={styles.section} aria-labelledby="date-guides-title">
+        <section id="date-guides" className={styles.section} aria-labelledby="date-guides-title">
           <div className={styles.sectionIntro}>
             <span className={styles.tag}>SOMETHING TO TRY TOGETHER</span>
             <h2 id="date-guides-title">
@@ -316,13 +319,13 @@ export default function Home() {
             {[
               {
                 href: "/blog/turn-photo-into-coloring-page",
-                title: "Turn a favorite photo into a coloring date",
+                title: "How to turn a photo into a coloring page",
                 text: "Choose a memory and make something together.",
                 image: "/blog/turn-photo-into-coloring-page.webp",
               },
               {
                 href: "/blog/long-distance-relationship-activities",
-                title: "Find your next long distance date",
+                title: "45 long distance relationship activities",
                 text: "Fresh ideas for the nights you spend in different places.",
                 image: "/blog/long-distance-relationship-activities.webp",
               },
@@ -361,7 +364,7 @@ export default function Home() {
             ))}
           </div>
           <Link href="/blog" className={`${styles.textLink} mt-8`}>
-            Explore all date ideas <ArrowRight size={18} aria-hidden="true" />
+            Explore relationship advice and date ideas <ArrowRight size={18} aria-hidden="true" />
           </Link>
         </section>
         <Testimonials />

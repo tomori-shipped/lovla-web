@@ -122,12 +122,23 @@ export default function LongDistanceActivitiesPage() {
               {post.title}
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[#6F5B6D] sm:text-lg">
-              {post.excerpt}
+              The best long distance activities fit the time and energy you both
+              have. Try a ten minute photo exchange on a busy night, a shared
+              coloring date when you want to make something, or a voice note
+              game when your schedules overlap badly. Choose from 45 ideas
+              below, grouped by the kind of evening you have.
             </p>
+            <div className="mt-6 flex flex-col items-center gap-3">
+              <AppStoreButton />
+              <p className="max-w-xl text-sm leading-6 text-[#6F5B6D]">
+                Lovla turns a favorite photo into a coloring page you can color together.
+              </p>
+            </div>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xs text-[#786577] sm:text-sm">
               <span>By {post.author}</span>
               <span aria-hidden="true">·</span>
               <time dateTime={post.date}>{post.displayDate}</time>
+              <span>Updated September 28, 2026</span>
               <span aria-hidden="true">·</span>
               <span>{post.readingMinutes} min read</span>
             </div>
@@ -199,6 +210,32 @@ export default function LongDistanceActivitiesPage() {
                   minutes is enough to start.
                 </p>
               </div>
+              <section className="my-10 rounded-xl bg-[#F4EAF2] p-6" aria-labelledby="tonight-plan">
+                <h2 id="tonight-plan" className="text-2xl font-semibold text-primary">
+                  A twenty minute date you can actually start tonight
+                </h2>
+                <p className="mt-4">
+                  Here is an example plan for two tired people with a short overlap.
+                  Send: “Have twenty minutes at eight? Bring one photo and a snack.
+                  Absolutely no interesting life updates required.” Confirm whose
+                  eight o’clock you mean before anyone makes tea six hours early.
+                </p>
+                <ol className="mt-4 ml-6 list-decimal space-y-3">
+                  <li><strong>First five minutes:</strong> each share a photo and tell the story behind it. An ordinary moment counts.</li>
+                  <li><strong>Next ten minutes:</strong> draw the same memory on paper or turn a photo into a shared coloring page in Lovla. Pick three colors each.</li>
+                  <li><strong>Last five minutes:</strong> show what you made, name one thing you liked, and agree whether you want to do it again.</li>
+                </ol>
+                <p className="mt-4">
+                  If one of you is exhausted, keep only the photo exchange. If your
+                  schedules do not overlap, send the photo with a voice note and
+                  let your partner reply when they are awake. A shorter plan that
+                  works for both people beats a romantic appointment nobody enjoys.
+                </p>
+                <p className="mt-4">
+                  For the practical setup, see <Link href="/blog/turn-photo-into-coloring-page" className="text-primary underline">how to turn your photo into a coloring page</Link>.
+                  If finding a time is the hard part, try our <Link href="/blog/long-distance-different-time-zones" className="text-primary underline">guide for couples in different time zones</Link>.
+                </p>
+              </section>
               {activityGroups.map((group) => (
                 <section
                   key={group.id}

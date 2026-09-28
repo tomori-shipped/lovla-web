@@ -66,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: baseUrl,
-      lastModified: new Date("2026-09-19"),
+      lastModified: new Date("2026-09-28"),
       changeFrequency: "monthly",
       priority: 1,
     },
