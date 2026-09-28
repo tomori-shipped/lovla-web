@@ -1,3 +1,4 @@
+import { archivePosts } from "./lovla-archive-posts";
 import { travelPosts } from "./lovla-travel-posts";
 import { lateSeptemberPosts } from "./lovla-late-september-posts";
 import { launchAndAutumnPosts } from "./lovla-launch-and-autumn-posts";
@@ -29,6 +30,7 @@ export const lovlaStories: LovlaStory[] = [
   ...launchAndAutumnPosts,
   ...lateSeptemberPosts,
   ...travelPosts,
+  ...archivePosts,
   {
     slug: "lovla-ten-minute-date",
     seoTitle: "Ten Minute Date Ideas for Busy Couples",
