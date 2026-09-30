@@ -120,9 +120,6 @@ export default function Home() {
               Meet Lovla <ArrowDown size={17} aria-hidden="true" />
             </a>
           </div>
-          <Link href="#date-guides" className={`${styles.textLink} mt-6`}>
-            Looking for a date idea? Start here <ArrowDown size={17} aria-hidden="true" />
-          </Link>
           <div className={styles.heroStage}>
             <Image
               src="/media/lovla-hand-beach.png"
@@ -301,71 +298,6 @@ export default function Home() {
               </li>
             ))}
           </ol>
-        </section>
-        <section id="date-guides" className={styles.section} aria-labelledby="date-guides-title">
-          <div className={styles.sectionIntro}>
-            <span className={styles.tag}>SOMETHING TO TRY TOGETHER</span>
-            <h2 id="date-guides-title">
-              A little inspiration.
-              <br />
-              <em>Your next date.</em>
-            </h2>
-            <p>
-              Creative dates, shared memories, and small ways to make time for
-              each other.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {
-                href: "/blog/turn-photo-into-coloring-page",
-                title: "How to turn a photo into a coloring page",
-                text: "Choose a memory and make something together.",
-                image: "/blog/turn-photo-into-coloring-page.webp",
-              },
-              {
-                href: "/blog/long-distance-relationship-activities",
-                title: "45 long distance relationship activities",
-                text: "Fresh ideas for the nights you spend in different places.",
-                image: "/blog/long-distance-relationship-activities.webp",
-              },
-              {
-                href: "/blog/lovla-ten-minute-date",
-                title: "Make ten minutes feel like a date",
-                text: "A small plan for couples with very full calendars.",
-                image: "/blog/lovla-ten-minute-date.webp",
-              },
-            ].map((guide) => (
-              <Link
-                key={guide.href}
-                href={guide.href}
-                className="group overflow-hidden rounded-2xl border border-primary/10 bg-white transition-shadow hover:shadow-lg"
-              >
-                <Image
-                  src={guide.image}
-                  alt=""
-                  width={1672}
-                  height={941}
-                  sizes="(max-width: 768px) 100vw, 380px"
-                  className="h-auto w-full"
-                />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold leading-snug text-primary">
-                    {guide.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#6F5B6D]">
-                    {guide.text}
-                  </p>
-                  <span className="mt-5 inline-block font-semibold text-primary group-hover:underline">
-                    Read the guide
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <Link href="/blog" className={`${styles.textLink} mt-8`}>
-            Explore relationship advice and date ideas <ArrowRight size={18} aria-hidden="true" />
-          </Link>
         </section>
         <Testimonials />
         <section className={`${styles.section} ${styles.faqSection}`}>
