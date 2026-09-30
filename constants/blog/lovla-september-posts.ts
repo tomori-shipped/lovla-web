@@ -1,3 +1,4 @@
+import { septemberFinalePosts } from "./lovla-september-finale-posts";
 import { archivePosts } from "./lovla-archive-posts";
 import { travelPosts } from "./lovla-travel-posts";
 import { lateSeptemberPosts } from "./lovla-late-september-posts";
@@ -19,6 +20,7 @@ export type LovlaStory = {
   sections: {
     title: string;
     paragraphs: string[];
+    table?: { headers: string[]; rows: string[][] };
     items?: string[];
     links?: { title: string; href: string }[];
   }[];
@@ -27,6 +29,7 @@ export type LovlaStory = {
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...septemberFinalePosts,
   ...launchAndAutumnPosts,
   ...lateSeptemberPosts,
   ...travelPosts,

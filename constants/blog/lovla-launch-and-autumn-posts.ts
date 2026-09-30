@@ -3,56 +3,65 @@ import type { LovlaStory } from "./lovla-september-posts";
 export const launchAndAutumnPosts: LovlaStory[] = [
   {
     "slug": "the-story-of-lovla",
-    "title": "The Story of Lovla: A Little More Color, A Little More Us",
-    "seoTitle": "The Story of Lovla | Launched February 14, 2026",
-    "description": "Born from a love of coloring and a wish to hold on to shared memories, Lovla launched on February 14, 2026. This is the story behind the app.",
+    "title": "Introducing Lovla: Bring a Little Color to Love",
+    "seoTitle": "Introducing Lovla: Bring a Little Color to Love",
+    "description": "Turn your shared photos into coloring pages with Lovla. Revisit the moments only you two understand, one brush stroke and one unexpected color at a time.",
     "date": "2026-02-14",
-    "updatedDate": "2026-09-26",
-    "category": "Our story",
-    "coverText": "The Story of Lovla: A Little More Color, A Little More Us",
+    "updatedDate": "2026-09-30",
+    "category": "Introducing Lovla",
+    "coverText": "Introducing Lovla: Bring a Little Color to Love",
     "image": "/blog/the-story-of-lovla.webp",
     "imageAlt": "Illustration of two people adding color to a heart shaped garden together",
-    "answer": "Lovla began with a love of coloring and a deeply personal wish: to hold on to the moments that make a relationship yours. When its founder learned that his girlfriend might have early onset dementia, he began looking for a way to revisit their memories together. The idea became Lovla, a couples coloring app launched on February 14, 2026.",
-    "featureLine": "Turn a photo from your own story into a coloring page and spend a little time with it together.",
+    "answer": "Meet Lovla, a couples coloring app that turns your photos into pages you can color together. Pick the blurry holiday selfie you somehow love more than the good one. Bring back the jacket, the sky, the table where you stayed until closing. With a few brush strokes, an evening you already lived becomes an evening you get to spend together again.",
+    "featureLine": "Choose a memory. Give your partner a color. See where the two of you take it.",
     "sections": [
       {
-        "title": "A photograph can hold more than it shows",
+        "title": "You remember the rain. They remember the chips.",
         "paragraphs": [
-          "A first date leaves you with things a camera cannot quite capture. The feeling before you meet. The moment you realize the conversation is easy. The tiny details that become part of the story you tell each other later.",
-          "The photograph matters because it takes you back to those things. You can look at an ordinary table, a familiar street, or two faces squeezed into a frame and find a whole evening waiting there.",
-          "For Lovla’s founder, the possibility that his girlfriend might have early onset dementia gave those shared memories a different weight. Their first dates and the moments they had collected together felt worth finding a new way to revisit. He wanted something they could do with those memories, together."
+          "There is a photo somewhere in your camera roll that would mean very little to anyone else. Two people under an awning. A paper bag going soft in the rain. Somebody wearing a jacket that clearly belongs to the other person.",
+          "You know the rest. The restaurant was closed. The walk was longer than promised. The chips were excellent. Years later, you still disagree about whose idea it was to leave the umbrella behind.",
+          "Open that photo in Lovla and turn it into a coloring page. Suddenly there is a small decision to make together: what color was that jacket? Your partner insists it was blue. You remember green. Neither of you is prepared to concede. The evening has begun."
         ]
       },
       {
-        "title": "From a love of coloring to a way of bonding",
+        "title": "A brush stroke can take you somewhere",
         "paragraphs": [
-          "Coloring offered a starting point. It was something creative, something to spend time on, and something that did not require the perfect words. A page could give two people a place to begin even when a conversation felt difficult to start.",
-          "The idea was to turn photographs of their relationship into coloring pages. Their first dates could become outlines. Familiar places could become spaces to fill. They could return to a memory while making something new from it.",
-          "That is where the two loves behind Lovla met: the love of coloring and the love of bonding. Making a picture together could become another moment worth keeping."
+          "Start with the sky. Or the sleeve. Or the tiny corner you always forget is in the photograph. As you add color, you spend time with details you might usually flick past.",
+          "The lines give you somewhere to begin. You bring the color, the conversation and whatever mood you are in tonight. Perhaps you follow the original. Perhaps the beach becomes pink because your partner has found a pink they refuse to stop using.",
+          "By the time you reach the water, you are talking about the drive home. A song comes up. Then a story you had almost forgotten to tell. There is still half a picture left, and you are in no hurry to finish it."
         ]
       },
       {
-        "title": "Room for a memory, room for today",
+        "title": "Bring the ordinary ones, too",
         "paragraphs": [
-          "There is a tenderness in choosing the colors for somewhere you have already been. You might try to match the original photograph. You might decide that the sky deserves a much more dramatic shade of pink. The page can hold both the memory and the mood you bring to it today.",
-          "The hope behind Lovla was to create more opportunities for that kind of shared time. A favorite photograph would be an invitation to sit together, notice something, or simply enjoy making a mess of the colors.",
-          "The uncertainty in this story remains uncertainty. Lovla is a creative app, not a treatment for dementia or a promise to preserve someone’s memory. Its purpose is to help people spend time with their photographs and with each other."
+          "The big photographs will find their way here: the trip, the celebration, the first proper picture together. Leave room for the ones you took without planning to keep them.",
+          "A Sunday breakfast. Your partner asleep on the train. The two of you in the kitchen after a recipe went slightly wrong. You might have to explain why a particular picture matters. Luckily, the person coloring beside you was there.",
+          "Choose a photo you both like. Let it be funny, untidy or completely uneventful. Some of the nicest things about being a couple are difficult to put in a caption. You recognize them anyway."
         ]
       },
       {
-        "title": "Why February 14",
+        "title": "Two places. One picture.",
         "paragraphs": [
-          "Lovla launched on February 14, 2026. Valentine’s Day became the beginning of a product built around a very personal expression of love: wanting to spend more time with someone and the life you share.",
-          "A launch gives an idea a date. The meaning comes from what people bring to it afterward. For one couple, that might be a photograph from their first trip. For another, it might be the only decent selfie from a weekend when everything else went wrong.",
-          "Every relationship has its own collection. Some moments are spectacular. Others would need a long explanation before anybody else understood why they mattered. There is room for both."
+          "Some evenings you can sit close enough to steal a glance at each other’s colors. Other evenings, your partner is in another city, propping up a phone beside a mug you wish was on your table.",
+          "Lovla gives you a photo to color together from wherever you are. Keep your usual call open separately if you want to talk. Pick a part of the picture each, or make the color choices together. These little arrangements are yours to invent.",
+          "You can spend ten minutes on it before bed and leave the rest for another evening. That unfinished corner gives you somewhere to pick up next time. “Shall we finish the sky?” is a lovely thing to have waiting in a message."
         ]
       },
       {
-        "title": "Start with a photo that belongs to the two of you",
+        "title": "Love also has questionable eyebrows",
         "paragraphs": [
-          "If you are new to Lovla, begin with a picture you both like. Turn it into a coloring page, choose a few colors, and see where the evening goes. There is no need to tell your whole story in one sitting.",
-          "You can talk about what happened outside the frame. You can disagree affectionately about the color of a jacket. You can leave part of the page for another day.",
-          "Lovla began with the wish to hold on to shared memories. It carries that wish into a simple invitation: take one of your moments, give it some color, and make a little more time for each other."
+          "For an evening with a little more mischief, there is Color Battle. You paint each other from reference images in a timed round. Your partner has a face you know remarkably well. Getting it onto the canvas is another matter.",
+          "The eyebrows may become ambitious. The smile might suggest a completely different personality. You can care very much about somebody and still give them a nose they will be discussing for weeks.",
+          "Enjoy what comes out. A portrait that makes you both laugh has already given you something worth keeping."
+        ]
+      },
+      {
+        "title": "An invitation, in color",
+        "paragraphs": [
+          "Lovla launched on February 14, 2026, with an invitation to make a little room for this kind of shared creativity. Bring a photograph from your life together and give it an evening of your attention.",
+          "When you finish a shared coloring page, save the artwork in your journal. It holds the old moment and a little of the new one: the colors you chose, the details you noticed, the conversation that wandered somewhere unexpected.",
+          "There is probably a photo you are thinking of already. Send it to your partner. Ask, “This one?”",
+          "The first color can be their choice."
         ]
       }
     ],

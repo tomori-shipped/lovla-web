@@ -207,6 +207,42 @@ export default async function LovlaStoryPage({ params }: Props) {
                       {p}
                     </p>
                   ))}
+                  {section.table && (
+                    <div
+                      role="region"
+                      aria-label={`${section.title} comparison`}
+                      tabIndex={0}
+                      className="mt-6 overflow-x-auto rounded-xl border border-primary/10 focus-visible:outline-2 focus-visible:outline-primary"
+                    >
+                      <table className="w-full min-w-[580px] text-left text-sm leading-6">
+                        <caption className="sr-only">{section.title}</caption>
+                        <thead className="bg-[#F0E6F0] text-primary">
+                          <tr>
+                            {section.table.headers.map((heading) => (
+                              <th key={heading} scope="col" className="px-4 py-3 font-semibold">
+                                {heading}
+                              </th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {section.table.rows.map((row) => (
+                            <tr key={row[0]} className="border-t border-primary/10">
+                              {row.map((cell, index) =>
+                                index === 0 ? (
+                                  <th key={index} scope="row" className="px-4 py-3 font-medium text-primary">
+                                    {cell}
+                                  </th>
+                                ) : (
+                                  <td key={index} className="px-4 py-3 align-top">{cell}</td>
+                                ),
+                              )}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
                   {section.items && (
                     <ul className="mt-5 list-disc space-y-3 pl-6">
                       {section.items.map((item) => (
