@@ -65,6 +65,16 @@ export default function BlogPage() {
             for each other.
           </p>
         </div>
+        <nav aria-label="Popular guides" className="mt-8 flex flex-wrap gap-3 text-sm font-semibold text-primary">
+          {[
+            ["Games for couples", "/blog/couples-games-at-home"],
+            ["Long distance activities", "/blog/long-distance-relationship-activities"],
+            ["Photo coloring", "/blog/turn-photo-into-coloring-page"],
+            ["Couples app guide", "/blog/best-apps-for-couples"],
+          ].map(([label, href]) => (
+            <Link key={href} href={href} className="rounded-full border border-primary/20 px-4 py-2 hover:bg-white">{label}</Link>
+          ))}
+        </nav>
         <section className="mt-12" aria-labelledby="latest-posts">
           <h2 id="latest-posts" className="sr-only">
             Latest posts

@@ -131,6 +131,14 @@ for (const [pathname, { html, metadata: m, canonical, schema }] of pages) {
         article?.dateModified,
       `${pathname}: incomplete article schema`,
     );
+    if (article?.datePublished && article?.dateModified) {
+      assert(
+        Number.isFinite(Date.parse(article.datePublished)) &&
+          Number.isFinite(Date.parse(article.dateModified)) &&
+          Date.parse(article.dateModified) >= Date.parse(article.datePublished),
+        `${pathname}: modification date precedes publication or is invalid`,
+      );
+    }
     assert(
       schema.some((v) => v["@type"] === "BreadcrumbList"),
       `${pathname}: missing breadcrumb schema`,

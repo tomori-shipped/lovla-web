@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       url,
       publishedTime: post.date,
-      modifiedTime: post.updatedDate ?? "2026-09-19",
+      modifiedTime: post.updatedDate ?? post.date,
       authors: ["The Lovla Team"],
       images: [{ url: image, alt: post.imageAlt }],
     },
@@ -56,10 +56,13 @@ export default async function LovlaStoryPage({ params }: Props) {
     "@graph": [
       {
         "@type": "BlogPosting",
+        "@id": `${canonical}#article`,
+        url: canonical,
+        inLanguage: "en-US",
         headline: post.title,
         description: post.description,
         datePublished: post.date,
-        dateModified: post.updatedDate ?? "2026-09-19",
+        dateModified: post.updatedDate ?? post.date,
         image: `https://www.lovla.app${storyImage(post)}`,
         author: {
           "@type": "Organization",
@@ -126,6 +129,11 @@ export default async function LovlaStoryPage({ params }: Props) {
       <main>
         <article>
           <header className="mx-auto max-w-4xl px-6 pb-10 pt-12 md:pt-20">
+            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-[#786577]">
+              <Link href="/" className="hover:underline">Home</Link>
+              <span aria-hidden="true"> / </span>
+              <Link href="/blog" className="hover:underline">Blog</Link>
+            </nav>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#A93F7B]">
               {post.category}
             </p>
@@ -149,7 +157,10 @@ export default async function LovlaStoryPage({ params }: Props) {
             <div className="mt-7 flex flex-wrap gap-x-3 gap-y-2 text-sm text-[#786577]">
               <span>By The Lovla Team</span>
               <span aria-hidden="true">·</span>
-              <time dateTime={post.date}>{storyDate(post.date)}</time>
+              <time dateTime={post.date}>Published {storyDate(post.date)}</time>
+              {post.updatedDate && post.updatedDate > post.date && (
+                <time dateTime={post.updatedDate}>Updated {storyDate(post.updatedDate)}</time>
+              )}
               <span aria-hidden="true">·</span>
               <span>{storyMinutes(post)} min read</span>
             </div>
