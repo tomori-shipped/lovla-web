@@ -10,6 +10,7 @@ import styles from "@/app/home.module.css";
 const links = [
   ["Features", "/#features"],
   ["How it works", "/#how-it-works"],
+  ["Shop", "/shop"],
   ["Press kit", "/press-kit"],
   ["Blog", "/blog"],
 ];
