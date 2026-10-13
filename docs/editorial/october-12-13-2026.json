@@ -1,0 +1,47 @@
+{
+  "observed": "2026-10-13",
+  "publicationPermission": "User authorized research, original images and publication without review; requested dates October 12 and 13; brand confirmed Lovla.",
+  "dates": "Sweetest Day assigned October 12 per user; substantive preparation October 13 disclosed with updatedDate. Apple article October 13.",
+  "trends": {
+    "url": "https://trends.google.com/trends/explore?date=today%205-y&geo=US&q=Sweetest%20Day,fall%20date%20ideas,apple%20picking",
+    "geography": "US",
+    "type": "Web Search",
+    "range": "past five years",
+    "completeWeeklyRows": {
+      "2026-09-20": [
+        7,
+        1,
+        26
+      ],
+      "2026-09-27": [
+        11,
+        1,
+        33
+      ],
+      "2026-10-04": [
+        14,
+        1,
+        37
+      ]
+    },
+    "columns": [
+      "Sweetest Day",
+      "fall date ideas",
+      "apple picking"
+    ],
+    "limitations": "Relative normalized interest, not search volume. Partial October 11 week excluded. Broad apple interest mixes intents; apple picking date is an editorial hypothesis. Low comparison value for fall date ideas is not zero demand. Historical October Sweetest Day peaks visible. No growth or rank guarantees."
+  },
+  "sources": [
+    "https://www.timeanddate.com/holidays/fun/sweetest-day",
+    "https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/growing-apples",
+    "https://www.lovla.app/"
+  ],
+  "overlap": "Existing Halloween, pumpkin patch, gifts and rainy day guides retained. New intent is specific Sweetest Day occasion and orchard planning, rather than another broad fall list.",
+  "pageTypes": [
+    "use case",
+    "use case"
+  ],
+  "productFit": "Verified live Lovla homepage: photo conversion, live shared coloring, journal; both partners need iPhone/iPad and app.",
+  "visuals": "Two original generated editorial illustrations, plus existing feature screenshots. No generated UI or customer evidence.",
+  "gsc": "Sitemap review requested. No query performance comparison or conversion attribution claimed."
+}
