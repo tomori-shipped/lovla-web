@@ -261,7 +261,7 @@ export const octoberHolidayPosts: LovlaStory[] = [
     "seoTitle": "Pumpkin Patch Date Ideas for a Relaxed Autumn Afternoon",
     "description": "Plan a pumpkin patch date with a simple budget, playful photo prompts, a rainy day backup and a creative way to keep the memory afterward.",
     "date": "2026-10-08",
-    "updatedDate": "2026-10-11",
+    "updatedDate": "2026-10-14",
     "image": "/blog/pumpkin-patch-date-ideas.webp",
     "category": "Seasonal dates",
     "coverText": "Pick a little magic.",
@@ -274,6 +274,68 @@ export const octoberHolidayPosts: LovlaStory[] = [
         "paragraphs": [
           "Look at the farm’s own website for opening hours, reservations, weather updates and what admission includes. Some activities or pumpkins may be charged separately. Set a total budget that includes travel, food and the pumpkin itself, then choose which extras actually matter to you.",
           "Wear shoes you do not mind getting dirty and bring a layer. Ask about accessible paths or seating if either person needs them. A beautiful field is less enjoyable when one of you is quietly uncomfortable."
+        ]
+      },
+      {
+        "title": "Choose a pumpkin date near you",
+        "paragraphs": [
+          "Start with your city and the kind of outing you want. A working pumpkin farm, an urban festival and a nighttime pumpkin walk offer different dates. These five guides help you plan the visit and choose something personal to make afterwards. Check the operator’s current calendar before traveling."
+        ],
+        "table": {
+          "headers": [
+            "Place",
+            "Location",
+            "Date idea"
+          ],
+          "rows": [
+            [
+              "Hunter Farms Pumpkin Patch",
+              "Atwater, California",
+              "Choose pumpkins and plan a playful decorating date"
+            ],
+            [
+              "Live Oak Canyon",
+              "Redlands, California",
+              "Choose pumpkins before the sunset cutoff"
+            ],
+            [
+              "Minnesota Zoo",
+              "Apple Valley, Minnesota",
+              "Enjoy a timed evening pumpkin display walk"
+            ],
+            [
+              "Jack’s Pumpkin Pop Up",
+              "Chicago, Illinois",
+              "Pair an urban fall festival with a cozy evening"
+            ],
+            [
+              "McCall’s Pumpkin Patch",
+              "Moriarty, New Mexico",
+              "Keep the daytime farm date separate from haunted plans"
+            ]
+          ]
+        },
+        "links": [
+          {
+            "title": "A Hunter Farms Pumpkin Patch Date in Atwater, With Something to Make Afterwards",
+            "href": "/blog/hunter-farms-pumpkin-patch-atwater-date"
+          },
+          {
+            "title": "A Live Oak Canyon Pumpkin Date That Keeps Going After Sunset",
+            "href": "/blog/live-oak-canyon-pumpkin-patch-date"
+          },
+          {
+            "title": "A Minnesota Zoo Pumpkin Walk Date, Then a Little Color at Home",
+            "href": "/blog/mn-zoo-pumpkin-walk-date"
+          },
+          {
+            "title": "A Jack’s Pumpkin Pop Up Date in Chicago, With a Cozy Second Chapter",
+            "href": "/blog/jacks-pumpkin-pop-up-chicago-date"
+          },
+          {
+            "title": "A McCall’s Pumpkin Patch Date in Moriarty, Then Dessert and Our Photo in Color",
+            "href": "/blog/mccalls-pumpkin-patch-moriarty-date"
+          }
         ]
       },
       {
@@ -327,6 +389,28 @@ export const octoberHolidayPosts: LovlaStory[] = [
         "paragraphs": [
           "Choose the photo where you look most like yourselves. In Lovla, turn that personal photo into a coloring page and color it together. You might keep the autumn palette or make the entire field wildly unrealistic.",
           "A clear picture with visible faces is a useful starting point. The little details matter too: the scarf one person borrowed, the pumpkin neither of you could carry gracefully, the expression just before a laugh."
+        ]
+      },
+      {
+        "title": "Pumpkin ideas for the evening after your outing",
+        "paragraphs": [
+          "Choose the next activity around your energy. Pumpkin decorating ideas can be as simple as a tiny moon, a checkerboard or a face that looks like your partner when dinner is late. For pumpkin contest ideas, choose playful categories such as funniest expression and most unexpected color rather than judging who can draw best.",
+          "If you want pumpkin carving, save it for a time when you have suitable tools and a clear workspace. Pumpkin seeds can become another home activity if you enjoy preparing them. A slice of pumpkin pie or a pumpkin spice drink can keep the evening easy without turning the date into a cooking project. A decorative pumpkin is not automatically a good choice for a pie recipe.",
+          "For a gentle seasonal movie night, Spookley the Square Pumpkin is another option to look into. Check the official viewing information for availability in your region. It is a story choice for the evening, not a claim that any of these venues has a Spookley attraction."
+        ],
+        "links": [
+          {
+            "title": "Official Spookley viewing information",
+            "href": "https://spookley.com/watch_schedule/"
+          },
+          {
+            "title": "Pumpkin painting date ideas",
+            "href": "/blog/pumpkin-painting-date-ideas"
+          },
+          {
+            "title": "Halloween painting ideas for couples",
+            "href": "/blog/halloween-painting-ideas-for-couples"
+          }
         ]
       }
     ],

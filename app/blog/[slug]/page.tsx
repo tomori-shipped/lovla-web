@@ -63,7 +63,9 @@ export default async function LovlaStoryPage({ params }: Props) {
         description: post.description,
         datePublished: post.date,
         dateModified: post.updatedDate ?? post.date,
-        image: `https://www.lovla.app${storyImage(post)}`,
+        image: post.imageSequence
+          ? post.imageSequence.images.map((image) => `https://www.lovla.app${image.src}`)
+          : `https://www.lovla.app${storyImage(post)}`,
         author: {
           "@type": "Organization",
           name: "The Lovla Team",
@@ -165,6 +167,23 @@ export default async function LovlaStoryPage({ params }: Props) {
               <span>{storyMinutes(post)} min read</span>
             </div>
           </header>
+          {post.imageSequence ? (
+            <section aria-label={post.imageSequence.title} className="mx-auto max-w-6xl px-6">
+              <h2 className="mb-6 font-helix text-3xl text-primary">{post.imageSequence.title}</h2>
+              <div className="grid gap-6 md:grid-cols-3">
+                {post.imageSequence.images.map((image, index) => (
+                  <figure key={image.src} className="min-w-0">
+                    <Image src={image.src} alt={image.alt} width={1122} height={1402}
+                      preload={index === 0}
+                      sizes="(max-width: 767px) 100vw, 33vw"
+                      className="h-auto w-full rounded-2xl border border-primary/10" />
+                    <figcaption className="mt-3 text-sm font-semibold text-primary">{image.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+              <p className="mt-5 text-sm leading-6 text-[#786577]">{post.imageSequence.credit}</p>
+            </section>
+          ) : (
           <figure className="mx-auto max-w-5xl px-4 sm:px-8">
             <Image
               src={storyImage(post)}
@@ -176,6 +195,7 @@ export default async function LovlaStoryPage({ params }: Props) {
               className="h-auto w-full rounded-2xl"
             />
           </figure>
+          )}
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-14">
             <aside>
               <nav

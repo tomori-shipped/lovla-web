@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-14",
+  "approval": "User approved visual direction, then explicitly said no need to connect Lovla; use generated images instead of app screenshots.",
+  "mode": "built-in image_gen",
+  "publish": "Five first person planning guides and a hub refresh; generated artwork visibly credited; no invented visits or captured app export claims.",
+  "sourceAssets": {
+    "atwater": [
+      "01-date-photo.png",
+      "02-coloring-page-study.png",
+      "03-colored-study.png"
+    ],
+    "redlands": [
+      "redlands-photo.png",
+      "redlands-line.png",
+      "redlands-colored.png"
+    ],
+    "zoo": [
+      "zoo-photo.png",
+      "zoo-line.png",
+      "zoo-colored.png"
+    ],
+    "chicago": [
+      "chicago-photo.png",
+      "chicago-line.png",
+      "chicago-colored.png"
+    ],
+    "moriarty": [
+      "moriarty-photo.png",
+      "moriarty-line.png",
+      "moriarty-colored.png"
+    ]
+  },
+  "newAssetCopies": {
+    "redlands-line.png": "exec-45b82378-d967-46bc-995e-a41f9f8fbf45.png",
+    "redlands-colored.png": "exec-4fd1eafd-76f5-4608-98ed-0b329b75ad46.png",
+    "zoo-line.png": "exec-6fef85a8-2bde-417e-abcf-e057debef70e.png",
+    "zoo-colored.png": "exec-1e070c23-59c4-4701-9d25-aa47bb32d09d.png",
+    "chicago-line.png": "exec-c99cf7d8-0809-494e-9606-cf492f951d04.png",
+    "chicago-colored.png": "exec-40bfb803-c82a-4a7f-8c33-0bf6e9ce382d.png",
+    "moriarty-line.png": "exec-f5206ff9-9444-4e71-a2b7-911bccc4b3a9.png",
+    "moriarty-colored.png": "exec-66565859-5f0b-46e0-beba-5a9fc910ab58.png"
+  },
+  "keywordStrategy": "Venue/city entity pages linked from existing general pumpkin date guide; Live Oak aliases consolidated. Supplied 24h changes not national popularity ranking.",
+  "validation": "Final production build, lint and SEO audit passed across 76 pages. Five gallery credits, October 14 dates, CTAs, all 15 image sitemap references and no app screenshots verified. Desktop gallery and 390px mobile inspected; no horizontal overflow and images loaded.",
+  "promptSet": {
+    "mode": "built-in image_gen",
+    "photo": "Original adults, casual Pinterest-inspired autumn layers and affectionate poses; phone-camera framing, natural skin texture, uneven light, mild noise, flyaways and wrinkles. Generic scene, no named-venue photographic claim.",
+    "lineArt": "Reference matching source photo; preserve faces, pose, crop, hands, clothing and pumpkins; black contours on white, closed colorable regions, simplified background, no UI.",
+    "colored": "Reference matching line art; preserve contours and geometry; flat region fills, natural skin colors, original clothes plus a playful lilac accent, small white areas, no UI or captured app export claim.",
+    "paletteByLocation": {
+      "Atwater": "cream cardigan, rust/navy flannel, orange/lilac pumpkins",
+      "Redlands": "lilac overshirt, olive tee, orange pumpkin",
+      "Apple Valley": "burgundy fleece, sage coat, orange glow, blue night sky",
+      "Chicago": "blue denim, rust sweater, orange pumpkin",
+      "Moriarty": "blue denim, tan overshirt, orange/lilac pumpkins"
+    }
+  }
+}

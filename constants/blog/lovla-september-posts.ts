@@ -1,3 +1,4 @@
+import { localPumpkinPosts } from "./lovla-local-pumpkin-posts";
 import { octoberMidmonthPosts } from "./lovla-october-12-13-posts";
 import { rainyDayPost } from "./rainy-day-date-ideas";
 import { octoberHolidayPosts } from "./lovla-october-holiday-posts";
@@ -31,9 +32,15 @@ export type LovlaStory = {
   }[];
   related: { href: string; title: string }[];
   screenshot?: string;
+  imageSequence?: {
+    title: string;
+    credit: string;
+    images: { src: string; alt: string; caption: string }[];
+  };
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...localPumpkinPosts,
   ...octoberMidmonthPosts,
   rainyDayPost,
   ...octoberHolidayPosts,

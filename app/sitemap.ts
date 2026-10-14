@@ -129,6 +129,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const post = blogPosts.find(
       (post) => `${baseUrl}${post.href}` === entry.url,
     );
-    return post ? { ...entry, images: [`${baseUrl}${post.image}`] } : entry;
+    const story = lovlaStories.find((story) => `${baseUrl}/blog/${story.slug}` === entry.url);
+    return post
+      ? { ...entry, images: story?.imageSequence
+          ? story.imageSequence.images.map((image) => `${baseUrl}${image.src}`)
+          : [`${baseUrl}${post.image}`] }
+      : entry;
   });
 }
