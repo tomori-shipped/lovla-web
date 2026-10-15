@@ -1,3 +1,4 @@
+import { halloweenEscapePosts } from "./lovla-halloween-escape-posts";
 import { localPumpkinPosts } from "./lovla-local-pumpkin-posts";
 import { octoberMidmonthPosts } from "./lovla-october-12-13-posts";
 import { rainyDayPost } from "./rainy-day-date-ideas";
@@ -34,12 +35,13 @@ export type LovlaStory = {
   screenshot?: string;
   imageSequence?: {
     title: string;
-    credit: string;
+    credit?: string;
     images: { src: string; alt: string; caption: string }[];
   };
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...halloweenEscapePosts,
   ...localPumpkinPosts,
   ...octoberMidmonthPosts,
   rainyDayPost,

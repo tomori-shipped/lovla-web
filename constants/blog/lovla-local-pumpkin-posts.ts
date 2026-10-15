@@ -75,8 +75,8 @@ export const localPumpkinPosts: LovlaStory[] = [
     "date": "2026-10-14",
     "category": "Local pumpkin dates",
     "coverText": "A pumpkin date. A little more us.",
-    "image": "/blog/hunter-farms-pumpkin-patch-atwater-date-photo.webp",
-    "imageAlt": "AI photographic artwork of a couple enjoying a pumpkin date, inspired by Atwater, California",
+    "image": "/blog/hunter-farms-pumpkin-patch-atwater-date-cover.webp",
+    "imageAlt": "Painted autumn illustration for A Hunter Farms Pumpkin Patch Date in Atwater, With Something to Make Afterwards",
     "related": [
       {
         "title": "Plan a pumpkin patch date",
@@ -93,7 +93,6 @@ export const localPumpkinPosts: LovlaStory[] = [
     ],
     "imageSequence": {
       "title": "A pumpkin date, in three stages",
-      "credit": "AI artwork created for Lovla. The scenes are creative inspiration, not venue photographs or captured app exports.",
       "images": [
         {
           "src": "/blog/hunter-farms-pumpkin-patch-atwater-date-photo.webp",
@@ -111,7 +110,8 @@ export const localPumpkinPosts: LovlaStory[] = [
           "caption": "3. The colors we would choose"
         }
       ]
-    }
+    },
+    "updatedDate": "2026-10-15"
   },
   {
     "slug": "live-oak-canyon-pumpkin-patch-date",
@@ -187,8 +187,8 @@ export const localPumpkinPosts: LovlaStory[] = [
     "date": "2026-10-14",
     "category": "Local pumpkin dates",
     "coverText": "A pumpkin date. A little more us.",
-    "image": "/blog/live-oak-canyon-pumpkin-patch-date-photo.webp",
-    "imageAlt": "AI photographic artwork of a couple enjoying a pumpkin date, inspired by Redlands, California",
+    "image": "/blog/live-oak-canyon-pumpkin-patch-date-cover.webp",
+    "imageAlt": "Painted autumn illustration for A Live Oak Canyon Pumpkin Date That Keeps Going After Sunset",
     "related": [
       {
         "title": "Plan a pumpkin patch date",
@@ -205,7 +205,6 @@ export const localPumpkinPosts: LovlaStory[] = [
     ],
     "imageSequence": {
       "title": "A pumpkin date, in three stages",
-      "credit": "AI artwork created for Lovla. The scenes are creative inspiration, not venue photographs or captured app exports.",
       "images": [
         {
           "src": "/blog/live-oak-canyon-pumpkin-patch-date-photo.webp",
@@ -223,7 +222,8 @@ export const localPumpkinPosts: LovlaStory[] = [
           "caption": "3. The colors we would choose"
         }
       ]
-    }
+    },
+    "updatedDate": "2026-10-15"
   },
   {
     "slug": "mn-zoo-pumpkin-walk-date",
@@ -294,8 +294,8 @@ export const localPumpkinPosts: LovlaStory[] = [
     "date": "2026-10-14",
     "category": "Local pumpkin dates",
     "coverText": "A pumpkin date. A little more us.",
-    "image": "/blog/mn-zoo-pumpkin-walk-date-photo.webp",
-    "imageAlt": "AI photographic artwork of a couple enjoying a pumpkin date, inspired by Apple Valley, Minnesota",
+    "image": "/blog/mn-zoo-pumpkin-walk-date-cover.webp",
+    "imageAlt": "Painted autumn illustration for A Minnesota Zoo Pumpkin Walk Date, Then a Little Color at Home",
     "related": [
       {
         "title": "Plan a pumpkin patch date",
@@ -312,7 +312,6 @@ export const localPumpkinPosts: LovlaStory[] = [
     ],
     "imageSequence": {
       "title": "A pumpkin date, in three stages",
-      "credit": "AI artwork created for Lovla. The scenes are creative inspiration, not venue photographs or captured app exports.",
       "images": [
         {
           "src": "/blog/mn-zoo-pumpkin-walk-date-photo.webp",
@@ -330,7 +329,8 @@ export const localPumpkinPosts: LovlaStory[] = [
           "caption": "3. The colors we would choose"
         }
       ]
-    }
+    },
+    "updatedDate": "2026-10-15"
   },
   {
     "slug": "jacks-pumpkin-pop-up-chicago-date",
@@ -406,8 +406,8 @@ export const localPumpkinPosts: LovlaStory[] = [
     "date": "2026-10-14",
     "category": "Local pumpkin dates",
     "coverText": "A pumpkin date. A little more us.",
-    "image": "/blog/jacks-pumpkin-pop-up-chicago-date-photo.webp",
-    "imageAlt": "AI photographic artwork of a couple enjoying a pumpkin date, inspired by Chicago, Illinois",
+    "image": "/blog/jacks-pumpkin-pop-up-chicago-date-cover.webp",
+    "imageAlt": "Painted autumn illustration for A Jack’s Pumpkin Pop Up Date in Chicago, With a Cozy Second Chapter",
     "related": [
       {
         "title": "Plan a pumpkin patch date",
@@ -424,7 +424,6 @@ export const localPumpkinPosts: LovlaStory[] = [
     ],
     "imageSequence": {
       "title": "A pumpkin date, in three stages",
-      "credit": "AI artwork created for Lovla. The scenes are creative inspiration, not venue photographs or captured app exports.",
       "images": [
         {
           "src": "/blog/jacks-pumpkin-pop-up-chicago-date-photo.webp",
@@ -442,7 +441,8 @@ export const localPumpkinPosts: LovlaStory[] = [
           "caption": "3. The colors we would choose"
         }
       ]
-    }
+    },
+    "updatedDate": "2026-10-15"
   },
   {
     "slug": "mccalls-pumpkin-patch-moriarty-date",
@@ -518,8 +518,8 @@ export const localPumpkinPosts: LovlaStory[] = [
     "date": "2026-10-14",
     "category": "Local pumpkin dates",
     "coverText": "A pumpkin date. A little more us.",
-    "image": "/blog/mccalls-pumpkin-patch-moriarty-date-photo.webp",
-    "imageAlt": "AI photographic artwork of a couple enjoying a pumpkin date, inspired by Moriarty, New Mexico",
+    "image": "/blog/mccalls-pumpkin-patch-moriarty-date-cover.webp",
+    "imageAlt": "Painted autumn illustration for A McCall’s Pumpkin Patch Date in Moriarty, Then Dessert and Our Photo in Color",
     "related": [
       {
         "title": "Plan a pumpkin patch date",
@@ -536,7 +536,6 @@ export const localPumpkinPosts: LovlaStory[] = [
     ],
     "imageSequence": {
       "title": "A pumpkin date, in three stages",
-      "credit": "AI artwork created for Lovla. The scenes are creative inspiration, not venue photographs or captured app exports.",
       "images": [
         {
           "src": "/blog/mccalls-pumpkin-patch-moriarty-date-photo.webp",
@@ -554,6 +553,7 @@ export const localPumpkinPosts: LovlaStory[] = [
           "caption": "3. The colors we would choose"
         }
       ]
-    }
+    },
+    "updatedDate": "2026-10-15"
   }
 ];

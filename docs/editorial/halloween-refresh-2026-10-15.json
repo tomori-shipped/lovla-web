@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-15",
+  "tool": "built-in image_gen",
+  "changes": "Removed requested gallery credit, replaced five pumpkin thumbnails while retaining galleries, added two escape room use case posts.",
+  "topicDecision": "User wrote escape rooms but linked a music festival. Asked for clarification; proceeded with literal escape room intent and explicitly distinguished the festival.",
+  "sources": [
+    "https://escapehalloween.com/",
+    "https://theescapegame.com/escape-rooms/the-cabin/"
+  ],
+  "evidence": "Operator page supplies Cabin theme, 45 minute duration and difficulty. No demand metrics or attendance claims invented.",
+  "posts": [
+    "halloween-escape-room-date-ideas",
+    "halloween-escape-room-at-home-for-couples"
+  ],
+  "prompts": [
+    {
+      "slug": "hunter-farms-pumpkin-patch-atwater-date",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A little red wagon with two mismatched pumpkins in a sunny California pumpkin field, distant golden trees, open sketchbook and colored pencils in foreground. Text exactly: \"Pick a little happiness\"."
+    },
+    {
+      "slug": "live-oak-canyon-pumpkin-patch-date",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. Pumpkins below a grand oak tree with dry California hills at golden hour, a cozy picnic blanket and two cider mugs. Text exactly: \"Our golden hour\"."
+    },
+    {
+      "slug": "mn-zoo-pumpkin-walk-date",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A winding woodland path lined with glowing carved pumpkins at violet dusk, autumn leaves, two little paper admission tickets in foreground. No animals. Text exactly: \"A little autumn magic\"."
+    },
+    {
+      "slug": "jacks-pumpkin-pop-up-chicago-date",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A charming urban pumpkin garden with string lights, subtle Chicago inspired skyline silhouette, plaid scarf draped over hay bale and two cocoa cups. Text exactly: \"Pumpkins in the city\"."
+    },
+    {
+      "slug": "mccalls-pumpkin-patch-moriarty-date",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A whimsical corn maze and pumpkin wagon in a New Mexico autumn landscape, hay bales, distant low mountains, a pie slice and coloring pencils on rustic foreground table. Text exactly: \"Get a little lost together\"."
+    },
+    {
+      "slug": "halloween-escape-room-date-ideas",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A cozy mysterious room with an antique key, puzzle box, pumpkin lantern, folded clue cards and two mugs, warm lamplight and lilac shadows. Text exactly: \"My favorite partner in crime\"."
+    },
+    {
+      "slug": "halloween-escape-room-at-home-for-couples",
+      "prompt": "Use case: illustration-story. Create an original wide 16:9 Lovla editorial blog cover. Hand painted soft gouache and colored pencil, textured warm ivory paper, plum outlines and expressive plum brush lettering, lilac and blush accents, warm pumpkin orange. Rich cozy composition like a premium illustrated autumn journal, not a photograph. No people, no phone UI, no venue logos, no watermark. Scene is thematic illustration, not an exact venue depiction. A warm autumn living room table with three handwritten clue envelopes, a little locked keepsake box, pumpkin lantern, open coloring journal and colored pencils. Text exactly: \"The clue is you\"."
+    }
+  ]
+}

@@ -181,7 +181,7 @@ export default async function LovlaStoryPage({ params }: Props) {
                   </figure>
                 ))}
               </div>
-              <p className="mt-5 text-sm leading-6 text-[#786577]">{post.imageSequence.credit}</p>
+              {post.imageSequence.credit && <p className="mt-5 text-sm leading-6 text-[#786577]">{post.imageSequence.credit}</p>}
             </section>
           ) : (
           <figure className="mx-auto max-w-5xl px-4 sm:px-8">
