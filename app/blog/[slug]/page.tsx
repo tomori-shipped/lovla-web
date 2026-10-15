@@ -152,10 +152,6 @@ export default async function LovlaStoryPage({ params }: Props) {
               {post.featureLine}
             </p>
             <AppStoreButton className="mt-5" />
-            <p className="mt-3 text-xs leading-6 text-[#786577]">
-              For iPhone and iPad. Check the App Store for current subscription
-              details.
-            </p>
             <div className="mt-7 flex flex-wrap gap-x-3 gap-y-2 text-sm text-[#786577]">
               <span>By The Lovla Team</span>
               <span aria-hidden="true">·</span>
