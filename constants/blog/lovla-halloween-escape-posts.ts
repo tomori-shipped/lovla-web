@@ -2,6 +2,127 @@ import type { LovlaStory } from "./lovla-september-posts";
 
 export const halloweenEscapePosts: LovlaStory[] = [
   {
+    "slug": "escape-halloween-2026-couples-date-guide",
+    "title": "Escape Halloween 2026: A Festival Date for Two, and a Memory to Keep",
+    "seoTitle": "Escape Halloween 2026 Couples Date Guide",
+    "description": "Plan an Escape Halloween festival date in San Bernardino with official dates, entry checks, a shared music plan and a Lovla coloring keepsake afterwards.",
+    "date": "2026-10-15",
+    "category": "Halloween dates",
+    "coverText": "Our kind of Halloween",
+    "image": "/blog/escape-halloween-2026-couples-date-guide.webp",
+    "imageAlt": "Gouache illustration of a Halloween music festival at dusk with costumes, pumpkins and a memory journal",
+    "answer": "For an Escape Halloween 2026 date, plan around October 30 or 31 at the NOS Events Center in San Bernardino, choose a few music priorities together, and arrange the journey home before buying tickets. The official guide lists festival hours of 4 p.m. to 2 a.m. Take a clear costume photo, then give it a quieter second life as a shared Lovla coloring date.",
+    "featureLine": "Lovla turns a personal photo into a coloring page you can color together and keep in your shared journal.",
+    "sections": [
+      {
+        "title": "First, make sure this is your kind of Halloween",
+        "paragraphs": [
+          "Escape Halloween is a music festival, rather than a puzzle room. This is a plan for couples who want music, costumes and a large event. If one of you would prefer a small indoor mystery, choose an escape room date instead.",
+          "Before committing, each pick one thing that would make the night worthwhile. It could be dancing together, hearing a favorite artist or dressing up. Having a shared priority makes decisions easier when your energy or music tastes differ."
+        ],
+        "links": [
+          {
+            "title": "Prefer a Halloween escape room date?",
+            "href": "/blog/halloween-escape-room-date-ideas"
+          }
+        ]
+      },
+      {
+        "title": "The official details to check before booking",
+        "paragraphs": [
+          "The organizer lists October 30 and 31, 2026, at the NOS Events Center, 689 S. E St, San Bernardino, California. Entry is for ages 18 and older; alcohol and VIP require ages 21 and older. Check the accepted photo ID rules and make sure you both qualify for your chosen ticket.",
+          "The published policy does not allow reentry during the same day. Plan food and any trip back to your accommodation accordingly. Check the official ticket checkout for current prices, fees and availability instead of building your budget around an old social post."
+        ],
+        "links": [
+          {
+            "title": "Official hours, entry rules and venue address",
+            "href": "https://escapehalloween.com/guide/hours-and-info/"
+          },
+          {
+            "title": "Official ticket information",
+            "href": "https://escapehalloween.com/tickets/"
+          }
+        ]
+      },
+      {
+        "title": "Build the evening around a few shared choices",
+        "paragraphs": [
+          "Choose a small number of music priorities rather than treating every set as mandatory. When set times are released, compare your choices and leave room to move between stages, eat and rest. The official FAQ says set times are shared closer to the event, and the lineup can change.",
+          "Pick a meeting location once you have the official map. Agree what you will do if separated and unable to reach each other. Decide whether you want to stay until the end together or leave earlier if either person runs out of energy."
+        ],
+        "links": [
+          {
+            "title": "Official FAQ and set time updates",
+            "href": "https://escapehalloween.com/guide/faq/"
+          },
+          {
+            "title": "Official lineup",
+            "href": "https://escapehalloween.com/lineup/"
+          }
+        ]
+      },
+      {
+        "title": "Choose costumes you can enjoy wearing",
+        "paragraphs": [
+          "Try both outfits at home while walking, sitting and carrying the things you need. Coordinate a color or a small detail rather than making either person wear something uncomfortable. Comfortable footwear and an appropriate layer deserve space in the plan.",
+          "Read the current costume and bag rules before packing, especially if your idea includes props or face coverings. A costume that works at a house party may not meet event entry requirements. Keep the coloring supplies at home for the next part of the date."
+        ]
+      },
+      {
+        "title": "Give the journey home as much thought as the entrance",
+        "paragraphs": [
+          "Agree on transport and a spending limit before booking. Include tickets, fees, travel, food and any accommodation in the same total. If you are considering a shuttle or public transport, check the exact service dates and return arrangements with the operator.",
+          "Save the relevant route and accommodation details before arriving. A late finish can make a vague plan to “work it out afterwards” feel much less appealing. Build in time to leave the venue and reach your chosen pickup point."
+        ],
+        "links": [
+          {
+            "title": "Official travel options",
+            "href": "https://escapehalloween.com/travel/"
+          }
+        ]
+      },
+      {
+        "title": "Take one costume photo before it gets too dark",
+        "paragraphs": [
+          "A photo before leaving for the festival can be the easiest picture to keep. Face a window or use soft daylight, stand close enough that both faces are visible, and take a few frames. The costumes and ordinary background will still tell the story.",
+          "If you take a picture at the event, choose a permitted spot away from busy routes and avoid including other guests prominently. Keep the phone secure afterwards. You do not need to photograph every part of the night to have something worth revisiting."
+        ]
+      },
+      {
+        "title": "The next day can be a second little date",
+        "paragraphs": [
+          "After you have rested, pick a photo you both like and have permission to upload. Turn it into a coloring page in Lovla, then color it together. Keep your costume colors or try the lilac sky you wish had been behind you. Save the finished artwork in your shared journal.",
+          "Both partners need Lovla on an iPhone or iPad; check current subscription details before starting. The activity can be short. Put on a favorite song from the evening, choose a few colors and ask each other which moment you would want to do again.",
+          "If you want to keep the memory on paper, sketch the costumes or write down that moment together. The useful part is returning to the experience as a pair, after the noise and travel have faded."
+        ],
+        "links": [
+          {
+            "title": "Turn a photo into a coloring page",
+            "href": "/blog/turn-photo-into-coloring-page"
+          },
+          {
+            "title": "More easy couples Halloween costumes",
+            "href": "/blog/easy-couples-halloween-costumes"
+          }
+        ]
+      }
+    ],
+    "related": [
+      {
+        "title": "A Halloween escape room date",
+        "href": "/blog/halloween-escape-room-date-ideas"
+      },
+      {
+        "title": "Halloween escape room at home",
+        "href": "/blog/halloween-escape-room-at-home-for-couples"
+      },
+      {
+        "title": "Halloween painting ideas for couples",
+        "href": "/blog/halloween-painting-ideas-for-couples"
+      }
+    ]
+  },
+  {
     "slug": "halloween-escape-room-date-ideas",
     "title": "Halloween Escape Room Date Ideas: Find Your Kind of Scary",
     "seoTitle": "Halloween Escape Room Date Ideas for Couples",
@@ -84,6 +205,10 @@ export const halloweenEscapePosts: LovlaStory[] = [
           {
             "title": "Escape Halloween official festival website",
             "href": "https://escapehalloween.com/"
+          },
+          {
+            "title": "Plan an Escape Halloween festival date",
+            "href": "/blog/escape-halloween-2026-couples-date-guide"
           }
         ]
       }

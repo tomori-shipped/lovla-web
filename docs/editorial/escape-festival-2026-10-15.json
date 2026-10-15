@@ -1,0 +1,14 @@
+{
+  "type": "Use case",
+  "audience": "Couples attending Escape Halloween 2026",
+  "userAuthorization": "DO BLOG POSTS FOR BOTH",
+  "sources": [
+    "https://escapehalloween.com/guide/hours-and-info/",
+    "https://escapehalloween.com/guide/faq/"
+  ],
+  "evidence": "Official event dates, location, age and entry policies. No invented visits or search metrics.",
+  "uniqueValue": "Couples music priorities, transport, costume photo and followup shared coloring",
+  "imageTool": "built-in image_gen",
+  "asset": "public/blog/escape-halloween-2026-couples-date-guide.webp",
+  "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, warm ivory paper textured soft gouache and colored pencil, expressive plum brush lettering, lilac blush and pumpkin orange. A whimsical Halloween music festival at dusk, distant abstract stage with violet light beams, pumpkins and string lights, foreground two simple costume capes and a little open memory journal with colored pencils. No people, no venue replica, no official logos, no product UI. Cozy romantic editorial illustration, not photography. Text exactly: \"Our kind of Halloween\"."
+}
