@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-16",
+  "type": "Five use case articles",
+  "authorization": "User explicitly requested five new posts, new images, dates yesterday and today, publish and submit sitemap. Interpreted conflicting 'all three' as applying dates to all five.",
+  "evidence": {
+    "trends": "User supplied weekly Rising related query growth. These observations were not independently remeasured; Trends web retrieval unavailable. No metric or fresh spike claims appear in public copy.",
+    "primary": "Hallmark confirms third Saturday rule and October 17, 2026.",
+    "source": "https://www.hallmark.com/about-sweetest-day/"
+  },
+  "differentiation": [
+    "Card composition and message templates, not broad Sweetest Day ideas",
+    "Short curated married couple conversation, not another general questions compendium",
+    "Inside joke photo activity, not a broad long distance list",
+    "Specific first anniversary girlfriend gift selection",
+    "Fifteen minute decision and backup routine, not another long rainy day list"
+  ],
+  "overlappingPages": [
+    "sweetest-day-ideas-for-couples",
+    "questions-to-ask-your-partner",
+    "long-distance-relationship-activities",
+    "long-distance-anniversary-ideas",
+    "long-distance-relationship-gifts",
+    "rainy-day-date-ideas"
+  ],
+  "productFit": "Verified photo to coloring, shared coloring and shared journal. No generated UI or app export evidence.",
+  "screenshots": "User previously requested artwork instead of app screenshots.",
+  "cta": "Existing AppStoreButton to Lovla listing",
+  "imageTool": "built-in image_gen",
+  "prompts": [
+    {
+      "slug": "last-minute-sweetest-day-card-messages",
+      "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, textured warm ivory paper, hand painted soft gouache and colored pencil, rich plum outlines and expressive plum brush lettering, lilac blush and rose accents. Charming intimate editorial scene, not photography. No product UI, no logos, no watermark. Cozy tabletop with three handwritten greeting cards, rose ribbon, tiny chocolate box, a cherished printed couple snapshot partly tucked into an envelope and two tea mugs. Autumn light. Exact main text: \"A little note. A lot of us.\""
+    },
+    {
+      "slug": "date-night-questions-for-married-couples",
+      "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, textured warm ivory paper, hand painted soft gouache and colored pencil, rich plum outlines and expressive plum brush lettering, lilac blush and rose accents. Charming intimate editorial scene, not photography. No product UI, no logos, no watermark. A mature married couple laughing at their kitchen table with three small conversation cards, an old wedding photo and cups of tea, cat asleep nearby. Exact main text: \"Still more to discover\"."
+    },
+    {
+      "slug": "inside-joke-photo-date-long-distance",
+      "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, textured warm ivory paper, hand painted soft gouache and colored pencil, rich plum outlines and expressive plum brush lettering, lilac blush and rose accents. Charming intimate editorial scene, not photography. No product UI, no logos, no watermark. Two partners in separate cozy rooms smiling over the same funny vacation photo, paper caption notes and colored pencils, whimsical little connecting heart motif. No devices or app screens. Exact main text: \"Only we get it\"."
+    },
+    {
+      "slug": "one-year-anniversary-gifts-for-girlfriend",
+      "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, textured warm ivory paper, hand painted soft gouache and colored pencil, rich plum outlines and expressive plum brush lettering, lilac blush and rose accents. Charming intimate editorial scene, not photography. No product UI, no logos, no watermark. Romantic flatlay of a handwritten anniversary letter, twelve small memory envelopes, a photo keepsake, one flower and simple wrapped gift in blush paper. Exact main text: \"One year. So many little us.\""
+    },
+    {
+      "slug": "fifteen-minute-rainy-day-date",
+      "prompt": "Use case: illustration-story. Original 16:9 Lovla blog cover, textured warm ivory paper, hand painted soft gouache and colored pencil, rich plum outlines and expressive plum brush lettering, lilac blush and rose accents. Charming intimate editorial scene, not photography. No product UI, no logos, no watermark. Cozy rain streaked window nook with two mugs, a soft plum blanket, open coloring journal, colored pencils and a tiny paper picnic, warm lamplight and autumn leaves outside. Exact main text: \"Rain check? Stay close.\""
+    }
+  ]
+}
