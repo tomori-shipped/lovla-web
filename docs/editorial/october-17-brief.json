@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-17",
+  "authorization": "User explicitly requested two new posts dated October 17, published now, sitemap submitted.",
+  "type": "Two use case guides",
+  "evidence": "User supplied weekly Trends signals, not independently remeasured. No growth or popularity claims appear in public articles.",
+  "sources": [
+    "https://lichess.org/app",
+    "https://garticphone.com/"
+  ],
+  "verified": "Lichess official phone/tablet support and friend challenges. Gartic Phone not recommended as verified two player option.",
+  "differentiation": "Small phone chooser with setup distinctions; fifteen minute costume assembly routine rather than broad lists.",
+  "overlap": [
+    "online-games-for-long-distance-couples",
+    "easy-couples-halloween-costumes"
+  ],
+  "features": "Verified Color Battle portrait challenge and separate shared photo coloring/journal.",
+  "images": {
+    "tool": "built-in image_gen",
+    "prompts": [
+      {
+        "slug": "phone-games-for-two-couples",
+        "prompt": "Use case: illustration-story. Original 16:9 Lovla editorial blog illustration, textured warm ivory paper, hand painted gouache and colored pencil, deep plum brush lettering, lilac blush rose accents, intimate cozy atmosphere. No logos, no fake app UI, no watermark. A couple laughing on opposite ends of a lilac sofa, holding smartphones angled with screens invisible, a playful drawn portrait on a paper between them, tiny chess pieces and cocoa on side table. Exact headline: \"Your move. Our little date.\""
+      },
+      {
+        "slug": "last-minute-couples-costumes-fifteen-minutes",
+        "prompt": "Use case: illustration-story. Original 16:9 Lovla editorial blog illustration, textured warm ivory paper, hand painted gouache and colored pencil, deep plum brush lettering, lilac blush rose accents, intimate cozy atmosphere. No logos, no fake app UI, no watermark. An open wardrobe with simple striped shirts, two berets, bandanas, a plain paper moon and sun, mirror, shoes and a little photo journal on a bench. No people. Warm autumn bedroom, charming practical styling. Exact headline: \"A costume. A little us.\""
+      }
+    ]
+  }
+}
