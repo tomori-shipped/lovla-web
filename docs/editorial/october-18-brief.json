@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-18",
+  "status": "Approved for publication October 18, 2026",
+  "evidence": {
+    "email": "Lovla Google Trends Brief \u2014 October 17, 2026",
+    "gmailMessageId": "1a14a136a5b9051d",
+    "clock": "Reported US Trending Now fall back 2026: 20K+ bucket, 1000% baseline growth. Couples scheduling is editorial inference.",
+    "anniversary": "Reported US weekly Rising query 11 year anniversary gift traditional and modern +3850%. No independently remeasured trend claims in article."
+  },
+  "type": "Two use case guides",
+  "sources": [
+    "https://www.gov.uk/when-do-the-clocks-change",
+    "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst",
+    "https://ideas.hallmark.com/articles/anniversary-ideas/anniversary-gifts-by-year/",
+    "https://www.americangreetings.com/inspiration/wedding-anniversary-gift-guide/11th-year"
+  ],
+  "sourceAccess": "GOV.UK/NIST/Hallmark accessed directly. American Greetings modern theme verified in search result; full page returns403.",
+  "uniqueValue": "Specific 2026 UK/US mismatch plan distinct from general time zone guide; 11th anniversary traditional/modern and eleven memories distinct from first anniversary gifts.",
+  "productFit": "Photo coloring, shared coloring and shared journal; not a time zone calculator.",
+  "images": {
+    "tool": "built-in image_gen",
+    "prompts": [
+      {
+        "slug": "fall-back-2026-long-distance-date-planning",
+        "prompt": "Use case: illustration-story. Original 16:9 Lovla editorial cover. Warm ivory paper textured gouache and colored pencil, deep plum brush lettering, lilac blush and rose accents, intimate cozy illustration, no logos, no fake app interface, no watermarks. Two cozy window vignettes, London at evening and New York late afternoon, two simple analog clocks and a paper calendar with autumn leaves, photo journal and pencils connecting both spaces. Accurate clocks not essential no numerical schedules or map labels. Exact main text: \"Same date. Different clocks.\""
+      },
+      {
+        "slug": "eleven-year-anniversary-gifts",
+        "prompt": "Use case: illustration-story. Original 16:9 Lovla editorial cover. Warm ivory paper textured gouache and colored pencil, deep plum brush lettering, lilac blush and rose accents, intimate cozy illustration, no logos, no fake app interface, no watermarks. A mature couple seated together on a sofa looking through a memory album, foreground small steel photo frame, simple bracelet in a gift box, eleven little keepsake envelopes and two mugs. Exact main text: \"Eleven years. Still us.\""
+      }
+    ]
+  }
+}
