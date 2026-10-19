@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-19",
+  "type": "Tabletop comparison and focused conversation use case",
+  "authorization": "User requested adding two posts for today with new images and full creative control.",
+  "evidence": {
+    "email": "Lovla Google Trends Brief — October 19, 2026",
+    "gmailMessageId": "1a15465453a68edd",
+    "observations": "US weekly Rising: two player board games for couples +150%, would you rather questions for couples +50%. Reported in today's brief; not independently remeasured. No daily-spike claim in article."
+  },
+  "sources": [
+    "https://www.lookout-spiele.de/en/games/patchwork.html",
+    "https://www.scorpionmasque.com/en/sky-team",
+    "https://www.scorpionmasque.com/en/blog/sky-team-your-next-favorite-2-player-game",
+    "https://pegasus.de/en/Dorfromantik-Das-Duell/51241G",
+    "https://pegasus.de/NetiMedia/download?mediaId=018e5c2944d670e69ac73de77decc5f1"
+  ],
+  "differentiation": "Physical tabletop chooser distinct from phone and homemade games. Would-you-rather prompts lead to date selection rather than broad questions list.",
+  "features": "Photo conversion, shared coloring, journal; no built-in question mode claim.",
+  "images": {
+    "tool": "built-in image_gen",
+    "prompts": [
+      {
+        "slug": "two-player-board-games-for-couples",
+        "prompt": "Use case: illustration-story. Original wide 16:9 Lovla blog cover, warm ivory textured paper, gouache and colored pencil, expressive dark plum brush lettering, lilac blush rose palette, intimate autumn warmth. No logos, no copied game artwork, no app UI, no watermark. A diverse adult couple smiling across a cozy kitchen table with generic abstract quilt tiles, simple dice, a blank card deck, two mugs and a little memory journal. Clearly handmade editorial illustration, not an exact commercial board game. Exact main text: \"Your turn. Our evening.\""
+      },
+      {
+        "slug": "would-you-rather-date-night-for-couples",
+        "prompt": "Use case: illustration-story. Original wide 16:9 Lovla blog cover, warm ivory textured paper, gouache and colored pencil, expressive dark plum brush lettering, lilac blush rose palette, intimate autumn warmth. No logos, no copied game artwork, no app UI, no watermark. Two women laughing while holding two handwritten choice cards over a cozy table; little illustrated picnic basket and painting supplies symbolizing two date choices, favorite travel photo and colored pencils nearby. Exact main text: \"This or that. Always us.\""
+      }
+    ]
+  }
+}
