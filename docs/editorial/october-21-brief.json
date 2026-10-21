@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "authorization": "User requested four new posts and publication with sitemap update.",
+  "topics": [
+    "Black Friday Gift Ideas for Your Long Distance Partner",
+    "When to Book Holiday Flights to See Your Long Distance Partner",
+    "A Nostalgic Halloween Movie Date for Couples Apart",
+    "A Whimsical Halloween Decor Date for Two Different Homes"
+  ],
+  "evidence": [
+    "https://blog.google/products-and-platforms/products/search/frightgeist-halloween-trends-2026/",
+    "https://blog.google/intl/en-ca/products/explore-get-answers/halloween26/",
+    "https://blog.google/products-and-platforms/products/search/holiday-travel-trends-2026/",
+    "https://support.google.com/travel/answer/6235879?hl=en",
+    "https://consumer.ftc.gov/articles/online-shopping"
+  ],
+  "limits": "Research performed October 21. Google Trends Explore was inaccessible; use dated official Google Trends reports as proxies, not same day volumes. Canadian decor signal is explicitly regional. No verified GSC data. No claimed most searched route or guaranteed sales.",
+  "differentiation": "Black Friday focuses cross border gifting rather than general couples gifts. Flight article focuses holiday booking timing rather than existing evergreen airfare checklist. Movie and decor dates address distinct activities.",
+  "integration": "Shared story collection automatically supplies blog index, canonical metadata, Article/Breadcrumb schema and sitemap."
+}
