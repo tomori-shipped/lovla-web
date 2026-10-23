@@ -1,0 +1,72 @@
+{
+  "prepared": "2026-10-23",
+  "publicationDates": [
+    "2026-10-21",
+    "2026-10-21",
+    "2026-10-22",
+    "2026-10-22"
+  ],
+  "authorization": "User requested four new articles, two per date, original covers, publication and sitemap submission.",
+  "searchEvidence": [
+    {
+      "observed": "2026-10-20",
+      "source": "Lovla Google Trends Brief \u2014 October 20, 2026",
+      "messageId": "1a159764b01b3b75",
+      "query": "two player switch games for couples",
+      "growth": "+60%",
+      "settings": "US, Web Search, all categories, weekly Rising related queries; approximately October 13\u201320 versus October 6\u201313",
+      "url": "https://trends.google.com/trends/explore?date=now%207-d&geo=US&q=date%20night,couples%20games,long%20distance%20relationship,anniversary%20gifts"
+    },
+    {
+      "observed": "2026-10-22",
+      "source": "Lovla Google Trends Brief \u2014 October 22, 2026",
+      "messageId": "1a163bacc4b20350",
+      "queries": {
+        "pumpkin head couple photos": "+250%",
+        "3rd wedding anniversary traditional and modern gifts": "+70%"
+      },
+      "settings": "US, Web Search, all categories, weekly Rising; approximately October 15\u201322 versus October 8\u201315",
+      "url": "https://trends.google.com/trends/explore?date=now%207-d&geo=US&q=anniversary%20gifts,date%20ideas,couple%20photos,christmas%20gifts%20for%20couples"
+    }
+  ],
+  "limits": "Previously observed weekly signals read from sent research briefs; direct Explore retrieval failed in this production session. Not verified new daily spikes, absolute volume or ranking forecasts. Photo selection article is an adjacent practical use case, not a separately measured rising query.",
+  "overlapControl": [
+    "Switch hardware and multiplayer setup differs from phone/board game guides.",
+    "Photo selection and preparation support the existing conversion tutorial.",
+    "Pumpkin photo poses are a focused visual activity, not another pumpkin patch itinerary; existing guide linked.",
+    "Third year gift conventions differ from first and eleventh anniversary posts."
+  ],
+  "primarySources": [
+    "https://www.nintendo.com/us/store/products/it-takes-two-switch/",
+    "https://en-americas-support.nintendo.com/app/answers/detail/a_id/49683/p/989/c/120",
+    "https://www.ea.com/games/split-fiction/split-fiction/features/friends-pass-switch2",
+    "https://ideas.hallmark.com/articles/anniversary-ideas/3rd-anniversary-gifts/"
+  ],
+  "productFit": "Verified photo conversion, shared coloring, shared journal; no invented UI, pricing, platform expansion, physical gift or delivery features.",
+  "imageBase": "Use case: illustration-story. Asset type: wide 16:9 Lovla editorial blog cover. Warm ivory textured paper, gouache and colored pencil, plum hand painted brush lettering, lilac blush and rose accents. Cozy autumn light. Original tasteful illustration. No app interfaces, screenshots, logos, watermark or copyrighted game characters. ",
+  "imagePrompts": [
+    [
+      "switch-games-for-couples-setup-guide",
+      "Two people on a sofa with generic handheld controllers, a second cozy window vignette suggesting partners apart, tiny cooperative puzzle pieces and mugs. Exact text: \"Find your player two.\""
+    ],
+    [
+      "choose-photo-for-coloring-page",
+      "A still life of a simple personal pet photo print beside its clear uncolored line drawing and a colored pencil rendition, three stages recognizable as the same original sleeping cat on a chair. Illustrative artwork not actual app results. Exact text: \"A clearer photo. A happier page.\""
+    ],
+    [
+      "pumpkin-couple-photo-ideas",
+      "Two charming illustrated adults outdoors holding lightweight paper pumpkin face props in front of their faces, autumn leaves and a camera on a little tripod, playful modest outfits. No pumpkins worn on heads. Exact text: \"A little pumpkin magic.\""
+    ],
+    [
+      "third-anniversary-gifts-memory-date",
+      "A beautiful still life with a leather journal, small clear glass vase with three stems, three personal photo prints and colored pencils on an ivory table. Exact text: \"Three years. Our story.\""
+    ]
+  ],
+  "imageGenerationMode": "Built-in image generation",
+  "savedAssets": [
+    "/Users/benedictshogunle/Documents/ChatGPT/BLOG/lovla-web/public/blog/switch-games-for-couples-setup-guide.webp",
+    "/Users/benedictshogunle/Documents/ChatGPT/BLOG/lovla-web/public/blog/choose-photo-for-coloring-page.webp",
+    "/Users/benedictshogunle/Documents/ChatGPT/BLOG/lovla-web/public/blog/pumpkin-couple-photo-ideas.webp",
+    "/Users/benedictshogunle/Documents/ChatGPT/BLOG/lovla-web/public/blog/third-anniversary-gifts-memory-date.webp"
+  ]
+}
