@@ -1,0 +1,74 @@
+{
+  "prepared": "2026-10-27",
+  "publicationDates": [
+    "2026-10-23",
+    "2026-10-24",
+    "2026-10-25",
+    "2026-10-26",
+    "2026-10-27"
+  ],
+  "authorization": "User requested five new articles dated October 23 to 27 based on Google Trends, full creative control, immediate publication and sitemap submission in Search Console.",
+  "searchEvidence": {
+    "observed": "2026-10-27",
+    "source": "Google Trends Explore, Related queries (Rising), retrieved in the browser",
+    "settings": "US, Web Search, all categories, past 7 days (approximately October 20 to 27, 2026)",
+    "queries": {
+      "long distance relationship bracelets touch": "+300% (seed: long distance relationship)",
+      "how to keep a long distance relationship alive": "+110% (seed: long distance relationship)",
+      "long distance relationship date ideas": "+70% (seed: long distance relationship)",
+      "last minute anniversary gifts for her": "+250% (seed: anniversary gifts)",
+      "homemade anniversary gifts": "+50% (seed: anniversary gifts)",
+      "joint christmas gifts for couples": "Breakout (seed: christmas gifts for couples)",
+      "overrated relationship advice": "Breakout (seed: relationship advice)",
+      "common relationship advice": "+60% (seed: relationship advice)",
+      "long distance couple games": "+70% (seed: long distance)",
+      "long distance lamps": "+120% (seed: long distance)"
+    },
+    "limits": "Relative rising values for a seven day window, not absolute volume or ranking forecasts. Some seed requests were rate limited and are not represented."
+  },
+  "articles": [
+    {
+      "date": "2026-10-23",
+      "slug": "long-distance-touch-bracelets",
+      "query": "long distance relationship bracelets touch",
+      "type": "Comparison roundup / buyer guide"
+    },
+    {
+      "date": "2026-10-24",
+      "slug": "last-minute-anniversary-gifts-for-her",
+      "query": "last minute anniversary gifts for her",
+      "type": "Problem"
+    },
+    {
+      "date": "2026-10-25",
+      "slug": "keep-long-distance-relationship-alive",
+      "query": "how to keep a long distance relationship alive",
+      "type": "Problem"
+    },
+    {
+      "date": "2026-10-26",
+      "slug": "joint-christmas-gifts-for-couples",
+      "query": "joint christmas gifts for couples",
+      "type": "Use case"
+    },
+    {
+      "date": "2026-10-27",
+      "slug": "overrated-relationship-advice-long-distance",
+      "query": "overrated relationship advice",
+      "type": "Problem"
+    }
+  ],
+  "overlapControl": [
+    "Touch bracelets is a single product category buyer guide, distinct from the general long distance gifts page, which is linked.",
+    "Last minute anniversary gifts targets time pressure, distinct from one year and third anniversary pages.",
+    "Keep alive targets the flat middle phase, distinct from survive long distance and nothing to talk about, both linked.",
+    "Joint Christmas gifts covers shared gifts, distinct from Black Friday and Christmas date pages.",
+    "Overrated advice reframes common rules for couples apart; no existing page covers this intent."
+  ],
+  "primarySources": [
+    "https://bond-touch.com/",
+    "https://bond-touch.com/products/bond-touch-4-long-distance-bracelet"
+  ],
+  "productFit": "Verified photo to coloring page conversion, coloring together and shared journal only. No invented UI, pricing, export, printing or platform claims.",
+  "imageModel": "gpt-image-2 via OpenAI Images API; covers 1672x941 webp"
+}
