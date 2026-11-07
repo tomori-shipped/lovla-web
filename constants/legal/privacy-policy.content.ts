@@ -6,7 +6,7 @@ import type { LegalPageContent } from "./types";
  */
 export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
   title: "Privacy Policy",
-  lastUpdated: "February 9, 2026",
+  lastUpdated: "November 7, 2026",
   sections: [
     {
       number: 1,
@@ -60,13 +60,16 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
               type: "list",
               items: [
                 {
-                  text: "Account Information: name, username, email address, password, profile image.",
+                  text: "Account Information: name, username, email address, password, and profile image. If you sign in with Apple or Google, we receive your name and email address (or Apple's private relay email) from that provider.",
                 },
                 {
                   text: "Relationship Information: linked partner's account details and pairing status.",
                 },
                 {
-                  text: "User Content: photographs, text notes, and other content you upload or create.",
+                  text: "User Content: photographs, text prompts, drawings, coloring pages, notes, journal entries, and other content you upload or create.",
+                },
+                {
+                  text: "Survey Answers: optional answers you give during onboarding.",
                 },
                 {
                   text: "Communications: messages sent to us for support, feedback, or inquiries.",
@@ -88,10 +91,13 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
               type: "list",
               items: [
                 {
-                  text: "Device and Technical Data: IP address, device identifiers, operating system, app version, language, and crash logs.",
+                  text: "Device and Technical Data: IP address, device identifiers, operating system, app version, language, push notification token, and crash logs.",
                 },
                 {
                   text: "Usage Data: screens viewed, features used, interactions, and time spent in the app.",
+                },
+                {
+                  text: "Purchase Data: subscription status, product, and transaction details received from Apple.",
                 },
               ],
             },
@@ -108,9 +114,41 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
                   text: "Your linked partner may upload content that includes you.",
                 },
                 {
-                  text: "Service providers (such as analytics or cloud hosting partners) may provide aggregated or de-identified information.",
+                  text: "Sign-in providers (Apple, Google) and Apple's App Store provide the account and purchase information described above.",
                 },
               ],
+            },
+          ],
+        },
+        {
+          number: "2.4",
+          title: "Analytics and Diagnostics",
+          content: [
+            {
+              type: "paragraph",
+              content:
+                "We use PostHog for product analytics and session recordings (photos are hidden in recordings), linked to your account and email address so we can understand how the app is used, and Sentry for crash reports. If you allow tracking, Meta receives app events to measure our ads.",
+            },
+            {
+              type: "paragraph",
+              content:
+                "Text you type is masked in session recordings. Crash reports include device and app information and details of the error.",
+            },
+          ],
+        },
+        {
+          number: "2.5",
+          title: "Location",
+          content: [
+            {
+              type: "paragraph",
+              content:
+                "If you turn on distance sharing, we store your most recent location to calculate the distance to your partner. Your partner sees only the distance, never your location. Turning sharing off deletes it.",
+            },
+            {
+              type: "paragraph",
+              content:
+                "Distance sharing is optional and off by default. If you also allow location access \"Always,\" Lovla updates your location in the background, including when the app is closed, so the distance stays current. We keep only your latest location, not a history. You can stop sharing at any time in the app or by turning off location access in your device settings.",
             },
           ],
         },
@@ -131,14 +169,17 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
               text: "Create and manage user accounts and linked accounts",
             },
             { text: "Provide and personalize Lovla features" },
-            { text: "Process photos and generate AI outputs" },
-            { text: "Enable pairing between users" },
+            { text: "Process photos and prompts to generate AI coloring pages" },
+            { text: "Enable pairing between users and partner features such as distance sharing" },
             {
               text: "Maintain security, detect fraud, and prevent abuse",
             },
             { text: "Respond to support requests" },
-            { text: "Send important service-related notifications" },
-            { text: "Analyze usage to improve the Service" },
+            { text: "Send service-related and reminder notifications" },
+            { text: "Analyze usage and diagnose crashes to improve the Service" },
+            {
+              text: "Measure the performance of our advertising, only if you allow tracking (see Section 9)",
+            },
             { text: "Comply with legal obligations" },
           ],
         },
@@ -149,7 +190,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "We do not use personal data for third-party advertising or targeted advertising.",
+            "We do not show third-party ads in Lovla. Your photos, coloring pages, notes, messages, partner details, and location are never used for advertising.",
         },
       ],
     },
@@ -160,7 +201,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "When you upload photos, we process them using AI systems to:",
+            "When you upload photos or enter prompts, we process them using AI systems to:",
         },
         {
           type: "list",
@@ -175,22 +216,17 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "We may use third-party service providers to assist with image processing and AI functionality. These providers process data only on our behalf and under contractual obligations to protect user data.",
+            "To create coloring pages, the photos and prompts you submit are sent to Replicate, Inc., which runs AI models, including models from OpenAI and ByteDance. They are used only to generate your page. We ask your permission before the first one is sent.",
         },
         {
           type: "paragraph",
           content:
-            "We may use aggregated or de-identified data to improve our systems. We will not use identifiable images to train public AI models without your explicit consent.",
+            "We do not use your photos or prompts to train AI models.",
         },
         {
           type: "paragraph",
           content:
             "AI outputs are generated automatically and may contain errors. We do not guarantee accuracy, quality, or suitability of AI-generated content.",
-        },
-        {
-          type: "paragraph",
-          content:
-            "Generated coloring pages are digital-only and are not currently available for export or printing.",
         },
       ],
     },
@@ -242,7 +278,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
-            "Lovla is intended for users aged 13 and older.",
+            "Lovla is intended for users aged 13 and older. We do not knowingly collect personal data from children under 13. If we learn that we have, we will delete it.",
         },
         {
           type: "paragraph",
@@ -257,16 +293,31 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       content: [
         {
           type: "paragraph",
-          content: "We may share personal data with:",
+          content: "We share personal data only with:",
         },
         {
           type: "list",
           items: [
             {
-              text: "Your linked partner (for shared content)",
+              text: "Your linked partner (shared content, and the distance between you if you turn on distance sharing)",
             },
             {
-              text: "Service providers (cloud hosting, analytics, AI processing)",
+              text: "Supabase (database, file storage, and sign-in hosting)",
+            },
+            {
+              text: "Replicate, Inc. and the AI model providers it runs, such as OpenAI and ByteDance (AI coloring page generation)",
+            },
+            {
+              text: "PostHog (product analytics and session recordings) and Sentry (crash reports)",
+            },
+            {
+              text: "Expo and Apple (delivering push notifications)",
+            },
+            {
+              text: "Apple and Google (sign-in) and Apple (in-app purchases)",
+            },
+            {
+              text: "Meta Platforms (advertising measurement, only if you allow tracking; see Section 9)",
             },
             {
               text: "Authorities when required by law",
@@ -275,23 +326,45 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         },
         {
           type: "paragraph",
-          content: "We do not sell personal data.",
+          content:
+            "Our service providers process data on our behalf to provide their services to us. We do not sell personal data.",
         },
       ],
     },
     {
       number: 9,
-      title: "International Transfers",
+      title: "Advertising Measurement and Tracking",
       content: [
         {
           type: "paragraph",
           content:
-            "Your data may be processed in countries outside your own. We use appropriate safeguards to protect personal data during international transfers.",
+            "On iOS, Lovla asks for your permission through Apple's App Tracking Transparency prompt before any tracking happens. If you allow tracking, Lovla uses Meta's software development kit to understand whether our Facebook and Instagram ads lead to app installs and activity, measure advertising performance, and make our ads more relevant.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "If you allow tracking, Meta may receive device identifiers (including your advertising identifier), IP address and device information, app activation and usage events, and information about App Store purchases, subscriptions, and trials. We do not send Meta your name, email address, partner details, photos, coloring pages, messages, notes, or location.",
+        },
+        {
+          type: "paragraph",
+          content:
+            "If you decline, none of this is sent to Meta and you can keep using every part of Lovla. You can change your choice at any time in your device's Settings. Withdrawing permission stops further sharing but does not delete information Meta has already received. Meta processes the information it receives under its own privacy policy: https://www.facebook.com/privacy/policy/.",
         },
       ],
     },
     {
       number: 10,
+      title: "International Transfers",
+      content: [
+        {
+          type: "paragraph",
+          content:
+            "Your data may be processed in countries outside your own, including the United States, where our service providers operate. We use appropriate safeguards to protect personal data during international transfers.",
+        },
+      ],
+    },
+    {
+      number: 11,
       title: "Data Storage, Retention, and Deletion",
       content: [
         {
@@ -307,12 +380,17 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
         {
           type: "paragraph",
           content:
+            "Your stored location is deleted when you turn off distance sharing.",
+        },
+        {
+          type: "paragraph",
+          content:
             "Deleting your account does not automatically delete content already saved or downloaded by your linked partner.",
         },
       ],
     },
     {
-      number: 11,
+      number: 12,
       title: "Your Rights",
       content: [
         {
@@ -327,6 +405,8 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
             { text: "Correct inaccurate data" },
             { text: "Request deletion" },
             { text: "Request data portability" },
+            { text: "Object to or restrict certain processing" },
+            { text: "Withdraw consent at any time, such as for tracking, AI processing, or location" },
           ],
         },
         {
@@ -337,7 +417,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       ],
     },
     {
-      number: 12,
+      number: 13,
       title: "Security",
       content: [
         {
@@ -348,7 +428,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       ],
     },
     {
-      number: 13,
+      number: 14,
       title: "Reporting and Takedown",
       content: [
         {
@@ -359,7 +439,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       ],
     },
     {
-      number: 14,
+      number: 15,
       title: "Changes to This Policy",
       content: [
         {
@@ -370,7 +450,7 @@ export const PRIVACY_POLICY_CONTENT: LegalPageContent = {
       ],
     },
     {
-      number: 15,
+      number: 16,
       title: "Contact",
       content: [
         {

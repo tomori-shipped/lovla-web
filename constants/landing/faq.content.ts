@@ -33,6 +33,6 @@ export const faqItems: FaqItem[] = [
     id: "faq-privacy",
     question: "Are my photos private?",
     answer:
-      "Your privacy is our priority. Photos are only shared between you and your partner we never access or share your personal images.",
+      "Yes. Your photos are shared only with your partner. When you make a coloring page, the photo is sent to our AI provider just to create it, and we ask your permission first. We never sell your photos or use them for ads.",
   },
 ];
