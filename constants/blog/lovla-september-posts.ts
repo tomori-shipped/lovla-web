@@ -1,3 +1,4 @@
+import { novemberNineteenthPosts } from "./lovla-november-19-posts";
 import { novemberEighteenthPosts } from "./lovla-november-18-posts";
 import { novemberSeventeenthPosts } from "./lovla-november-17-posts";
 import { novemberSixteenthPosts } from "./lovla-november-16-posts";
@@ -61,6 +62,10 @@ export type LovlaStory = {
     links?: { title: string; href: string }[];
   }[];
   related: { href: string; title: string }[];
+  /** Keyword map entry: one primary query per page, plus close variants it should also answer. */
+  keywords?: { primary: string; secondary: string[]; source: string };
+  /** Visible FAQ block, also emitted as FAQPage structured data. Answers must match the page. */
+  faqs?: { question: string; answer: string }[];
   screenshot?: string;
   imageSequence?: {
     title: string;
@@ -70,6 +75,7 @@ export type LovlaStory = {
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...novemberNineteenthPosts,
   ...novemberEighteenthPosts,
   ...novemberSeventeenthPosts,
   ...novemberSixteenthPosts,
