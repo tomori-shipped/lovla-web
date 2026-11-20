@@ -77,7 +77,23 @@ export default async function LovlaStoryPage({ params }: Props) {
           url: "https://www.lovla.app",
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+        ...(post.keywords && {
+          keywords: [post.keywords.primary, ...post.keywords.secondary].join(", "),
+        }),
       },
+      ...(post.faqs?.length
+        ? [
+            {
+              "@type": "FAQPage",
+              "@id": `${canonical}#faq`,
+              mainEntity: post.faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer", text: faq.answer },
+              })),
+            },
+          ]
+        : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
@@ -212,6 +228,16 @@ export default async function LovlaStoryPage({ params }: Props) {
                       </a>
                     </li>
                   ))}
+                  {post.faqs?.length ? (
+                    <li>
+                      <a
+                        href="#faq"
+                        className="block text-sm leading-6 text-primary hover:underline"
+                      >
+                        Frequently asked questions
+                      </a>
+                    </li>
+                  ) : null}
                 </ul>
               </nav>
             </aside>
@@ -308,6 +334,25 @@ export default async function LovlaStoryPage({ params }: Props) {
                   )}
                 </section>
               ))}
+              {post.faqs?.length ? (
+                <section
+                  id="faq"
+                  aria-labelledby="faq-heading"
+                  className="mt-12 scroll-mt-8 border-t border-primary/10 pt-9"
+                >
+                  <h2 id="faq-heading" className="font-helix text-3xl leading-tight text-primary">
+                    Frequently asked questions
+                  </h2>
+                  <dl className="mt-6 space-y-6">
+                    {post.faqs.map((faq) => (
+                      <div key={faq.question}>
+                        <dt className="font-semibold text-primary">{faq.question}</dt>
+                        <dd className="mt-2">{faq.answer}</dd>
+                      </div>
+                    ))}
+                  </dl>
+                </section>
+              ) : null}
               <section className="my-12 rounded-2xl bg-[#F0E6F0] p-6 sm:p-8">
                 <h2 className="font-helix text-3xl leading-tight text-primary">
                   Make a little more time for us.
