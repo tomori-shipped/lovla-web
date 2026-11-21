@@ -1,3 +1,4 @@
+import { novemberTwentyFirstPosts } from "./lovla-november-21-posts";
 import { novemberTwentiethPosts } from "./lovla-november-20-posts";
 import { novemberNineteenthPosts } from "./lovla-november-19-posts";
 import { novemberEighteenthPosts } from "./lovla-november-18-posts";
@@ -76,6 +77,7 @@ export type LovlaStory = {
 };
 
 export const lovlaStories: LovlaStory[] = [
+  ...novemberTwentyFirstPosts,
   ...novemberTwentiethPosts,
   ...novemberNineteenthPosts,
   ...novemberEighteenthPosts,
